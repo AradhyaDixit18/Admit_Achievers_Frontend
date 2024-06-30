@@ -51,3 +51,105 @@
 .half-black-container{
     background: linear-gradient(to bottom , white 0% , white 50%, #333232 50% , #333232 100%);
 }
+
+/* Define the styles for the community container */
+.community-container {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.community-card {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.community-icon {
+  margin-right: 1rem;
+}
+
+.community-text {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Background colors for each card */
+.bg-light-green {
+  background-color: #f8f9f4;
+}
+
+.bg-light-red {
+  background-color: #fff5f5;
+}
+
+.bg-light-purple {
+  background-color: #f6f3f9;
+}
+
+.bg-light-orange {
+  background-color: #fef7f3;
+}
+
+/* Colors for icons and text */
+.text-multicolor {
+  color: #fca311; /* Icon color for Google Play and Instagram */
+}
+
+.text-dark-red {
+  color: #ff0000; /* Icon color for YouTube */
+}
+
+.text-dark-orange {
+  color: #f97316; /* Icon color for Users */
+}
+
+/* Additional utility classes */
+.p-8 {
+  padding: 2rem;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-orange-500 {
+  color: #f97316;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.gap-4 {
+  gap: 1rem;
+}

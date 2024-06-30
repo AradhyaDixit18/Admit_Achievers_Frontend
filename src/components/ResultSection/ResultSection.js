@@ -1,7 +1,10 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import './ResultSection.css';
 
 const ResultSection = () => {
   const [activeSection, setActiveSection] = useState('Profile Building');
+  const containerRef = useRef(null);
+  const [animationDuration, setAnimationDuration] = useState('0s');
 
   const sections = {
     'Profile Building': (
@@ -58,6 +61,17 @@ const ResultSection = () => {
     ),
   };
 
+  useEffect(() => {
+    const container = containerRef.current;
+    if (container) {
+      const items = container.querySelectorAll('.university-item');
+      const totalWidth = Array.from(items).reduce((sum, item) => sum + item.offsetWidth, 0);
+      const containerWidth = container.offsetWidth;
+      const duration = (totalWidth / containerWidth) * 30; // Adjust this value to slow down the animation
+      setAnimationDuration(`${duration}s`);
+    }
+  }, []);
+
   return (
     <div>
       {/* Crimson Student Results Section */}
@@ -69,32 +83,14 @@ const ResultSection = () => {
           <p className="mt-2">OUR STUDENTS HAVE RECEIVED 3500+ OFFERS TO THE WORLD'S BEST UNIVERSITIES.</p>
         </div>
 
-        <div className="flex justify-around items-center mt-8">
-          <div className="text-center">
-            <img src="/path/to/columbia_logo.png" alt="Columbia University" className="h-16 mx-auto" />
-            <p className="mt-2">Columbia University</p>
-            <p className="font-bold">13</p>
-          </div>
-          <div className="text-center">
-            <img src="/path/to/yale_logo.png" alt="Yale University" className="h-16 mx-auto" />
-            <p className="mt-2">Yale University</p>
-            <p className="font-bold">23</p>
-          </div>
-          <div className="text-center">
-            <img src="/path/to/brown_logo.png" alt="Brown University" className="h-16 mx-auto" />
-            <p className="mt-2">Brown University</p>
-            <p className="font-bold">65</p>
-          </div>
-          <div className="text-center">
-            <img src="/path/to/stanford_logo.png" alt="Stanford University" className="h-16 mx-auto" />
-            <p className="mt-2">Stanford University</p>
-            <p className="font-bold">27</p>
-          </div>
-          <div className="text-center">
-            <img src="/path/to/mit_logo.png" alt="MIT" className="h-16 mx-auto" />
-            <p className="mt-2">MIT</p>
-            <p className="font-bold">12</p>
-          </div>
+        <div ref={containerRef} className="university-container mt-8" style={{ animationDuration }}>
+          {['Columbia University', 'Yale University', 'Brown University', 'Stanford University', 'MIT'].map((university, index) => (
+            <div key={index} className="university-item">
+              <img src={`/path/to/${university.toLowerCase().replace(/ /g, '_')}_logo.png`} alt={university} className="university-logo" />
+              <p className="university-text">{university}</p>
+              <p className="university-text font-bold">{[13, 23, 65, 27, 12][index]}</p>
+            </div>
+          ))}
         </div>
       </div>
 
@@ -108,7 +104,7 @@ const ResultSection = () => {
               className={`text-center ${activeSection === section ? 'text-orange-500' : ''}`}
               onClick={() => setActiveSection(section)}
             >
-              <img src={`/path/to/${section.toLowerCase().replace(' ', '_')}_icon.png`} alt={section} className="h-16 mx-auto" />
+              <img src={`/path/to/${section.toLowerCase().replace(/ /g, '_')}_icon.png`} alt={section} className="h-16 mx-auto" />
               <p className="mt-2">{section}</p>
             </button>
           ))}

@@ -102,27 +102,29 @@ const TestimonialSlider = () => {
       </div>
 
       {/* Section 2 */}
-      <div className="bg-white p-8 rounded-lg shadow-lg text-center mb-8">
-        <h3 className="text-2xl font-bold mb-4">Join India's <span className="text-orange-500">largest</span> communities</h3>
-        <div className="grid grid-cols-4 gap-4">
-          <div className="p-4 flex flex-col items-center">
-            <FaGooglePlay className="text-4xl mb-2 text-green-500" />
-            <p className="text-green-500">1M+ Downloads</p>
-          </div>
-          <div className="p-4 flex flex-col items-center">
-            <FaYoutube className="text-4xl mb-2 text-red-500" />
-            <p className="text-red-500">100k+ Subscribers</p>
-          </div>
-          <div className="p-4 flex flex-col items-center">
-            <FaInstagram className="text-4xl mb-2 text-pink-500" />
-            <p className="text-pink-500">200k+ Instagram</p>
-          </div>
-          <div className="p-4 flex flex-col items-center">
-            <FaUsers className="text-4xl mb-2 text-orange-500" />
-            <p className="text-orange-500">100k+ Community</p>
-          </div>
+      <div className="community-container bg-white p-8 rounded-lg shadow-lg text-center mb-8">
+      <h3 className="text-2xl font-bold mb-4">
+        Join India's <span className="text-orange-500">largest</span> communities
+      </h3>
+      <div className="grid grid-cols-4 gap-4">
+        <div className="community-card bg-light-green p-4 flex items-center rounded-lg shadow-md">
+          <FaGooglePlay className="community-icon text-4xl mr-4 text-multicolor" />
+          <p className="community-text text-multicolor">1M+<br/>Downloads</p>
+        </div>
+        <div className="community-card bg-light-red p-4 flex items-center rounded-lg shadow-md">
+          <FaYoutube className="community-icon text-4xl mr-4 text-dark-red" />
+          <p className="community-text text-dark-red">100k+<br/>Subscribers</p>
+        </div>
+        <div className="community-card bg-light-purple p-4 flex items-center rounded-lg shadow-md">
+          <FaInstagram className="community-icon text-4xl mr-4 text-multicolor" />
+          <p className="community-text text-multicolor">200k+<br/>Instagram</p>
+        </div>
+        <div className="community-card bg-light-orange p-4 flex items-center rounded-lg shadow-md">
+          <FaUsers className="community-icon text-4xl mr-4 text-dark-orange" />
+          <p className="community-text text-dark-orange">100k+<br/>Community</p>
         </div>
       </div>
+    </div>
 
       {/* Section 3 */}
       <div className="relative mb-8">
