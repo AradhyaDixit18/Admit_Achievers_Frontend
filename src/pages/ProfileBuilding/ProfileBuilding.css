@@ -1,0 +1,88 @@
+/* Half Circle Styles */
+.half-circle-left {
+    position: absolute;
+    top: 20%;
+    left: -50px;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    transform: translateY(-50%);
+    overflow: hidden;
+  }
+  
+  .half-circle-right {
+    position: absolute;
+    top: 70%;
+    right: -50px;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    transform: translateY(-50%);
+  }
+  
+  /* Orange Square Style */
+  .orange-square {
+    position: absolute;
+    border-radius: 200%;
+    top: 40%;
+    left: 40%;
+    width: 100px;
+    height: 100px;
+    background-color: #ea580c;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+  
+
+  .black-square {
+    position: absolute;
+    border-radius: 200%;
+    top: 40%;
+    right: 40%;
+    width: 100px;
+    height: 100px;
+    background-color: #000000;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+
+
+
+.main-form{
+  display: flex;
+  align-items: center;
+  justify-content: center ;
+}
+
+  
+  
+  .form-container {
+    width: 40%;
+    height: 300px;
+  }
+  
+  .next-button {
+    color: #FF5722;
+  }
+  
+
+  .label-1{
+    margin-right: 325px;
+  }
+
+  .label-2{
+    margin-right: 460px;
+  }
+
+
+  .leap-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin-left: 10%;
+  }

@@ -1,0 +1,39 @@
+/* styles.css */
+
+/* Styling for the contact cards */
+.contact-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increased shadow for better effect */
+    margin-top: -50px; /* Increase overlap with the black strip */
+    width: 90%; /* Responsive sizing */
+    max-width: 220px; /* Slightly larger to better match the image */
+    border-top: 4px solid #FF7F00; /* Orange top border */
+  }
+  
+  /* Font styling */
+  body, h1, h2, p, button, input, textarea {
+    font-family: 'Arial', sans-serif; /* Ensure consistent font across the page */
+  }
+  
+  /* Icon color adjustment */
+  .contact-card img, .location-icon {
+    filter: invert(50%) sepia(78%) saturate(4988%) hue-rotate(348deg) brightness(96%) contrast(105%); /* Adjust icon color to orange */
+  }
+  
+  /* Button styling */
+  button {
+    font-size: 1rem; /* Larger font for better readability */
+    padding: 0.75rem 1.5rem; /* Adjusted padding for a larger button */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+  }
+  
+  /* Input and textarea styling */
+  input, textarea {
+    border: 1px solid #ccc;
+    padding: 0.75rem;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+  }
+  
