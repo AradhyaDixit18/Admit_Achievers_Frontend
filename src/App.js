@@ -9,6 +9,10 @@ import Admissions from './pages/Admissions/Admissions';
 import ProfileBuilding from './pages/ProfileBuilding/ProfileBuilding';
 import ContactUs from './pages/ContactUs/ContactUs';
 import BookaSession from './pages/BookaSession/BookaSession';
+import BlogListing from './pages/BlogListing/BlogListing';
+import BlogPage from './pages/BlogPage/BlogPage';
+
+
 function App() {
   return (
     <Router>
@@ -21,6 +25,8 @@ function App() {
           <Route path='/admissions' element={<Admissions/>} />
           <Route path='/profile-building' element={<ProfileBuilding/>} />
           <Route path='/book-a-session' element={<BookaSession/>} />
+          <Route path='/blog-lists' element={<BlogListing/>} />
+          <Route path='/blog-lists/blog/:id' element={<BlogPage/>} />
         </Routes>
         <Footer/>
       </div>

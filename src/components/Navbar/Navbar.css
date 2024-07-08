@@ -55,3 +55,27 @@
 nav {
   border-bottom: 1px solid #e5e7eb; /* Light grey border at the bottom */
 }
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 10;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin: 0.125rem 0 0;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+}
+
+.relative:hover .dropdown-menu,
+.relative:focus-within .dropdown-menu {
+  display: block;
+}

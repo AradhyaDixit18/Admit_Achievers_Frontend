@@ -21,10 +21,10 @@ const ContactUs = () => {
     <div className="min-h-screen bg-gray-100 p-5 flex flex-col items-center">
       <div className="w-full max-w-5xl bg-white rounded-md shadow-lg overflow-hidden">
         {/* Top black strip */}
-        <div className="bg-black text-white text-center py-8"> {/* Increase height to match the image */}
-          <h1 className="text-lg md:text-xl font-semibold">If you have any questions or queries you can Contact Us on the following</h1>
+        <div className="bg-black text-white text-center py-16"> {/* Increase height to match the image */}
+          <h1 className="text-lg md:text-xl mb-4 font-semibold">If you have any questions or queries you can Contact Us on the following</h1>
         </div>
-        <div className="p-6 flex justify-between items-start gap-4 flex-col md:flex-row">
+        <div className="p-6 mb-4 flex justify-between items-start gap-4 flex-col md:flex-row">
           {/* Contact Cards */}
           <div className="flex-1 flex flex-col items-center text-center">
             <div className="contact-card">
@@ -35,13 +35,13 @@ const ContactUs = () => {
           <div className="flex-1 flex flex-col items-center text-center">
             <div className="contact-card">
               <img src="https://img.icons8.com/ios/50/FF7F00/phone.png" alt="Phone" className="mx-auto mb-2" /> {/* Orange icon */}
-              <p className="text-gray-700">+91 88260 31820</p>
+              <p className="text-gray-700">+91 8826031820</p>
             </div>
           </div>
           <div className="flex-1 flex flex-col items-center text-center">
             <div className="contact-card">
               <img src="https://img.icons8.com/ios/50/FF7F00/whatsapp.png" alt="WhatsApp" className="mx-auto mb-2" /> {/* Orange icon */}
-              <p className="text-gray-700">+91 88260 31820</p>
+              <p className="text-gray-700">+91 8826031820</p>
             </div>
           </div>
         </div>

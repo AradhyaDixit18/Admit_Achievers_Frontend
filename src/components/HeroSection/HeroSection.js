@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './HeroSection.css';
-import { client } from "../../contentful/client";
+import HeroBanner from "../../assets/Homepage/AA_Home_HeroBanner.png"
 
 const stats = [
     { icon: 'fas fa-clock', value: '250000+', label: 'Hours of counseling experience' },
@@ -16,37 +16,19 @@ const stats = [
 ];
 
 const HeroSection = () => {
-    const [loading, setLoading] = useState(true);
-    const [text, setText] = useState(null);
-
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const entries = await client.getEntries({ content_type: "homepageHeroSection" });
-                if (entries.items && entries.items.length > 0) {
-                    setText(entries.items[0].fields);
-                }
-                setLoading(false);
-            } catch (error) {
-                console.log(error);
-                setLoading(false);
-            }
-        };
-        fetchData();
-    }, []);
-
-    if (loading) return <div>Loading...</div>;
+ 
+  
 
     return (
         <div className="relative text-white main">
             <div className="relative w-full h-96 overflow-hidden z-0">
-                <img src="" alt="Background" className="absolute w-full h-full object-cover" />
+                <img src={HeroBanner} alt="" className="absolute w-full h-full object-cover" />
                 <div className="relative container mx-auto py-24 px-6 text-center z-10">
                     <h1 id="hero-text" className="text-4xl text-white font-bold">
-                        {text ? text.heroText : 'Loading...'}
+                      
                     </h1>
                     <button className="mt-6 bg-gray-800 text-white px-6 py-3 rounded-lg font-semibold">
-                        {text ? text.mainButtonText : 'Loading...'}
+                        
                     </button>
                     <div className="mt-6 text-lg">
                         <span className="block">1,00,000+ Success Stories</span>
