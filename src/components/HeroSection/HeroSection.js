@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './HeroSection.css';
 import HeroBanner from "../../assets/Homepage/AA_Home_HeroBanner.png"
 
@@ -25,14 +25,14 @@ const HeroSection = () => {
                 <img src={HeroBanner} alt="" className="absolute w-full h-full object-cover" />
                 <div className="relative container mx-auto py-24 px-6 text-center z-10">
                     <h1 id="hero-text" className="text-4xl text-white font-bold">
-                      
+                    Unlock Your Academic Potential
                     </h1>
-                    <button className="mt-6 bg-gray-800 text-white px-6 py-3 rounded-lg font-semibold">
-                        
+                    <button  className="mt-6 bg-gray-800 text-white px-6 py-3 rounded-lg font-semibold">
+                    Start Here
                     </button>
                     <div className="mt-6 text-lg">
-                        <span className="block">1,00,000+ Success Stories</span>
-                        <span className="block">10,000+ Preferred Courses</span>
+                        <span className="block">Expert Guidance For Your Study Abroad Journey</span>
+                        <span className="block"></span>
                     </div>
                 </div>
             </div>

@@ -21,7 +21,7 @@ export const StudentsResult = () => {
         }
       }, []);
   return (
-    <div className="bg-gray-800 text-white p-8">
+    <div className="bg-gray-800 text-white p-8 overflow-hidden">
     <div className="text-center">
       <h1 className="text-3xl font-bold">
         Crimson <span className="text-orange-500">Student</span> Results
@@ -31,11 +31,11 @@ export const StudentsResult = () => {
 
     <div ref={containerRef} className="university-container mt-8" style={{ animationDuration }}>
       {[
-        { name: 'Columbia University', image: AA_Home_UniversityAdmits_FIT, count: 13 },
-        { name: 'Yale University', image: AA_Home_UniversityAdmits_HEC, count: 23 },
-        { name: 'Brown University', image: AA_Home_UniversityAdmits_LBS, count: 65 },
-        { name: 'Stanford University', image: AA_Home_UniversityAdmits_Mehnheim, count: 27 },
-        { name: 'MIT', image: AA_Home_UniversityAdmits_MelbourneUniversity, count: 12 }
+        { name: 'FIT', image: AA_Home_UniversityAdmits_FIT, count: 13 },
+        { name: 'HEC', image: AA_Home_UniversityAdmits_HEC, count: 23 },
+        { name: 'London Bussiness School', image: AA_Home_UniversityAdmits_LBS, count: 65 },
+        { name: 'Mehnheim University', image: AA_Home_UniversityAdmits_Mehnheim, count: 27 },
+        { name: 'Melbourne University', image: AA_Home_UniversityAdmits_MelbourneUniversity, count: 12 }
       ].map((university, index) => (
         <div key={index} className="university-item">
           <img
