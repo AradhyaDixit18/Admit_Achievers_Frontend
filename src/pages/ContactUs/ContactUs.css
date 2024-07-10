@@ -4,7 +4,7 @@
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increased shadow for better effect */
-  margin-top: -30px; /* Increase overlap with the black strip */
+  margin-top: -60px; /* Increase overlap with the black strip */
   width: 90%; /* Responsive sizing */
   max-width: 220px; /* Slightly larger to better match the image */
   border-top: 4px solid #FF7F00; /* Orange top border */
@@ -49,7 +49,7 @@ input, textarea {
 @media (max-width: 768px) {
   .contact-card {
       width: 100%; /* Full width on mobile */
-      margin-top: 0; /* Remove negative margin on mobile */
+      margin-top: 0px; /* Remove negative margin on mobile */
       margin-bottom: 20px; /* Add spacing between cards */
   }
   .flex-col {
