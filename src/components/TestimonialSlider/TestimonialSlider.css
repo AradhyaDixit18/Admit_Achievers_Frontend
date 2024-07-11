@@ -43,7 +43,11 @@
     background-color: #f0f0f0;
   }
   
-/* Custom CSS */
+.testimonial-image{
+  margin-left: -20%;
+}
+
+
 .custom-shadow {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -68,6 +72,8 @@
   padding: 1rem;
   border-radius: 0.5rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 240px;
+  
 }
 
 .community-icon {

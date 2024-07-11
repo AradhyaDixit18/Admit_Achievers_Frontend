@@ -1,14 +1,15 @@
 import React from 'react';
 import './Footer.css';
+import footerIcon from "../../assets/Logos/AA_Footer_Logo_1080_Square.png"
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-8 mt-8">
+    <footer className="main-footer text-white py-8 mt-8">
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center md:flex-row md:justify-between">
           <div className="flex flex-col items-center">
             <div className="footer-logo mb-4">
-              <img src="your-logo-url-here" alt="Logo" className="w-20" />
+              <img src={footerIcon} alt="Logo" className="logo-main" />
             </div>
             <div className="flex space-x-4">
               <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
@@ -22,8 +23,8 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          <div className="flex flex-col md:flex-row md:space-x-12 mt-8 md:mt-0">
-            <div>
+          <div className="flex flex-col md:flex-row md:space-x-36 mt-8 md:mt-0">
+            <div >
               <h3 className="font-bold mb-4">Our Services</h3>
               <ul className="list-none space-y-2">
                 <li><a href="#fullstack-admissions" className="hover:underline hover:cursor-pointer">Full Stack Admissions</a></li>
@@ -32,7 +33,7 @@ const Footer = () => {
                 <li><a href="#visas" className="hover:underline hover:cursor-pointer">Visas</a></li>
               </ul>
             </div>
-            <div>
+            <div >
               <h3 className="font-bold mb-4">Company</h3>
               <ul className="list-none space-y-2">
                 <li><a href="/about-us" className="hover:underline hover:cursor-pointer">About Us</a></li>
@@ -40,7 +41,7 @@ const Footer = () => {
                 <li><a href="#blogs" className="hover:underline hover:cursor-pointer">Blogs</a></li>
               </ul>
             </div>
-            <div>
+            <div >
               <h3 className="font-bold mb-4">Destination</h3>
               <ul className="list-none space-y-2">
                 <li><a href="#america" className="hover:underline hover:cursor-pointer">America</a></li>

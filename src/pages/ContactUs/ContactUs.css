@@ -48,28 +48,14 @@ input, textarea {
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
   .contact-card {
-      width: 100%; /* Full width on mobile */
-      margin-top: 0px; /* Remove negative margin on mobile */
-      margin-bottom: 20px; /* Add spacing between cards */
+    width: 100%; /* Full width on mobile */
+    margin-top: 0px; /* Remove negative margin on mobile */
+    margin-bottom: 20px; /* Add spacing between cards */
   }
   .flex-col {
-      flex-direction: column;
+    flex-direction: column;
   }
   .grid-cols-2 {
-      grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
-}
-
-.custom-send-button {
-  background-color: #FF7F00; /* Matching the orange color */
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-.custom-send-button:hover {
-  background-color: #e66b00; /* Darker shade on hover */
 }

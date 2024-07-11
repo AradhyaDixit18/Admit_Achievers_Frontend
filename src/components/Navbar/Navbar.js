@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Navbar.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { useLocation, Link } from 'react-router-dom';
-
+import Logo from "../../assets/Logos/AA_Header_Logo_1080_Horizontal.png"
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
@@ -35,7 +35,7 @@ const Navbar = () => {
         </div>
         <div className="flex-1 flex justify-start lg:justify-start">
           <Link to="/">
-            <img src="logo.png" alt="Admit Achievers" className="h-12 w-auto" />
+            <img src={Logo} alt="Admit Achievers" className="h-16 w-auto" />
           </Link>
         </div>
         <div className={`w-full lg:flex lg:items-center lg:w-auto ${isOpen ? 'block' : 'hidden'} lg:block`}>
@@ -66,10 +66,10 @@ const Navbar = () => {
               )}
             </div>
             <Link to="/blog-listing" className={`block lg:inline-block p-2 ${getLinkClass('/blog-listing')}`}>Blog</Link>
-            <Link to="/about-us" className={`block lg:inline-block p-2 ${getLinkClass('/about-us')}`}>About Us</Link>
+            <Link to="/about-us" className={`block lg:inline-block p-2  ${getLinkClass('/about-us')}`}>About Us</Link>
           </div>
-          <div className="lg:flex lg:space-x-4 lg:ml-auto mt-4 lg:mt-0">
-            <Link to="/book-a-session" className={`bg-orange-500 text-white px-4 py-2 rounded mb-2 lg:mb-0 ${getLinkClass('/book-a-session')}`}>Book a Session</Link>
+          <div className="lg:flex lg:space-x-4 lg:ml-auto mt-4 ml-4 lg:mt-0">
+            <Link to="/book-a-session" className={`bg-orange-500 ml-8 text-white px-4 py-2 rounded mb-2 lg:mb-0 ${getLinkClass('/book-a-session')}`}>Book a Session</Link>
             <Link to="/find-a-course" className="bg-gray-100 text-gray-800 px-4 py-2 rounded mb-2 lg:mb-0">Find a Course</Link>
             <button className="bg-gray-100 text-gray-800 px-4 py-2 rounded">
               <i className="fas fa-search"></i>
