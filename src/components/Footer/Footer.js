@@ -24,7 +24,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex flex-col md:flex-row md:space-x-36 mt-8 md:mt-0">
-            <div >
+            <div>
               <h3 className="font-bold mb-4">Our Services</h3>
               <ul className="list-none space-y-2">
                 <li><a href="#fullstack-admissions" className="hover:underline hover:cursor-pointer">Full Stack Admissions</a></li>
@@ -33,26 +33,30 @@ const Footer = () => {
                 <li><a href="#visas" className="hover:underline hover:cursor-pointer">Visas</a></li>
               </ul>
             </div>
-            <div >
+            <div>
               <h3 className="font-bold mb-4">Company</h3>
               <ul className="list-none space-y-2">
                 <li><a href="/about-us" className="hover:underline hover:cursor-pointer">About Us</a></li>
-                <li><a href="#contact-us" className="hover:underline hover:cursor-pointer">Contact Us</a></li>
+                <li><a href="/contact-us" className="hover:underline hover:cursor-pointer">Contact Us</a></li>
                 <li><a href="#blogs" className="hover:underline hover:cursor-pointer">Blogs</a></li>
               </ul>
             </div>
-            <div >
+            <div className="flex flex-col">
               <h3 className="font-bold mb-4">Destination</h3>
-              <ul className="list-none space-y-2">
-                <li><a href="#america" className="hover:underline hover:cursor-pointer">America</a></li>
-                <li><a href="#uk" className="hover:underline hover:cursor-pointer">United Kingdom</a></li>
-                <li><a href="#canada" className="hover:underline hover:cursor-pointer">Canada</a></li>
-                <li><a href="#germany" className="hover:underline hover:cursor-pointer">Germany</a></li>
-                <li><a href="#australia" className="hover:underline hover:cursor-pointer">Australia</a></li>
-                <li><a href="#ireland" className="hover:underline hover:cursor-pointer">Ireland</a></li>
-                <li><a href="#new-zealand" className="hover:underline hover:cursor-pointer">New Zealand</a></li>
-                <li><a href="#singapore" className="hover:underline hover:cursor-pointer">Singapore</a></li>
-              </ul>
+              <div className="grid grid-cols-2 gap-x-20">
+                <ul className="list-none space-y-2">
+                  <li><a href="#america" className="hover:underline hover:cursor-pointer">America</a></li>
+                  <li><a href="#uk" className="hover:underline hover:cursor-pointer">United Kingdom</a></li>
+                  <li><a href="#canada" className="hover:underline hover:cursor-pointer">Canada</a></li>
+                  <li><a href="#germany" className="hover:underline hover:cursor-pointer">Germany</a></li>
+                </ul>
+                <ul className="list-none space-y-2">
+                  <li><a href="#australia" className="hover:underline hover:cursor-pointer">Australia</a></li>
+                  <li><a href="#ireland" className="hover:underline hover:cursor-pointer">Ireland</a></li>
+                  <li><a href="#new-zealand" className="hover:underline hover:cursor-pointer">New Zealand</a></li>
+                  <li><a href="#singapore" className="hover:underline hover:cursor-pointer">Singapore</a></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

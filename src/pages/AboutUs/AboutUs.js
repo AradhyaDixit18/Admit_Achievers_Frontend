@@ -18,11 +18,21 @@ const AboutUs = () => {
   ];
 
   const cards = [
-    "QUALITY & UNIQUENESS over QUANTITY",
-    "PASSION and CURIOSITY",
-    "PERSISTENCE and PERSEVERANCE",
-    "INNOVATION",
-    "TRUST TEAMWORK TRANSPARENCY"
+    <>
+      QUALITY <span className="text-333333">&amp;</span> UNIQUENESS<br />
+      <span className="text-333333">over</span><br />QUANTITY
+    </>,
+    <>
+      PASSION<br /><span className="text-333333">&amp;</span><br />CURIOSITY
+    </>,
+    <>
+      PERSISTENCE<br /><span className="text-333333">&amp;</span><br />PERSEVERANCE
+    </>,
+    <span className="text-333333">
+    <>INNOVATION</></span>,
+    <>
+      TRUST<br /><span className="text-333333">TEAMWORK</span><br /><span className="">TRANSPARENCY</span>
+    </>
   ];
 
   useEffect(() => {
@@ -35,19 +45,23 @@ const AboutUs = () => {
   return (
     <>
       <div className="about-us-container">
-        <section className="top-section bg-white text-center flex justify-center items-center">
-          <h1 className="text-orange-500 md:text-5xl font-bold">
+        <section className="top-section bg-white text-left flex justify-center items-center h-64">
+          <div className="text-container">
+            <h1 className="text-orange-500 md:text-5xl  font-bold leading-snug">
             We believe to realize education<br />
             aspirations through the alchemy<br />
             of empathy and holistic approach.
-          </h1>
+            </h1>
+          </div>
         </section>
-        <section className="top-section bg-black text-center flex justify-center items-center">
-          <h1 className="text-white md:text-5xl font-bold">
+        <section className="top-section bg-grey text-left flex justify-center items-center h-64">
+          <div className="text-container">
+            <h1 className="text-white md:text-5xl font-bold leading-snug">
             We believe value-driven outcomes<br />
             for quality engagement,<br />
             less distraction, and zero time-leak.
-          </h1>
+            </h1>
+          </div>
         </section>
         <section className="bg-white text-center py-12 px-4">
           <h2 className="text-333333 md:text-4xl font-bold leading-tight">
@@ -105,31 +119,13 @@ const AboutUs = () => {
               <span className="text-orange-600"> vision to realize your aspirations</span>
             </h2>
             <div className="flex w-3/4 ml-36 flex-wrap items-center justify-center mt-8 space-y-4 md:space-y-0">
-              <div className="w-full md:w-1/3 p-4 box-border">
-                <div className="bg-white shadow-lg text-md p-6 rounded-lg text-center h-48 flex items-center justify-center">
-                  <p className="text-lg font-semibold text-orange-500">QUALITY & UNIQUENESS<br />over<br />QUANTITY</p>
+              {cards.map((card, index) => (
+                <div key={index} className="w-full md:w-1/3 p-4 box-border">
+                  <div className="bg-white shadow-lg text-md p-6 rounded-lg text-center h-48 flex items-center justify-center">
+                    <p className="text-lg font-semibold text-orange-500">{card}</p>
+                  </div>
                 </div>
-              </div>
-              <div className="w-full md:w-1/3 p-4 box-border">
-                <div className="bg-white shadow-lg text-md p-6 rounded-lg text-center h-48 flex items-center justify-center">
-                  <p className="text-lg font-semibold text-orange-500">PASSION<br />&<br />CURIOSITY</p>
-                </div>
-              </div>
-              <div className="w-full md:w-1/3 p-4 box-border">
-                <div className="bg-white shadow-lg text-md p-6 rounded-lg text-center h-48 flex items-center justify-center">
-                  <p className="text-lg font-semibold text-orange-500">PERSISTENCE<br />&<br />PERSEVERANCE</p>
-                </div>
-              </div>
-              <div className="w-full md:w-1/2 p-4 box-border">
-                <div className="bg-white shadow-lg text-md p-6 rounded-lg text-center h-48 flex items-center justify-center">
-                  <p className="text-lg font-semibold text-orange-500">INNOVATION</p>
-                </div>
-              </div>
-              <div className="w-full md:w-1/2 p-4 box-border">
-                <div className="bg-white shadow-lg text-md p-6 rounded-lg text-center h-48 flex items-center justify-center">
-                  <p className="text-lg font-semibold text-orange-500">TRUST<br />TEAMWORK<br />TRANSPARENCY</p>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>

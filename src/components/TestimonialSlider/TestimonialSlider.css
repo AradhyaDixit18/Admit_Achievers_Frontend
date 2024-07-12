@@ -16,6 +16,13 @@
     transform: translateX(-100%);
     transition: opacity 300ms, transform 300ms;
   }
+
+  .text-width1{
+    width: 63%;
+  }
+  .text-width2{
+    width: 74%;
+  }
   
 .arrows{
     color:#F54C1E ;

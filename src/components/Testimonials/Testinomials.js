@@ -74,8 +74,8 @@ const Testimonial = () => {
               <p className="text-gray-600  mb-4">{testimonials[currentIndex].message}</p>
               <div className="bg-white -ml-36 w-48  shadow-lg p-4 ">
                 <p className="text-ff6633 font-bold text-lg">{testimonials[currentIndex].name}</p>
-                <p className="text-333333 font-bold">{testimonials[currentIndex].course}</p>
-                <p className="text-333333 font-bold">{testimonials[currentIndex].university}</p>
+                <p className="text-333333 text-width1 font-bold">{testimonials[currentIndex].course}</p>
+                <p className="text-333333 text-width2 font-bold">{testimonials[currentIndex].university}</p>
               </div>
             </div>
           </div>

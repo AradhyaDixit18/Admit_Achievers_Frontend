@@ -2,7 +2,10 @@
 .top-section {
   height: 400px;
   width: 100%;
+  
 }
+
+
 
 .arrow-btns {
   margin-left: 95%;
@@ -45,7 +48,12 @@
 .university-text {
   margin-top: 0.5rem;
 }
-
+.bg-grey{
+  background-color: #333333;
+}
+.leading-snug{
+  margin-left: -30%;
+}
 .ready-section {
   background-image: url('../../assets/Homepage/AA_Home_ReadyToTakeTheLeap.png');
   padding: 2rem;
@@ -76,6 +84,11 @@
     height: 250px;
   }
 }
+
+.text-333333 {
+  color: #333333;
+}
+
 
 .card-heading1{
   margin-left: -39%;
