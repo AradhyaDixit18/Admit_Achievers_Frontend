@@ -24,25 +24,27 @@ const Card = ({ title, description, icon }) => (
 const BookaSession = () => {
   return (
     <>
-      <div className=' overflow-hidden'>
+      <div className='overflow-hidden'>
         <div className="text-white main">
           <div className="z-0">
             <img src={HeroBanner} alt="" className="absolute w-full lg:h-96 object-cover" />
             <div className="relative container mx-auto py-24 px-6 text-center z-10">
-              <h1 className="md:text-5xl  md:mt-8 mt-4  sm:text-3xl font-extrabold text-white">
-                Want to Study in the Best School of the World?
+              <h1 className="md:text-5xl md:mt-8 mt-4 sm:text-3xl font-extrabold text-white">
+                From Aspirations to Admissions
               </h1>
-              <h2 className=" md:text-2xl mt-4 md:mt-8 sm:text-xs text-white px-6 py-3 text-md ">
-                Learn how we can increase your admit chances by 300%
+              <h2 className="md:text-2xl mt-4 md:mt-8 sm:text-xs text-white px-6 py-3 text-md">
+                With a 99% Success Rate and over 200 successful admissions, we can help you get into your dream schools
               </h2>
               <div className="flex mt-4 lg:mt-4 justify-center items-center z-2">
-                <div className="bg-white shadow-md text-black text-md p-8 z-2  shadow-lg w-full max-w-4xl flex flex-col md:flex-row">
+                <div className="bg-white rounded-md shadow-md text-black text-md p-8 z-2 shadow-lg w-full max-w-4xl flex flex-col md:flex-row">
                   <div className="w-full md:w-1/2 md:pr-8">
                     <p className="mb-4 font-semibold">Book a Strategy Session to Discuss:</p>
-                    <p className="mb-4">1. Strategies to Increase your chances of admission.</p>
-                    <p className="mb-4">2. Realistic Score Expectations</p>
-                    <p className="mb-4">3. Evaluation of Your Profile's Strengths and Areas for Improvement</p>
-                    <p className="mb-4">4. Overview of Best-fit Schools you can Target</p>
+                    <ul className="list-disc pl-5">
+                      <li className="mb-4">Strategies to increase your chances of admission.</li>
+                      <li className="mb-4">Realistic score expectations.</li>
+                      <li className="mb-4">Evaluation of your profile's strengths and areas for improvement.</li>
+                      <li className="mb-4">Overview of best-fit schools you can target.</li>
+                    </ul>
                   </div>
                   <div className="hidden md:block w-px bg-gray-300"></div>
                   <div className="w-full md:w-3/4 md:pl-8 mt-8 md:mt-0">
@@ -81,32 +83,32 @@ const BookaSession = () => {
                   </div>
                 </div>
               </div>
-              <h2 className="  text-black font-bold mt-16 md:text-4xl   mb-8">
-                What to expect <span className="text-orange-500">from our advisory</span> services? 
+              <h2 className="text-black font-bold mt-16 md:text-4xl mb-8">
+                What to expect <span className="text-orange-500">from our advisory</span> services?
               </h2>
               <div className="flex flex-col md:flex-row justify-center items-center ml-24 mt-16">
                 <div className="w-full md:w-2/3">
                   <ul className="list-none space-y-4 text-black text-left">
                     <li className="flex items-center">
                       <FontAwesomeIcon icon={faCheck} className="tick w-5 h-5 mr-2" />
-                      <span className="font-semibold">Stay Updated on University Admissions with Expert Help</span>
+                      <span className="font-semibold">Stay updated on university admissions with expert help</span>
                     </li>
                     <li className="flex items-center">
                       <FontAwesomeIcon icon={faCheck} className="tick w-5 h-5 mr-2" />
-                      <span className="font-semibold"> Receive guidance from seasoned professionals</span>
+                      <span className="font-semibold">Receive guidance from seasoned professionals</span>
                     </li>
                     <li className="flex items-center">
                       <FontAwesomeIcon icon={faCheck} className="tick w-5 h-5 mr-2" />
                       <span className="font-semibold">Benefit from our expert counselors' services</span>
                     </li>
                     <li className="flex items-center">
-                      <FontAwesomeIcon icon={faCheck} className=" w-5 h-5 mr-2" />
+                      <FontAwesomeIcon icon={faCheck} className="w-5 h-5 mr-2" />
                       <span className="font-semibold">Connect with our international education experts from home</span>
                     </li>
                   </ul>
                 </div>
-                <div className=" md:w-1/3  -ml-48 flex justify-center items-center mt-8 md:mt-0">
-                  <img className="rounded-lg  " src={SessionBenefits} alt="Counselling session" />
+                <div className="md:w-1/3 -ml-48 flex justify-center items-center mt-8 md:mt-0">
+                  <img className="rounded-lg" src={SessionBenefits} alt="Counselling session" />
                 </div>
               </div>
             </div>
@@ -116,7 +118,7 @@ const BookaSession = () => {
         <div className="relative bg-gray-50 py-12">
           <div className="absolute inset-0 bg-pattern bg-cover bg-center opacity-50"></div>
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className=" font-extrabold text-center md:text-4xl -ml-8 mb-16">
+            <h2 className="font-extrabold text-center md:text-4xl -ml-8 mb-16">
               Get Your <span className="text-orange-500">Questions</span> Answered by Our <span className="text-orange-500">Expert Counselors</span>
             </h2>
             <div className="grid grid-cols-1 cards ml-32 md:grid-cols-2 gap-8">

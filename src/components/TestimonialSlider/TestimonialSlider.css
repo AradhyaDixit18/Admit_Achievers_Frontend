@@ -31,8 +31,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 49%;
-    margin-top: 40px;
+   margin-left: 35%;
+    margin-top: 50px;
+    width: 42%;
 
 }
 
@@ -67,13 +68,20 @@
 }
 
 .community-card {
+  height: 160px;
   display: flex;
   align-items: center;
   padding: 1rem;
   border-radius: 0.5rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 240px;
+  width: 200px;
   
+}
+
+.background-clr{
+  background-color: #333333;
+  margin-left: -30%;
+  font-size: 20px;
 }
 
 .community-icon {
@@ -81,8 +89,9 @@
 }
 
 .community-text {
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 550;
+  margin-top: 40%;
 }
 
 /* Background colors for each card */
@@ -102,20 +111,6 @@
   background-color: #fef7f3;
 }
 
-/* Colors for icons and text */
-.text-multicolor {
-  color: #fca311; /* Icon color for Google Play and Instagram */
-}
-
-.text-dark-red {
-  color: #ff0000; /* Icon color for YouTube */
-}
-
-.text-dark-orange {
-  color: #f97316; /* Icon color for Users */
-}
-
-/* Additional utility classes */
 .p-8 {
   padding: 2rem;
 }
@@ -140,12 +135,14 @@
   font-size: 1.5rem;
 }
 
+
+
 .font-bold {
   font-weight: 700;
 }
 
 .text-orange-500 {
-  color: #f97316;
+  color: #ff6633;
 }
 
 .grid {

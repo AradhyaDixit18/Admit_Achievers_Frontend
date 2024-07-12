@@ -1,6 +1,6 @@
 
 .top-section {
-  height: 500px;
+  height: 400px;
   width: 100%;
 }
 
@@ -78,13 +78,10 @@
 }
 
 .card-heading1{
-  margin-left: -55%;
+  margin-left: -39%;
 }
 
 .card-heading2{
-  margin-left: -50%;
+  margin-left: -30%;
 }
 
-.card-heading3{
-  margin-left: -40%;
-}

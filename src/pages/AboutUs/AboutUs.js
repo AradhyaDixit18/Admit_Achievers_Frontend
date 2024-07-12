@@ -5,7 +5,7 @@ import AA_Home_UniversityAdmits_HEC from '../../assets/Homepage/AA_Home_Universi
 import AA_Home_UniversityAdmits_LBS from '../../assets/Homepage/AA_Home_UniversityAdmitsTickr/AA_Home_UniversityAdmits_LBS.png';
 import AA_Home_UniversityAdmits_Mehnheim from '../../assets/Homepage/AA_Home_UniversityAdmitsTickr/AA_Home_UniversityAdmits_Mehnheim.png';
 import AA_Home_UniversityAdmits_MelbourneUniversity from '../../assets/Homepage/AA_Home_UniversityAdmitsTickr/AA_Home_UniversityAdmits_MelbourneUniversity.png';
-import WhoWeAre from "../../assets/Homepage/OtherServices/AA_HomePageService_Documentation.jpg";
+import WhoWeAre from "../../assets/about-us/AA_AboutUs.jpg";
 
 const AboutUs = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -20,9 +20,9 @@ const AboutUs = () => {
   const cards = [
     "QUALITY & UNIQUENESS over QUANTITY",
     "PASSION and CURIOSITY",
-    "Persistence and Perseverance",
+    "PERSISTENCE and PERSEVERANCE",
     "INNOVATION",
-    "3T’s – TRUST, TEAMWORK, TRANSPARENCY"
+    "TRUST TEAMWORK TRANSPARENCY"
   ];
 
   useEffect(() => {
@@ -35,28 +35,28 @@ const AboutUs = () => {
   return (
     <>
       <div className="about-us-container">
-        <section className="top-section bg-white  text-center flex justify-center items-center h-96 md:h-[500px]">
-          <h1 className="text-orange-500 -ml-96  md:text-5xl font-bold leading-tight">
-            We believe to realize education <br />
-            aspirations through the alchemy <br />
+        <section className="top-section bg-white text-center flex justify-center items-center">
+          <h1 className="text-orange-500 md:text-5xl font-bold">
+            We believe to realize education<br />
+            aspirations through the alchemy<br />
             of empathy and holistic approach.
           </h1>
         </section>
-        <section className="top-section  bg-black text-center flex justify-center items-center h-96 md:h-[500px]">
-          <h1 className="text-white md:text-5xl  -ml-96 font-bold leading-tight">
-            We believe value-driven outcomes <br />
-            for quality engagement, <br />
+        <section className="top-section bg-black text-center flex justify-center items-center">
+          <h1 className="text-white md:text-5xl font-bold">
+            We believe value-driven outcomes<br />
+            for quality engagement,<br />
             less distraction, and zero time-leak.
           </h1>
         </section>
         <section className="bg-white text-center py-12 px-4">
-          <h2 className="text-black  md:text-4xl font-bold leading-tight">
+          <h2 className="text-333333 md:text-4xl font-bold leading-tight">
             We are <span className="text-orange-500">Admit Achievers</span>
           </h2>
           <p className="text-gray-700 text-lg mt-4 max-w-3xl mx-auto leading-relaxed">
-            We, at Admit Achievers, are passionate about POSITIVE REALISM where we develop a FOCUSED BLUEPRINT to realize your study abroad aspirations.
+            We, at Admit Achievers, are passionate about <span className="font-bold">POSITIVE REALISM</span> where we develop a <span className="font-bold">FOCUSED BLUEPRINT</span> to realize your study abroad aspirations.
           </p>
-          <div className="video-container  w-full mt-8">
+          <div className="video-container w-full mt-8">
             <iframe
               className="youtube-video"
               src="https://www.youtube.com/embed/_HDi9Ek7UfI"
@@ -88,7 +88,7 @@ const AboutUs = () => {
                 </p>
               </div>
               <div className="mb-4 md:w-3/4">
-                <h2 className="text-xl font-bold text-orange-600">OUR <span className="text-black">STUDENTS</span> COME FIRST</h2>
+                <h2 className="text-xl font-bold text-orange-600">OUR <span className="text-333333">STUDENTS</span> COME FIRST</h2>
                 <p className="text-gray-700 text-lg leading-relaxed">
                   We identify aspirations as a journey that begins with creating a Document Twin of the aspirant and focusing on the Profile Building thereby resulting in a Dynamic Self Managed Process distinctive to each aspirant. Our services target at achieving successful admissions to global universities for the aspirants.
                 </p>
@@ -96,38 +96,38 @@ const AboutUs = () => {
             </div>
           </div>
           <div className="mt-24">
-            <h2 className="text-3xl card-heading1 font-bold ">
-              At <span className="text-orange-600">Admit Achievers</span></h2><br/>
-            <h2 className="text-3xl card-heading2  font-bold ">
-              our core values guide our 
-            </h2><br/>
-            <h2 className="text-3xl card-heading3 font-bold">
-            <span className="text-orange-600">vision to realize your aspirations</span>
+            <h2 className="text-3xl card-heading1 font-bold">
+              At <span className="text-orange-600">Admit Achievers</span> our core values
+            </h2>
+            
+            <h2 className="text-3xl card-heading2 font-bold">
+              guide our 
+              <span className="text-orange-600"> vision to realize your aspirations</span>
             </h2>
             <div className="flex w-3/4 ml-36 flex-wrap items-center justify-center mt-8 space-y-4 md:space-y-0">
-              <div className=" md:w-1/3 p-4 box-border">
+              <div className="w-full md:w-1/3 p-4 box-border">
                 <div className="bg-white shadow-lg text-md p-6 rounded-lg text-center h-48 flex items-center justify-center">
-                  <p className="text-lg font-semibold">{cards[0]}</p>
+                  <p className="text-lg font-semibold text-orange-500">QUALITY & UNIQUENESS<br />over<br />QUANTITY</p>
                 </div>
               </div>
               <div className="w-full md:w-1/3 p-4 box-border">
                 <div className="bg-white shadow-lg text-md p-6 rounded-lg text-center h-48 flex items-center justify-center">
-                  <p className="text-lg font-semibold">{cards[1]}</p>
+                  <p className="text-lg font-semibold text-orange-500">PASSION<br />&<br />CURIOSITY</p>
                 </div>
               </div>
               <div className="w-full md:w-1/3 p-4 box-border">
                 <div className="bg-white shadow-lg text-md p-6 rounded-lg text-center h-48 flex items-center justify-center">
-                  <p className="text-lg font-semibold">{cards[2]}</p>
+                  <p className="text-lg font-semibold text-orange-500">PERSISTENCE<br />&<br />PERSEVERANCE</p>
                 </div>
               </div>
               <div className="w-full md:w-1/2 p-4 box-border">
                 <div className="bg-white shadow-lg text-md p-6 rounded-lg text-center h-48 flex items-center justify-center">
-                  <p className="text-lg font-semibold">{cards[3]}</p>
+                  <p className="text-lg font-semibold text-orange-500">INNOVATION</p>
                 </div>
               </div>
               <div className="w-full md:w-1/2 p-4 box-border">
                 <div className="bg-white shadow-lg text-md p-6 rounded-lg text-center h-48 flex items-center justify-center">
-                  <p className="text-lg font-semibold">{cards[4]}</p>
+                  <p className="text-lg font-semibold text-orange-500">TRUST<br />TEAMWORK<br />TRANSPARENCY</p>
                 </div>
               </div>
             </div>
@@ -138,10 +138,10 @@ const AboutUs = () => {
       <div className="about-us-container">
         <section className="accreditations-section overflow-hidden bg-white text-center py-12">
           <h2 className="text-black text-3xl font-bold leading-tight mb-4">
-            Our <span className="text-orange-500">Accreditations</span>
+            Placement<span className="text-orange-500"> Highlights</span>
           </h2>
-          <p className="text-gray-700 text-lg mb-8">
-            OUR STUDENTS HAVE RECEIVED 3500+ OFFERS TO THE WORLD'S BEST UNIVERSITIES.
+          <p className="text-gray-700 uppercase text-lg mb-8">
+            Our students have received offers from the globally recognized and reputed universities
           </p>
           <div className="university-container mt-8">
             <div className="university-slider flex space-x-8">
@@ -158,7 +158,7 @@ const AboutUs = () => {
       <div className="ready-section w-full md:w-3/4 mx-auto text-white p-8 rounded-lg flex flex-col items-center text-center mb-10">
         <h2 className="text-2xl md:text-4xl mt-10 font-bold mb-4 z-10">Ready to take the <span className="text-orange-500">Leap</span>?</h2>
         <p className="mb-4 z-10 mt-5">Connect with India's finest counsellors and biggest study abroad community.</p>
-        <button className="bg-white mt-5 text-black px-6 py-3 rounded-lg font-bold z-10">
+        <button className="bg-white mt-5 text-333333 px-6 py-3 rounded-lg font-bold z-10">
           Connect Now
         </button>
       </div>

@@ -6,18 +6,21 @@ import { StudentsResult } from '../StudentsResult/StudentsResult';
 import ProfileBuildingImage from '../../assets/Homepage/OtherServices/AA_HomepageServices_ProfileBuilding.jpg';
 import DocumentationImage from '../../assets/Homepage/OtherServices/AA_HomePageService_Documentation.jpg';
 import ApplicationsAssistImage from '../../assets/Homepage/OtherServices/AA_HomepageServices_ApplicationAssist.jpg';
-import UniversitySelectionImage from '../../assets/Homepage/OtherServices/AA_HomepageServices_ScholarShipAssistance.jpg';
-
+import UniversitySelectionImage from '../../assets/Homepage/OtherServices/AA_HomepageServices_UniversityShortlisting.jpg';
+import ScholarshipAssistanceImage from '../../assets/Homepage/OtherServices/AA_HomepageServices_ScholarShipAssistance.jpg'
 // Importing icons
 import ProfileBuildingActiveIcon from '../../assets/Homepage/Icons/aa_profile_hm_active.png';
 import UniversitySelectionActiveIcon from '../../assets/Homepage/Icons/aa_university_hm_active.png';
 import DocumentationActiveIcon from '../../assets/Homepage/Icons/aa_document_hm_active.png';
 import ApplicationsAssistActiveIcon from '../../assets/Homepage/Icons/aa_application_hm_active.png';
+import ScholarshipAssistanceActiveIcon from '../../assets/Homepage/Icons/aa_application_hm_default.png';
 
 import ProfileBuildingDefaultIcon from '../../assets/Homepage/Icons/aa_profile_hm_default.png';
 import UniversitySelectionDefaultIcon from '../../assets/Homepage/Icons/aa_university_hm_default.png';
 import DocumentationDefaultIcon from '../../assets/Homepage/Icons/aa_document_hm_default.png';
 import ApplicationsAssistDefaultIcon from '../../assets/Homepage/Icons/aa_application_hm_default.png';
+import ScholarshipAssistanceDefaultIcon from '../../assets/Homepage/Icons/aa_application_hm_default.png';
+
 
 const ResultSection = () => {
   const [activeSection, setActiveSection] = useState('Profile Building');
@@ -87,6 +90,22 @@ const ResultSection = () => {
         <p className="mt-4">We understand the importance of each step and strive to help you submit strong and well-prepared applications.</p>
       </div>
     ),
+    'Scholarship Assistance': (
+      <div>
+        <h3 className="text-2xl font-bold">Scholarship Assistance</h3>
+        <p className="mt-4">
+          There are many scholarship opportunities available for the students to minimize their education costs but they are highly competitive. There are so many things students can do to improve their chances of getting scholarships. It is essential to clearly communicate your motivation for studying and gaining the scholarships to support your financials.
+          Our team will help you to achieve maximum scholarships to minimize your education cost.
+        </p>
+        <ul className="aligned-list mt-4">
+          <li>Identify Opportunities: Creating the list of the scholarships you may apply.</li>
+          <li>Document Preparation: Assist you to create the required documents.</li>
+          <li>Scholarship Essays: Guide you to write a strong scholarship essay to present your case.</li>
+          <li>Application Submission: Help you in timely submission of the scholarship applications.</li>
+        </ul>
+        <p className="mt-4">We aim to maximize your scholarship opportunities to reduce your educational expenses.</p>
+      </div>
+    ),
   };
 
   const imagePaths = {
@@ -94,6 +113,7 @@ const ResultSection = () => {
     'University Selection': UniversitySelectionImage,
     'Document Editing': DocumentationImage,
     'Applications Assist': ApplicationsAssistImage,
+    'Scholarship Assistance': ScholarshipAssistanceImage,
   };
 
   const iconPaths = {
@@ -112,6 +132,10 @@ const ResultSection = () => {
     'Applications Assist': {
       active: ApplicationsAssistActiveIcon,
       default: ApplicationsAssistDefaultIcon,
+    },
+    'Scholarship Assistance': {
+      active: ScholarshipAssistanceActiveIcon,
+      default: ScholarshipAssistanceDefaultIcon,
     },
   };
 
@@ -133,8 +157,8 @@ const ResultSection = () => {
 
       {/* How it Works Section */}
       <div className="bg-white text-gray-800 p-8">
-        <h2 className="text-center text-2xl font-bold mb-8">
-          How does <span className="text-orange-500">Admit Achievers</span> work?
+        <h2 className="text-center text-5xl mt-4 font-bold mb-8">
+          How <span className="text-orange-500">We</span> Work?
         </h2>
         <div className="flex justify-around items-center border-b border-gray-300 pb-4">
           {Object.keys(sections).map((section) => (
@@ -154,11 +178,11 @@ const ResultSection = () => {
         </div>
       </div>
 
-      <div className="bg-white text-gray-800 p-8 flex">
+      <div className="bg-white text-gray-800 p-8 flex mx-8">
         <img
           src={imagePaths[activeSection]}
           alt={activeSection}
-          className="h-72 w-72 mr-8" // Increased size of the image
+          className="h-86 w-72 mr-8" // Increased size of the image
         />
         <div>
           {sections[activeSection]}

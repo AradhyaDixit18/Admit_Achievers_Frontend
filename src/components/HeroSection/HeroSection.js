@@ -1,38 +1,32 @@
 import React from 'react';
 import './HeroSection.css';
-import HeroBanner from "../../assets/Homepage/AA_Home_HeroBanner.png"
+import HeroBanner from "../../assets/Homepage/AA_Home_HeroBanner.png";
 
 const stats = [
-    { icon: 'fas fa-clock', value: '250000+', label: 'Hours of counseling experience' },
-    { icon: 'fas fa-calendar-alt', value: '17', label: 'Years of experience' },
-    { icon: 'fas fa-check-circle', value: '99%', label: 'Visa success rate' },
-    { icon: 'fas fa-graduation-cap', value: '24000+', label: 'Students placed abroad' },
-    { icon: 'fas fa-building', value: '6', label: 'Branch offices with more on the way' },
-    { icon: 'fas fa-dollar-sign', value: 'US $18.5', label: 'Scholarships worth US $18.5 million won for our students' },
-    { icon: 'fas fa-user-friends', value: '1-1', label: 'One-on-one in-depth counseling' },
-    { icon: 'fas fa-university', value: '38', label: 'Universities have exclusive scholarships for AEC\'s students' },
-    { icon: 'fas fa-trophy', value: 'Most awarded', label: 'Most awarded consultant by the universities' },
-    { icon: 'fas fa-thumbs-up', value: 'Priority offer', label: 'Priority offer from the university' },
+    { icon: 'fas fa-chart-line', value: '95%+', label: 'Success Rate' },
+    { icon: 'fas fa-globe', value: '10+', label: 'Countries Covered' },
+    { icon: 'fas fa-user-graduate', value: '100+', label: 'Students Placed' },
+    { icon: 'fas fa-check-circle', value: '98%', label: 'Visa Approval Rate' },
+    { icon: 'fas fa-briefcase', value: '15 Years', label: 'Avg. Advisor Experience' },
+    { icon: 'fas fa-dollar-sign', value: '$100,000+', label: 'Scholarships' },
+    { icon: 'fas fa-user-cog', value: '100+', label: 'Students Profile Building' },
+    { icon: 'fas fa-clock', value: '10,000+', label: 'Counseling Hours' },
 ];
 
 const HeroSection = () => {
- 
-  
-
     return (
         <div className="relative text-white main">
             <div className="relative w-full h-96 overflow-hidden z-0">
-                <img src={HeroBanner} alt="" className="absolute w-full h-full object-cover" />
-                <div className="relative container mx-auto py-24 px-6 text-center z-10">
+                <img src={HeroBanner} alt="Hero Banner" className="absolute w-full h-full object-cover hero-image" />
+                <div className="relative container mx-auto py-24 px-6 text-center z-10 hero-content">
                     <h1 id="hero-text" className="text-4xl text-white font-bold">
-                    Unlock Your Academic Potential
+                        Unlock Your Academic Potential
                     </h1>
-                    <button  className="mt-6 bg-gray-800 text-white px-6 py-3 rounded-lg font-semibold">
-                    Start Here
+                    <button className="mt-6 bg-gray-800 text-white px-6 py-3 rounded-lg font-semibold">
+                        Start Here
                     </button>
                     <div className="mt-6 text-lg">
                         <span className="block">Expert Guidance For Your Study Abroad Journey</span>
-                        <span className="block"></span>
                     </div>
                 </div>
             </div>
@@ -40,13 +34,13 @@ const HeroSection = () => {
                 <div className="pattern-dots top-right"></div>
                 <h2 className="text-4xl font-bold mb-8 text-black">Why Admit Achievers?</h2>
                 <div className="pattern-dots bottom-left"></div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 stats">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 stats">
                     {stats.map((stat, index) => (
                         <div key={index} className="flex flex-col items-center stat-item">
-                            <div className="text-orange-500 text-4xl">
+                            <div className="text-orange-500 text-6xl">
                                 <i className={stat.icon}></i>
                             </div>
-                            <p className="mt-2 text-xl font-semibold">{stat.value}</p>
+                            <p className="mt-2 text-xl text-gray-500 font-semibold">{stat.value}</p>
                             <p className="text-gray-500 text-center">{stat.label}</p>
                         </div>
                     ))}

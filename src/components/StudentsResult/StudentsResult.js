@@ -11,12 +11,12 @@ export const StudentsResult = () => {
     <div className="bg-gray-800 text-white p-8 overflow-hidden">
       <div className="text-center">
         <h1 className="text-3xl font-bold">
-          Crimson <span className="text-orange-500">Student</span> Results
+        Placement Highlights
         </h1>
-        <p className="mt-2">OUR STUDENTS HAVE RECEIVED 3500+ OFFERS TO THE WORLD'S BEST UNIVERSITIES.</p>
+        <p className="mt-2">Our students have received offers from the globally recognized and reputed universities</p>
       </div>
 
-      <div className="university-container mt-8 overflow-hidden whitespace-nowrap custom-university-container">
+      <div className="university-container  overflow-hidden whitespace-nowrap custom-university-container">
         {[
           { id: 'fit', name: 'FIT', image: AA_Home_UniversityAdmits_FIT, count: 13 },
           { id: 'hec', name: 'HEC', image: AA_Home_UniversityAdmits_HEC, count: 23 },

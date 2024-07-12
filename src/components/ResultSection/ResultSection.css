@@ -29,7 +29,7 @@
 }
 
 .border-orange-500 {
-  border-color: #f97316; /* Tailwind orange-500 */
+  border-color: #ff6633; /* Tailwind orange-500 */
 }
 
 .bg-white {
@@ -100,7 +100,7 @@
 }
 
 .border-gray-800 {
-  border-color: #1f2937; /* Tailwind gray-800 */
+  border-color: #333333; /* Tailwind gray-800 */
 }
 
 .bg-transparent {
@@ -123,7 +123,7 @@ li {
 .aligned-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  
 }
 
 ul.aligned-list {
@@ -133,7 +133,7 @@ ul.aligned-list {
 
 ul.aligned-list li::before {
   content: "\2022";
-  color: #ff6f00; /* Custom bullet color */
+  color: #ff6633; /* Custom bullet color */
   font-weight: bold;
   display: inline-block;
   width: 1em;
