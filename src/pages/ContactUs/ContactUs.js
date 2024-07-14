@@ -53,7 +53,7 @@ const ContactUs = () => {
     <div className="min-h-screen bg-gray-100 p-5 flex flex-col items-center">
       <div className="w-full max-w-5xl bg-white rounded-md shadow-lg overflow-hidden">
         {/* Top black strip */}
-        <div className="bg-black text-white text-center py-8 md:py-16">
+        <div className="bg-333333 text-white text-center py-8 md:py-16">
           <h1 className="text-lg md:text-xl mb-4 font-semibold">
             If you have any questions or queries you can Contact Us on the following
           </h1>
@@ -80,8 +80,8 @@ const ContactUs = () => {
           </div>
         </div>
       
-        <div className="p-6">
-          <h2 className=" text-2xl font-bold mb-4">Get in Touch</h2>
+        <div className=" p-6 ">
+          <h2 className=" text-2xl  text-gray-700 font-bold mb-4">Get in Touch</h2>
           <form ref={form} onSubmit={sendEmail} className="grid grid-cols-1 gap-4">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <input type="text" name="name" placeholder="Name" className="border p-2 rounded" required />
@@ -93,7 +93,7 @@ const ContactUs = () => {
             <textarea name="message" placeholder="Message" className="border p-2 rounded" rows="5" required></textarea>
             <button type="submit" className="custom-send-button w-48 ">Send Message</button>
           </form>
-        </div>
+      </div>
       </div>
     </div>
   );

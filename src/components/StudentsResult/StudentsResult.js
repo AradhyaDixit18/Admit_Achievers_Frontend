@@ -10,13 +10,13 @@ export const StudentsResult = () => {
   return ( 
     <div className="bg-gray-800 text-white p-8 overflow-hidden">
       <div className="text-center">
-        <h1 className="text-3xl font-bold">
+        <h1 className="text-5xl font-bold">
         Placement Highlights
         </h1>
         <p className="mt-2">Our students have received offers from the globally recognized and reputed universities</p>
       </div>
 
-      <div className="university-container  overflow-hidden whitespace-nowrap custom-university-container">
+      <div className="university-container">
         {[
           { id: 'fit', name: 'FIT', image: AA_Home_UniversityAdmits_FIT, count: 13 },
           { id: 'hec', name: 'HEC', image: AA_Home_UniversityAdmits_HEC, count: 23 },
@@ -24,15 +24,13 @@ export const StudentsResult = () => {
           { id: 'mehnheim', name: 'Mehnheim University', image: AA_Home_UniversityAdmits_Mehnheim, count: 27 },
           { id: 'melbourne', name: 'Melbourne University', image: AA_Home_UniversityAdmits_MelbourneUniversity, count: 12 }
         ].map((university, index) => (
-          <div key={university.id} className="university-item inline-block text-center px-4 py-2 sm:px-4 custom-university-item">
+          <div key={university.id} className="university-item text-center  py-2 ">
             <img
               src={university.image}
               alt={university.name}
               className="university-logo"
-              style={{ maxWidth: '100%', height: 'auto' }}
             />
-            <p className="university-text text-white">{university.name}</p>
-            <p className="university-text text-white font-bold">{university.count}</p>
+            <p className="university-text mt-4 text-white">{university.name}</p>
           </div>
         ))}
       </div>

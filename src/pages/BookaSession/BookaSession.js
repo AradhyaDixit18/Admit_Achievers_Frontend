@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
 import './BookaSession.css';
 import HeroBanner from "../../assets/Book-a-session/AA_BookASession_PageBanner.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -22,6 +23,73 @@ const Card = ({ title, description, icon }) => (
 );
 
 const BookaSession = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    phone: '',
+    email: '',
+    preference: 'Phone Call',
+    date: '',
+    time: ''
+  });
+  const [userMessage, setUserMessage] = useState('');
+
+  const handleChange = (e) => {
+    const { id, value } = e.target;
+    setFormData(prevState => ({
+      ...prevState,
+      [id]: value
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const templateParamsCompany = {
+      name: formData.name,
+      phone: formData.phone,
+      email: formData.email,
+      preference: formData.preference,
+      date: formData.date,
+      time: formData.time
+    };
+
+    const templateParamsUser = {
+      name: formData.name,
+      email: formData.email
+    };
+
+    // Send email to the company
+    emailjs.send('service_r9q75qg', 'template_cxkbce1', templateParamsCompany, 'BHX1Ca4sSWoOpfmMq')
+      .then((response) => {
+        console.log('SUCCESS! Company Email Sent', response.status, response.text);
+
+        // Send email to the user after company email is sent
+        emailjs.send('service_3clznej', 'template_uy9hwga', templateParamsUser, 'BHX1Ca4sSWoOpfmMq')
+          .then((response) => {
+            console.log('SUCCESS! User Email Sent', response.status, response.text);
+            setUserMessage('Emails have been successfully sent!');
+          }, (error) => {
+            console.error('FAILED to send user email...', error);
+            setUserMessage('There was an error sending the email to the user.');
+          });
+
+      }, (error) => {
+        console.error('FAILED to send company email...', error);
+        setUserMessage('There was an error sending the email to the company.');
+      });
+  };
+
+  const getMinDate = () => {
+    const today = new Date();
+    today.setDate(today.getDate() + 1);
+    return today.toISOString().split('T')[0];
+  };
+
+  const isTimeValid = (time) => {
+    const [hours, minutes] = time.split(':').map(Number);
+    return hours >= 9 && hours < 22;
+  };
+
   return (
     <>
       <div className='overflow-hidden'>
@@ -49,19 +117,19 @@ const BookaSession = () => {
                   <div className="hidden md:block w-px bg-gray-300"></div>
                   <div className="w-full md:w-3/4 md:pl-8 mt-8 md:mt-0">
                     <h2 className="text-orange-500 text-xl font-semibold mb-4">Schedule Virtual Counseling by Appointment</h2>
-                    <form>
+                    <form onSubmit={handleSubmit}>
                       <div className="mb-4">
-                        <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Name" />
+                        <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Name" value={formData.name} onChange={handleChange} required />
                       </div>
                       <div className="mb-4">
-                        <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="phone" type="tel" placeholder="Phone No" />
+                        <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="phone" type="tel" placeholder="Phone No" value={formData.phone} onChange={handleChange} required />
                       </div>
                       <div className="mb-4">
-                        <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Email" />
+                        <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Email" value={formData.email} onChange={handleChange} required />
                       </div>
                       <div className="mb-4">
                         <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="preference">Counseling Preference*</label>
-                        <select className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="preference">
+                        <select className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="preference" value={formData.preference} onChange={handleChange} required>
                           <option>Phone Call</option>
                           <option>Video Call</option>
                         </select>
@@ -69,28 +137,30 @@ const BookaSession = () => {
                       <div className="mb-4 flex flex-col md:flex-row">
                         <div className="w-full md:w-1/2 md:pr-2 mb-4 md:mb-0">
                           <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="date">Preferred Date*</label>
-                          <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="date" type="date" />
+                          <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="date" type="date" value={formData.date} onChange={handleChange} min={getMinDate()} required />
                         </div>
                         <div className="w-full md:w-1/2 md:pl-2">
                           <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="time">Preferred Time*</label>
-                          <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="time" type="time" />
+                          <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="time" type="time" value={formData.time} onChange={handleChange} required />
+                          {!isTimeValid(formData.time) && <p className="text-red-500 text-xs italic">Please select a time between 09:00 AM and 10:00 PM.</p>}
                         </div>
                       </div>
-                      <button className="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+                      <button className="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit" disabled={!isTimeValid(formData.time)}>
                         Book a Free Session
                       </button>
                     </form>
+                    {userMessage && <p className="text-red-500 text-xs italic mt-4">{userMessage}</p>}
                   </div>
                 </div>
               </div>
-              <h2 className="text-black font-bold mt-16 md:text-4xl mb-8">
+              <h2 className="text-black font-bold mt-16 md:text-5xl mb-8">
                 What to expect <span className="text-orange-500">from our advisory</span> services?
               </h2>
               <div className="flex flex-col md:flex-row justify-center items-center ml-24 mt-16">
                 <div className="w-full md:w-2/3">
                   <ul className="list-none space-y-4 text-black text-left">
                     <li className="flex items-center">
-                      <FontAwesomeIcon icon={faCheck} className="tick w-5 h-5 mr-2" />
+                      <FontAwesomeIcon icon={faCheck} className="tick  w-5 h-5 mr-2" />
                       <span className="font-semibold">Stay updated on university admissions with expert help</span>
                     </li>
                     <li className="flex items-center">
@@ -118,10 +188,10 @@ const BookaSession = () => {
         <div className="relative bg-gray-50 py-12">
           <div className="absolute inset-0 bg-pattern bg-cover bg-center opacity-50"></div>
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="font-extrabold text-center md:text-4xl -ml-8 mb-16">
+            <h2 className="font-extrabold text-center md:text-5xl -ml-8 mb-16">
               Get Your <span className="text-orange-500">Questions</span> Answered by Our <span className="text-orange-500">Expert Counselors</span>
             </h2>
-            <div className="grid grid-cols-1 cards ml-32 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1  cards ml-32 md:grid-cols-2 gap-8">
               <Card 
                 title="Country course and university selection" 
                 description="" 

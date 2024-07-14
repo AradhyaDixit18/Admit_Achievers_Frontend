@@ -149,13 +149,11 @@ const ResultSection = () => {
     };
 
     preloadImages();
-  }, []); // Empty dependency array ensures this effect runs only once, when component mounts
-
+  }, []); 
   return (
     <div>
       <StudentsResult />
 
-      {/* How it Works Section */}
       <div className="bg-white text-gray-800 p-8">
         <h2 className="text-center text-5xl mt-4 font-bold mb-8">
           How <span className="text-orange-500">We</span> Work?
@@ -182,7 +180,7 @@ const ResultSection = () => {
         <img
           src={imagePaths[activeSection]}
           alt={activeSection}
-          className="h-86 w-72 mr-8" // Increased size of the image
+          className="h-86 w-96 mr-8" // Increased size of the image
         />
         <div>
           {sections[activeSection]}

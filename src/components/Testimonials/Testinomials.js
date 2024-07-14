@@ -47,8 +47,8 @@ const Testimonial = () => {
     <>
       <div className="mx-auto mt-8 py-8">
         <div className='mb-4'>
-          <h2 className="text-2xl mb-4 font-bold mb-4 test-head inline">What Students are saying about <span className="text-orange-500">Admit Achievers</span></h2>
-          <div className="ml-36 mb-4 inline">
+          <h2 className="text-5xl mb-4 font-bold mb-4 test-head inline">What Students are saying about <span className="text-orange-500">Admit Achievers</span></h2>
+          <div className="ml-4 mb-4 inline">
             <button
               onClick={handlePrev}
               className="arrows w-11 h-11 p-2 ml-4 shadow-sm hover:bg-gray-200"
@@ -74,8 +74,8 @@ const Testimonial = () => {
               <p className="text-gray-600  mb-4">{testimonials[currentIndex].message}</p>
               <div className="bg-white -ml-36 w-48  shadow-lg p-4 ">
                 <p className="text-ff6633 font-bold text-lg">{testimonials[currentIndex].name}</p>
-                <p className="text-333333 text-width1 font-bold">{testimonials[currentIndex].course}</p>
-                <p className="text-333333 text-width2 font-bold">{testimonials[currentIndex].university}</p>
+                <p className=" text-width1 font-bold">{testimonials[currentIndex].course}</p>
+                <p className=" text-width2 font-bold">{testimonials[currentIndex].university}</p>
               </div>
             </div>
           </div>

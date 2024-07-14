@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+
 
 .top-section {
   height: 400px;
@@ -21,6 +28,7 @@
 .youtube-video {
   width: 80%;
   height: 600px;
+  margin-left: 34%;
 }
 
 .university-container {
@@ -51,8 +59,11 @@
 .bg-grey{
   background-color: #333333;
 }
-.leading-snug{
+.leading-snug1{
   margin-left: -30%;
+}
+.leading-snug2{
+  margin-left: -27%;
 }
 .ready-section {
   background-image: url('../../assets/Homepage/AA_Home_ReadyToTakeTheLeap.png');
@@ -91,10 +102,10 @@
 
 
 .card-heading1{
-  margin-left: -39%;
+  margin-left: -22%;
 }
 
 .card-heading2{
-  margin-left: -30%;
+  margin-left: -7%;
 }
 

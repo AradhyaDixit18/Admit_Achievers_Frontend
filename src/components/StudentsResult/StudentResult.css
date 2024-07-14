@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+@keyframes moveLeft {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .university-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: moveLeft 20s linear infinite; /* Adjust duration as needed */
+  }
+  
+  .university-item {
+    display: inline-block;
+    width: 20%; /* Adjust width based on the number of items */
+    padding: 0 20px; /* Adjust padding as needed */
+  }
+  
+  .university-logo {
+    max-width: 100%;
+    height: auto;
+  }
+  

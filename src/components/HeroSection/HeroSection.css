@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+
 .main {
   position: relative;
   background-color: #f8f9fa;
@@ -18,11 +25,7 @@
   z-index: 1;
 }
 
-#hero-text {
-  width: 100%;
-  font-size: 32px;
-  margin: 0 auto;
-}
+
 
 .cards-section {
   border-radius: 20px;
@@ -105,11 +108,7 @@
   z-index: 1;
 }
 
-#hero-text {
-  width: 100%;
-  font-size: 32px;
-  margin: 0 auto;
-}
+
 
 .cards-section {
   border-radius: 20px;
@@ -171,4 +170,18 @@
   .stat-item {
       margin: 0 auto;
   }
+}
+
+
+
+#hero-text{
+  margin-left: -35%;
+}
+
+#hero-button{
+  margin-left: -81%;
+}
+
+#hero-subtext{
+  margin-left: -50%;
 }

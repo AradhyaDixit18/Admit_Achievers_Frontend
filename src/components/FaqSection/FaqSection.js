@@ -13,31 +13,32 @@ const FAQSection = () => {
 
   const questionsAndAnswers = [
     {
-      question: 'What is the Riipen experiential learning platform?',
-      answer: 'Riipen is a platform that connects educators, students, and employers to facilitate experiential learning opportunities such as internships, co-op programs, and projects.'
+      question: 'Why should I consider studying abroad?'
+,
+      answer: 'Studying abroad offers numerous benefits, including exposure to different cultures, a chance to enhance language skills, global networking opportunities, access to high-quality education, and personal growth.'
     },
     {
-      question: 'What makes Riipen the #1 experiential learning platform?',
-      answer: 'Riipen is considered the #1 platform due to its extensive network, ease of use, and the high-quality experiential learning opportunities it offers to students and institutions.'
+      question: 'How do I choose the right study abroad destination?',
+      answer: 'Consider factors such as academic reputation, cost of living, safety, cultural fit, language requirements, available scholarships, and career prospects in different countries to determine the right study abroad destination for you.'
     },
     {
-      question: 'What are the benefits of using an experiential learning platform?',
-      answer: 'Benefits include hands-on experience, improved employability, enhanced learning outcomes, and stronger connections between students and industry professionals.'
+      question: 'What are the language requirements for studying abroad?',
+      answer: "Language requirements vary depending on the country and the language of instruction. Some countries may require proficiency in the local language, while others offer programs taught in English. It's important to check the language requirements of the specific university or program you are interested in."
     },
     {
-      question: 'What are the benefits of using an experiential admit learning platform?',
-      answer: 'An experiential admit learning platform provides students with real-world experiences that can enhance their admissions prospects by demonstrating practical skills and experience.'
+      question: 'What are the popular study abroad destinations for Indian students?',
+      answer: 'Popular study abroad destinations for Indian students include the United States, United Kingdom, Canada, Australia, Germany, and Singapore. However, the choice of destination depends on individual preferences and career goals.'
     },
     {
-      question: 'What are the benefits of using an admit achievers experiential admit learning platform?',
-      answer: 'Using this platform helps students achieve better outcomes in their admissions process by providing them with opportunities to gain relevant experience and skills that are highly valued by institutions.'
+      question: 'How do I finance my studies abroad?',
+      answer: 'Financing options include scholarships, grants, part-time jobs, student loans, and financial assistance from family. Research and apply for scholarships specifically designed for international students and explore funding options provided by universities and government agencies'
     }
   ];
 
   return (
     <div className="main font-sans antialiased bg-white py-8">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-4">
+        <h2 className="text-5xl font-bold text-center mb-4">
           Got Questions? Find <span className="text-red-500">Answers</span> Here
         </h2>
         <div className="flex ml-32 flex-col md:flex-row mt-4 justify-center items-start">

@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
 /* Styling for the contact cards */
 .contact-card {
   background-color: #ffffff;
@@ -7,13 +13,11 @@
   margin-top: -60px; /* Increase overlap with the black strip */
   width: 90%; /* Responsive sizing */
   max-width: 220px; /* Slightly larger to better match the image */
-  border-top: 4px solid #FF7F00; /* Orange top border */
+  border-top: 4px solid #FF6630; /* Orange top border */
 }
 
 /* Font styling */
-body, h1, h2, p, button, input, textarea {
-  font-family: 'Arial', sans-serif; /* Ensure consistent font across the page */
-}
+
 
 /* Icon color adjustment */
 .contact-card img, .location-icon {
@@ -24,7 +28,7 @@ body, h1, h2, p, button, input, textarea {
 .custom-send-button {
   font-size: 1rem; /* Larger font for better readability */
   padding: 0.75rem 1.5rem; /* Adjusted padding for a larger button */
-  background-color: #FF6633; /* Match the button color to the image */
+  background-color: #FF6630; /* Match the button color to the image */
   color: white;
   border: none;
   border-radius: 0.5rem;
@@ -58,4 +62,9 @@ input, textarea {
   .grid-cols-2 {
     grid-template-columns: 1fr;
   }
+}
+
+
+.bg-333333{
+  background-color: #333333;
 }
