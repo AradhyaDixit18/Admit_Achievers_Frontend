@@ -42,7 +42,7 @@ const TestimonialSlider = () => {
         </div>
 
         {/* Section 2 */}
-        <div className="community-container text-center px-4">
+         <div className="community-container text-center px-4">
       <h3 className="text-3xl md:text-5xl font-bold">
         Join Our <span className="text-orange-500">Community</span>
       </h3>
