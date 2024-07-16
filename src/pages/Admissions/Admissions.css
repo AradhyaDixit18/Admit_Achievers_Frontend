@@ -52,6 +52,7 @@
 
   .admissions-container {
     font-family: Arial, sans-serif;
+    margin-bottom: 0px;
   }
   
   .hero-section .hero-content {
@@ -69,14 +70,15 @@
   .services-section .service-card {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    
   }
   
   .section-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+   
     margin-top: 2rem;
+    margin-bottom: 1rem;
     background-color: white;
     padding: 2rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -84,17 +86,19 @@
   
   .text-section {
     flex: 1;
-    margin-right: 2rem;
+   
   }
   
   .section-title {
-    font-size: 1.875rem; /* 3xl */
+   
     font-weight: bold;
     color: #F97316;
   }
   
   .section-description {
     margin-top: 1rem;
+    margin-left: 20px;
+    text-align: left;
   }
   
   .image-collage {
@@ -123,6 +127,8 @@
     border-radius: 0.375rem; /* rounded-md */
     cursor: pointer;
     margin-top: 1rem;
+    text-align: left;
+    margin-left: -70%;
   }
   
   .custom-button:hover {
@@ -180,10 +186,7 @@
     border-top-right-radius: 8px;
   }
   
-  .text-center {
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-  }
+  
   
   .pagination-dot {
     width: 10px;
@@ -204,3 +207,37 @@
     margin-left: 65px;
     width: 90%;
   }
+
+  ul.list-disc {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  .aligned-list {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  ul.aligned-list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  ul.aligned-list li::before {
+    content: "\2022";
+    color: #ff6633; /* Custom bullet color */
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+  ul.aligned-list li {
+    margin-left: 20px; /* Aligns the text with the custom bullet */
+  }
+  

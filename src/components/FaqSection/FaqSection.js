@@ -37,12 +37,12 @@ const FAQSection = () => {
 
   return (
     <div className="main font-sans antialiased bg-white py-8">
-      <div className="container mx-auto px-4">
-        <h2 className="text-5xl font-bold text-center mb-4">
-          Got Questions? Find <span className="text-red-500">Answers</span> Here
+      <div className="container questions mx-auto px-4">
+        <h2 className="text-5xl main-text font-bold text-center mb-4">
+          Got Questions? Find <span className="text-orange">Answers</span> Here
         </h2>
-        <div className="flex ml-32 flex-col md:flex-row mt-4 justify-center items-start">
-          <div className="w-full md:w-1/2">
+        <div className="flex ml-32  flex-col md:flex-row mt-4 justify-center items-start">
+          <div className="w-full main-quesns md:w-1/2">
             <ul className="list-none">
               {questionsAndAnswers.map((item, index) => (
                 <li key={index} className="mb-4">
@@ -50,7 +50,7 @@ const FAQSection = () => {
                     <span className="question-text">{item.question}</span>
                     <button
                       onClick={() => toggleQuestion(index)}
-                      className="text-red-500 ml-8 font-bold text-6xl"
+                      className="text-red-500 symbol ml-8 font-bold text-6xl"
                     >
                       {openQuestionIndex === index ? '-' : '+'}
                     </button>
@@ -62,21 +62,21 @@ const FAQSection = () => {
               ))}
             </ul>
           </div>
-          <div className="w-full ml-8 md:w-1/2 md:pl-8 flex flex-col -space-y-4">
+          <div className="w-full images ml-8 md:w-1/2 md:pl-8 flex flex-col -space-y-4">
             <img
               src={Faq1}
               alt="Image 1"
-              className="w-80 h-36 object-cover rounded-md transition-transform transform x"
+              className="w-80 h-36 object-cover images1 rounded-md transition-transform transform x"
             />
             <img
               src={Faq2}
               alt="Image 2"
-              className="w-80 ml-16 z-10  h-36 object-cover rounded-md transition-transform transform "
+              className="w-80 ml-16 z-10  h-36 images2 object-cover rounded-md transition-transform transform "
             />
             <img
               src={Faq3}
               alt="Image 3"
-              className="w-80 h-36 object-cover rounded-md transition-transform transform "
+              className="w-80 h-36 object-cover images3 rounded-md transition-transform transform "
             />
           </div>
         </div>

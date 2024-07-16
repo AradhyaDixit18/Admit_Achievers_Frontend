@@ -11,6 +11,7 @@ import ContactUs from './pages/ContactUs/ContactUs';
 import BookaSession from './pages/BookaSession/BookaSession';
 import BlogListing from './pages/BlogListing/BlogListing';
 import BlogPage from './pages/BlogPage/BlogPage';
+import ComingSoon from './pages/ComingSoon/ComingSoon';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
           <Route path='/book-a-session' element={<BookaSession/>} />
           <Route path='/blog-lists' element={<BlogListing/>} />
           <Route path='/blog-lists/blog/:id' element={<BlogPage/>} />
+          <Route path='/coming-soon' element={<ComingSoon/>} />
         </Routes>
         <Footer/>
       </div>

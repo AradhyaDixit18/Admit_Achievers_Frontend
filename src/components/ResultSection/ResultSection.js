@@ -13,13 +13,13 @@ import ProfileBuildingActiveIcon from '../../assets/Homepage/Icons/aa_profile_hm
 import UniversitySelectionActiveIcon from '../../assets/Homepage/Icons/aa_university_hm_active.png';
 import DocumentationActiveIcon from '../../assets/Homepage/Icons/aa_document_hm_active.png';
 import ApplicationsAssistActiveIcon from '../../assets/Homepage/Icons/aa_application_hm_active.png';
-import ScholarshipAssistanceActiveIcon from '../../assets/Homepage/Icons/aa_application_hm_default.png';
+import ScholarshipAssistanceActiveIcon from '../../assets/Homepage/Icons/AA_HomepageService_ScholarshipAssist_Active.png';
 
 import ProfileBuildingDefaultIcon from '../../assets/Homepage/Icons/aa_profile_hm_default.png';
 import UniversitySelectionDefaultIcon from '../../assets/Homepage/Icons/aa_university_hm_default.png';
 import DocumentationDefaultIcon from '../../assets/Homepage/Icons/aa_document_hm_default.png';
 import ApplicationsAssistDefaultIcon from '../../assets/Homepage/Icons/aa_application_hm_default.png';
-import ScholarshipAssistanceDefaultIcon from '../../assets/Homepage/Icons/aa_application_hm_default.png';
+import ScholarshipAssistanceDefaultIcon from '../../assets/Homepage/Icons/AA_HomepageService_ScholarshipAssist_Default.png';
 
 
 const ResultSection = () => {
@@ -155,10 +155,10 @@ const ResultSection = () => {
       <StudentsResult />
 
       <div className="bg-white text-gray-800 p-8">
-        <h2 className="text-center text-5xl mt-4 font-bold mb-8">
+        <h2 className="text-center md:text-5xl mt-4 font-bold work-text mb-8">
           How <span className="text-orange-500">We</span> Work?
         </h2>
-        <div className="flex justify-around items-center border-b border-gray-300 pb-4">
+        <div className="flex icons justify-around items-center border-b border-gray-300 pb-4">
           {Object.keys(sections).map((section) => (
             <button
               key={section}
@@ -168,31 +168,25 @@ const ResultSection = () => {
               <img
                 src={activeSection === section ? iconPaths[section].active : iconPaths[section].default}
                 alt={section}
-                className="h-12 w-12 mx-auto"
+                className="h-12 w-12 mx-auto "
               />
-              <p className="mt-2">{section}</p>
+              <p className="mt-2 ">{section}</p>
             </button>
           ))}
         </div>
       </div>
 
-      <div className="bg-white text-gray-800 p-8 flex mx-8">
+      <div className="bg-white text-gray-800 image-content  p-8 flex mx-8">
         <img
           src={imagePaths[activeSection]}
           alt={activeSection}
-          className="h-86 w-96 mr-8" // Increased size of the image
+          className="h-86 w-96 mr-8 section-image" // Increased size of the image
         />
-        <div>
+        <div className='section-content'>
           {sections[activeSection]}
           <div className="mt-4 flex space-x-4">
             <button className="bg-orange-500 text-white px-6 py-2 rounded-md shadow-md flex items-center">
-              Book A Demo
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="ml-2 h-5 w-5">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-              </svg>
-            </button>
-            <button className="bg-transparent border border-gray-800 text-gray-800 px-6 py-2 rounded-md shadow-md flex items-center">
-              Learn More
+              Book A Session
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="ml-2 h-5 w-5">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>

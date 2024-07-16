@@ -4,7 +4,6 @@
   font-family: 'Poppins', sans-serif;
 }
 
-
 .main {
   position: relative;
   background-color: #f8f9fa;
@@ -23,9 +22,8 @@
 .hero-content {
   position: relative;
   z-index: 1;
+  text-align: center;
 }
-
-
 
 .cards-section {
   border-radius: 20px;
@@ -33,8 +31,8 @@
   margin-bottom: 20px;
   padding: 40px;
   background: #fff;
-  position: relative;
-  width: 90%;
+  align-items: center;
+  margin-left: 5%;
 }
 
 .stats-card {
@@ -49,6 +47,30 @@
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px; /* Ensuring uniform height */
+}
+
+.stat-item .text-orange-500 {
+  font-size: 3rem; /* Adjusting icon size for uniformity */
+}
+
+.stat-item p {
+  margin: 0;
+}
+
+.stat-item .value {
+  font-size: 1.5rem; /* Adjusting text size */
+  color: #333;
+}
+
+.stat-item .label {
+  font-size: 1rem;
+  color: #666;
 }
 
 .pattern-dots {
@@ -72,116 +94,114 @@
 
 @media (max-width: 768px) {
   .hero-image {
-      height: auto;
+    height: 500px;
+    width: 100vw;
   }
 
   .cards-section {
-      width: 100%;
-      margin-top: -10%;
+    margin-top: -20%;
+    width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .pattern-dots {
-      display: none;
+    display: none;
   }
 
   .stat-item {
-      margin: 0 auto;
+    margin: 0 auto;
+    width: 200px;
+  }
+
+  .hero-content {
+    padding: 20px;
+    margin-top: 4px;
+  }
+
+  #hero-text {
+    font-size: 2rem;
+    margin-left: -8px;
+    margin-top: 6%;
+  }
+
+  #hero-button {
+    margin-top: 20%;
+    font-size: 15px;
+    z-index: 1;
+  }
+
+  #hero-subtext {
+    font-size: 1.25rem;
+    margin-top: -25%;
+    margin-left: -4%;
+    z-index: -1;
+  }
+
+  .stat-item {
+    height: auto;
+    margin-bottom: 20px; 
+  }
+
+  .stat-item .text-orange-500 {
+    font-size: 2rem; 
+  }
+
+  .stat-item .value {
+    font-size: 1.25rem;
+  }
+
+  .stat-item .label {
+    font-size: 0.875rem;
   }
 }
-.main {
-  position: relative;
-  background-color: #f8f9fa;
-}
 
-.hero-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
+@media (max-width: 480px) {
+  .hero-content {
+    padding: 20px;
+    margin-top: 4px;
+  }
 
-.hero-content {
-  position: relative;
-  z-index: 1;
-}
+  #hero-text {
+    font-size: 2rem;
+    margin-left: -8px;
+    margin-top: 6%;
+  }
 
+  #hero-button {
+    margin-top: 20%;
+    font-size: 15px;
+    z-index: 1;
+  }
 
-
-.cards-section {
-  border-radius: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-  padding: 40px;
-  background: #fff;
-  position: relative;
-  width: 90%;
-}
-
-.stats-card {
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin: 20px;
-}
-
-.stat-item {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.pattern-dots {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  background-image: radial-gradient(circle, #000 1px, transparent 1px);
-  background-size: 5px 5px;
-  z-index: 3;
-}
-
-.pattern-dots.top-right {
-  top: -20px;
-  right: -20px;
-}
-
-.pattern-dots.bottom-left {
-  bottom: -20px;
-  left: -20px;
-}
-
-@media (max-width: 768px) {
-  .hero-image {
-      height: auto;
+  #hero-subtext {
+    font-size: 1.25rem;
+    margin-top: -25%;
+    margin-left: -4%;
+    z-index: -1;
   }
 
   .cards-section {
-      width: 100%;
-      margin-top: -10%;
-  }
-
-  .pattern-dots {
-      display: none;
+    margin-top: -20%;
+    width: 30vw;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .stat-item {
-      margin: 0 auto;
+    height: auto;
+    margin-bottom: 20px; 
   }
-}
 
+  .stat-item .text-orange-500 {
+    font-size: 2rem; 
+  }
 
+  .stat-item .value {
+    font-size: 1.25rem;
+  }
 
-#hero-text{
-  margin-left: -35%;
-}
-
-#hero-button{
-  margin-left: -81%;
-}
-
-#hero-subtext{
-  margin-left: -50%;
+  .stat-item .label {
+    font-size: 0.875rem;
+  }
 }

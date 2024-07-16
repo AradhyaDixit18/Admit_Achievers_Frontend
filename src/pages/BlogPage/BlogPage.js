@@ -3,6 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { blogs } from './blogData'; // Import your blog data
 import emailjs from 'emailjs-com';
 import './BlogPage.css'; // Import custom CSS for additional styling
+import FAQSection from '../../components/FaqSection/FaqSection';
 
 const BlogPage = () => {
   const { id } = useParams();
@@ -17,6 +18,8 @@ const BlogPage = () => {
     pinCode: '',
   });
   const [isChecked, setIsChecked] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1);
+  const blogsPerPage = 3;
 
   const statesOfIndia = [
     'Andhra Pradesh', 'Arunachal Pradesh', 'Assam', 'Bihar', 'Chhattisgarh',
@@ -63,6 +66,14 @@ const BlogPage = () => {
     return <div className="error-message">Blog not found</div>;
   }
 
+  // Pagination Logic
+  const indexOfLastBlog = currentPage * blogsPerPage;
+  const indexOfFirstBlog = indexOfLastBlog - blogsPerPage;
+  const currentBlogs = blogs.slice(indexOfFirstBlog, indexOfLastBlog);
+  const totalPages = Math.ceil(blogs.length / blogsPerPage);
+
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
   return (
     <>
       <div className="bg-slate-800 flex flex-col items-center"></div>
@@ -88,7 +99,7 @@ const BlogPage = () => {
           </div>
 
           {/* Registration Form */}
-          <div className="w-full h-1/2 md:w-1/3 bg-orange-500 rounded-lg p-6 shadow-md">
+          <div className="w-full h-1/2 mt-8 -ml-24 md:w-1/3 bg-orange-500 rounded-lg p-6 shadow-md">
             <h2 className="text-xl font-semibold mb-4 text-center text-white">Register for a Free Session</h2>
             <form onSubmit={handleSubmit}>
               <div className="mb-4">
@@ -135,9 +146,9 @@ const BlogPage = () => {
       {/* Related Blogs Section */}
       <div className="w-full bg-white mt-8">
         <div className="bg-white py-8 px-4">
-          <div className="bg-gray-900 text-white text-center py-8">
-            <h2 className="text-2xl mb-4 font-bold">Need guidance? Let us help you.</h2>
-            <button className="bg-orange-500 text-white px-4 py-2 rounded-md hover:bg-orange-600">
+          <div className="bg-gray-900 h-48 text-white text-center py-8 flex flex-row items-center">
+            <h2 className="text-4xl ml-64 font-bold">Need guidance? Let us help you.</h2>
+            <button className="bg-orange-500 ml-48 text-white px-4 py-2 rounded-md hover:bg-orange-600">
               ENQUIRE NOW
             </button>
           </div>
@@ -147,10 +158,10 @@ const BlogPage = () => {
           </div>
 
           <div className="flex justify-center gap-4 overflow-x-scroll">
-            {blogs.map((relatedBlog) => (
+            {currentBlogs.map((relatedBlog) => (
               <div 
                 key={relatedBlog.id} 
-                className="w-80 bg-white rounded-md shadow-lg overflow-hidden cursor-pointer"
+                className="w-80 bg-white m-16 rounded-md shadow-lg overflow-hidden cursor-pointer"
                 onClick={() => navigate(`/blog-lists/blog/${relatedBlog.id}`)} // Navigate to the detailed view
               >
                 <img src={relatedBlog.image} alt="Related Blog" className="w-full h-48 object-cover" />
@@ -165,19 +176,48 @@ const BlogPage = () => {
           <div className="flex justify-center mt-4">
             {/* Pagination */}
             <div className="flex gap-2 items-center">
-              <button className="text-gray-600 bg-white hover:bg-gray-100 px-3 py-1 rounded-md">{'<'}</button>
-              {[1, 2, 3, 4, 5].map((page) => (
+              <button
+                onClick={() => paginate(currentPage - 1)}
+                disabled={currentPage === 1}
+                className="bg-gray-200 px-2 py-1 rounded"
+              >
+                Prev
+              </button>
+              {[...Array(totalPages).keys()].map(number => (
                 <button
-                  key={page}
-                  className="text-gray-600 bg-white hover:bg-gray-100 px-3 py-1 rounded-md"
+                  key={number + 1}
+                  onClick={() => paginate(number + 1)}
+                  className={`px-2 py-1 rounded ${currentPage === number + 1 ? 'bg-blue-500 text-white' : 'bg-gray-200'}`}
                 >
-                  {page}
+                  {number + 1}
                 </button>
               ))}
-              <button className="text-gray-600 bg-white hover:bg-gray-100 px-3 py-1 rounded-md">{'>'}</button>
+              <button
+                onClick={() => paginate(currentPage + 1)}
+                disabled={currentPage === totalPages}
+                className="bg-gray-200 px-2 py-1 rounded"
+              >
+                Next
+              </button>
             </div>
           </div>
         </div>
+
+
+        <div className="ready-section  md:w-3/4 mx-auto text-white p-8 rounded-lg flex flex-col items-center text-center mb-10">
+          <h2 className="text-2xl md:text-4xl mt-10 font-bold mb-4 z-10">Start Your 
+          <span className="text-orange-500"> Journey</span></h2>
+          <p className="mb-4 z-10 mt-5">Connect with India's leading study abroad counselors.
+          </p>
+          <button
+            onClick={() => window.location.href='/book-a-session'}
+            className="bg-white mt-5 text-black px-6 py-3 rounded-lg font-bold z-10"
+          >
+            Connect Now
+          </button>
+        </div>
+
+        <FAQSection/>
       </div>
     </>
   );

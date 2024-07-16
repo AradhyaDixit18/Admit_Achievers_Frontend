@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './HeroSection.css';
 import HeroBanner from "../../assets/Homepage/AA_Home_HeroBanner.png";
 
@@ -14,15 +15,25 @@ const stats = [
 ];
 
 const HeroSection = () => {
+    const navigate = useNavigate();
+
+    const handleStartHereClick = () => {
+        navigate('/book-a-session');
+    };
+
     return (
         <div className="relative text-white main">
-            <div className="relative w-full h-96 overflow-hidden z-0">
-                <img src={HeroBanner} alt="Hero Banner" className="absolute w-full h-full object-cover hero-image" />
-                <div className="relative  mx-auto py-24 px-6 text-center z-10 hero-content">
-                    <h1 id="hero-text" className="text-5xl  ml-16    text-white font-bold">
+            <div className="relative w-full  h-96 overflow-hidden z-0">
+                <img src={HeroBanner} alt="Hero Banner" className="absolute   object-cover hero-image" />
+                <div className="relative mx-auto py-24 px-6 text-center z-10 hero-content">
+                    <h1 id="hero-text" className="text-5xl text-white font-bold">
                         Unlock Your Academic Potential
                     </h1>
-                    <button id='hero-button' className="mt-6 bg-gray-800 text-white px-6 py-3 rounded-lg font-semibold">
+                    <button
+                        id='hero-button'
+                        className="mt-6 bg-gray-800 text-white px-6 py-3 rounded-lg font-semibold"
+                        onClick={handleStartHereClick}
+                    >
                         Start Here
                     </button>
                     <div id='hero-subtext' className="mt-6 text-2xl">
@@ -30,9 +41,10 @@ const HeroSection = () => {
                     </div>
                 </div>
             </div>
-            <div className="relative container mx-auto text-center cards-section z-20 -mt-24">
+        
+            <div className="cards-section text-center z-20 -mt-24">
                 <div className="pattern-dots top-right"></div>
-                <h2 className="text-5xl font-bold mb-8 text-black">Why Admit Achievers?</h2>
+                <h2 className="md:text-5xl sm:text-2xl font-bold mb-8 text-black">Why Admit Achievers?</h2>
                 <div className="pattern-dots bottom-left"></div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 stats">
                     {stats.map((stat, index) => (

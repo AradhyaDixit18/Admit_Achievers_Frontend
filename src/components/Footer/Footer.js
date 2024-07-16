@@ -4,7 +4,7 @@ import footerIcon from "../../assets/Logos/AA_Footer_Logo_1080_Square.png"
 
 const Footer = () => {
   return (
-    <footer className="main-footer text-white py-8 mt-8">
+    <footer className="main-footer text-white py-8 mt-2">
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center md:flex-row md:justify-between">
           <div className="flex flex-col items-center">
@@ -27,10 +27,10 @@ const Footer = () => {
             <div>
               <h3 className="font-bold mb-4">Our Services</h3>
               <ul className="list-none space-y-2">
-                <li><a href="#fullstack-admissions" className="hover:underline hover:cursor-pointer">Full Stack Admissions</a></li>
-                <li><a href="#essay-review" className="hover:underline hover:cursor-pointer">Essay Review</a></li>
-                <li><a href="#profile-building" className="hover:underline hover:cursor-pointer">Profile Building</a></li>
-                <li><a href="#visas" className="hover:underline hover:cursor-pointer">Visas</a></li>
+                <li><a href="/coming-soon" className="hover:underline hover:cursor-pointer">Full Stack Admissions</a></li>
+                <li><a href="/coming-soon" className="hover:underline hover:cursor-pointer">Essay Review</a></li>
+                <li><a href="/coming-soon" className="hover:underline hover:cursor-pointer">Profile Building</a></li>
+                <li><a href="/coming-soon" className="hover:underline hover:cursor-pointer">Visas</a></li>
               </ul>
             </div>
             <div>
@@ -38,23 +38,23 @@ const Footer = () => {
               <ul className="list-none space-y-2">
                 <li><a href="/about-us" className="hover:underline hover:cursor-pointer">About Us</a></li>
                 <li><a href="/contact-us" className="hover:underline hover:cursor-pointer">Contact Us</a></li>
-                <li><a href="#blogs" className="hover:underline hover:cursor-pointer">Blogs</a></li>
+                <li><a href="/coming-soon" className="hover:underline hover:cursor-pointer">Blogs</a></li>
               </ul>
             </div>
             <div className="flex flex-col">
               <h3 className="font-bold mb-4">Destination</h3>
               <div className="grid grid-cols-2 gap-x-20">
                 <ul className="list-none space-y-2">
-                  <li><a href="#america" className="hover:underline hover:cursor-pointer">United States</a></li>
-                  <li><a href="#uk" className="hover:underline hover:cursor-pointer">United Kingdom</a></li>
-                  <li><a href="#canada" className="hover:underline hover:cursor-pointer">Canada</a></li>
-                  <li><a href="#germany" className="hover:underline hover:cursor-pointer">Germany</a></li>
+                  <li><a href="/coming-soon" className="hover:underline hover:cursor-pointer">United States</a></li>
+                  <li><a href="/coming-soon" className="hover:underline hover:cursor-pointer">United Kingdom</a></li>
+                  <li><a href="/coming-soon" className="hover:underline hover:cursor-pointer">Canada</a></li>
+                  <li><a href="/coming-soon" className="hover:underline hover:cursor-pointer">Germany</a></li>
                 </ul>
                 <ul className="list-none space-y-2">
-                  <li><a href="#australia" className="hover:underline hover:cursor-pointer">Australia</a></li>
-                  <li><a href="#ireland" className="hover:underline hover:cursor-pointer">Ireland</a></li>
-                  <li><a href="#new-zealand" className="hover:underline hover:cursor-pointer">New Zealand</a></li>
-                  <li><a href="#singapore" className="hover:underline hover:cursor-pointer">Singapore</a></li>
+                  <li><a href="/coming-soon" className="hover:underline hover:cursor-pointer">Australia</a></li>
+                  <li><a href="/coming-soon" className="hover:underline hover:cursor-pointer">Ireland</a></li>
+                  <li><a href="/coming-soon" className="hover:underline hover:cursor-pointer">New Zealand</a></li>
+                  <li><a href="/coming-soon" className="hover:underline hover:cursor-pointer">Singapore</a></li>
                 </ul>
               </div>
             </div>

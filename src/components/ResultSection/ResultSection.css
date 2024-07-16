@@ -149,3 +149,37 @@ ul.aligned-list li::before {
 ul.aligned-list li {
   margin-left: 20px; /* Aligns the text with the custom bullet */
 }
+
+@media (max-width: 768px) {
+  .button-container {
+      flex-direction: column;
+  }
+
+  .button {
+      margin-bottom: 1rem;
+  }
+.work-text{
+  visibility: hidden;
+}
+  .icons{
+    margin-top: -10%;
+    font-size: 10px;
+  }
+
+  .section-image{
+    width: 80vw;
+    border-radius: 2px;
+ 
+    align-items: center;
+  }
+
+  .section-content{
+    margin-top: 12px;
+  }
+
+  .image-content{
+    display: flex;
+    flex-direction: column;
+
+  }
+}
