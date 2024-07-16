@@ -4,13 +4,14 @@
   font-family: 'Poppins', sans-serif;
 }
 
-
 .question-text {
   font-family: 'Arial', sans-serif;
 }
-.text-orange{
+
+.text-orange {
   color: #ff730f;
 }
+
 .answer-text {
   margin-left: 1.5rem;
 }
@@ -19,33 +20,40 @@
   font-family: 'Arial', sans-serif;
 }
 
-
-@media (max-width: 768px){
-  .main-text{
-    align-items: center;
+@media (max-width: 768px) {
+  .main-text {
     font-size: 24px;
-    margin-left: 27%;
+    text-align: center;
   }
-  .questions{
+
+  .questions {
     font-size: 15px;
-    align-items: center;
-    margin-left: -12%;
-    height: 750px;
+    text-align: center;
+    margin: 0 auto;
   }
-  .symbol{
+
+  .symbol {
     font-size: 30px;
   }
 
-  .images{
-    margin-top: -700px;
-    height: 600px;
-    margin-left: 50px;
-    
-  }
-  
-
-  .main-quesns{
-    margin-top: 90%;
+  .images {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
+  .images1,
+  .images2,
+  .images3 {
+    width: 90%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .main-quesns {
+    margin-top: 2rem;
+    width: 100%;
+  }
 }

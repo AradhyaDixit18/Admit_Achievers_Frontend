@@ -68,11 +68,11 @@ const Testimonial = () => {
             <img
               src={testimonials[currentIndex].image}
               alt={testimonials[currentIndex].name}
-              className="w-84 h-80 mr-16 -mt-32  "
+              className="w-84 h-80 testimonial-img mr-16 -mt-32  "
             />
-            <div className=" ">
+            <div className=" testimonial-msg">
               <p className="text-gray-600  mb-4">{testimonials[currentIndex].message}</p>
-              <div className="bg-white -ml-36 w-48  shadow-lg p-4 ">
+              <div className="bg-white -ml-36 w-48 testimonial-names  shadow-lg p-4 ">
                 <p className="text-ff6633 font-bold text-lg">{testimonials[currentIndex].name}</p>
                 <p className=" text-width1 font-bold">{testimonials[currentIndex].course}</p>
                 <p className=" text-width2 font-bold">{testimonials[currentIndex].university}</p>
