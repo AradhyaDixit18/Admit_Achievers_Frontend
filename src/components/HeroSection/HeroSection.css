@@ -33,6 +33,7 @@
   background: #fff;
   align-items: center;
   margin-left: 5%;
+  width: 90%; /* Default width */
 }
 
 .stats-card {
@@ -94,13 +95,12 @@
 
 @media (max-width: 768px) {
   .hero-image {
-    height: 500px;
+    height: 800px;
     width: 100vw;
   }
 
   .cards-section {
-    margin-top: -20%;
-    width: 60vw;
+    width: 60%; /* Reduce width to 60% */
     margin-left: auto;
     margin-right: auto;
   }
@@ -182,8 +182,7 @@
   }
 
   .cards-section {
-    margin-top: -20%;
-    width: 30vw;
+    width: 60%; /* Reduce width to 60% */
     margin-left: auto;
     margin-right: auto;
   }

@@ -44,53 +44,49 @@ const Testimonial = () => {
   };
 
   return (
-    <>
-      <div className="mx-auto mt-8 py-8">
-        <div className='mb-4'>
-          <h2 className="text-5xl mb-4 font-bold mb-4 test-head inline">What Students are saying about <span className="text-orange-500">Admit Achievers</span></h2>
-          <div className="ml-4 mb-4 inline">
-            <button
-              onClick={handlePrev}
-              className="arrows w-11 h-11 p-2 ml-4 shadow-sm hover:bg-gray-200"
-            >
-              &lt;
-            </button>
-            <button
-              onClick={handleNext}
-              className="arrows w-11 h-11 p-2 ml-4 shadow-lg hover:bg-gray-200"
-            >
-              &gt;
-            </button>
-          </div>
-        </div>
-        <div className=" testimonial-image ">
-          <div className="testimonial   flex  space-x-4">
-            <img
-              src={testimonials[currentIndex].image}
-              alt={testimonials[currentIndex].name}
-              className="w-84 h-80 mr-16 -mt-32  "
-            />
-            <div className=" ">
-              <p className="text-gray-600  mb-4">{testimonials[currentIndex].message}</p>
-              <div className="bg-white -ml-36 w-48  shadow-lg p-4 ">
-                <p className="text-ff6633 font-bold text-lg">{testimonials[currentIndex].name}</p>
-                <p className=" text-width1 font-bold">{testimonials[currentIndex].course}</p>
-                <p className=" text-width2 font-bold">{testimonials[currentIndex].university}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="flex justify-center mt-8">
-          {testimonials.map((_, index) => (
-            <div
-              key={index}
-              className={`h-3 w-3 rounded-full mx-1 ${index === currentIndex ? 'bg-blue-600 animate-pulse' : 'bg-gray-400'}`}
-              onClick={() => setCurrentIndex(index)}
-            />
-          ))}
+    <div className="mx-auto mt-8 py-8 px-4 sm:px-6 lg:px-8">
+      <div className="text-center mb-8">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">What Students are saying about <span className="text-orange-500">Admit Achievers</span></h2>
+        <div className="flex justify-center mb-4">
+          <button
+            onClick={handlePrev}
+            className="arrows w-8 h-8 p-2 mx-2 shadow-sm hover:bg-gray-200"
+          >
+            &lt;
+          </button>
+          <button
+            onClick={handleNext}
+            className="arrows w-8 h-8 p-2 mx-2 shadow-lg hover:bg-gray-200"
+          >
+            &gt;
+          </button>
         </div>
       </div>
-    </>
+      <div className="flex flex-col items-center md:flex-row md:space-x-4">
+        <img
+          src={testimonials[currentIndex].image}
+          alt={testimonials[currentIndex].name}
+          className="testimonial-image w-full md:w-1/3 rounded-lg mb-4 md:mb-0"
+        />
+        <div className="md:w-2/3">
+          <p className="text-gray-600 mb-4">{testimonials[currentIndex].message}</p>
+          <div className="bg-white shadow-lg p-4 rounded-lg">
+            <p className="text-orange-500 font-bold text-lg">{testimonials[currentIndex].name}</p>
+            <p className="text-gray-700 font-bold">{testimonials[currentIndex].course}</p>
+            <p className="text-gray-700 font-bold">{testimonials[currentIndex].university}</p>
+          </div>
+        </div>
+      </div>
+      <div className="flex justify-center mt-8">
+        {testimonials.map((_, index) => (
+          <div
+            key={index}
+            className={`h-3 w-3 rounded-full mx-1 cursor-pointer ${index === currentIndex ? 'bg-blue-600 animate-pulse' : 'bg-gray-400'}`}
+            onClick={() => setCurrentIndex(index)}
+          />
+        ))}
+      </div>
+    </div>
   );
 };
 
