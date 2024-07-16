@@ -3,6 +3,7 @@ import './Navbar.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { useLocation, Link } from 'react-router-dom';
 import Logo from "../../assets/Logos/AA_Header_Logo_1080_Horizontal.png"
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
@@ -30,10 +31,10 @@ const Navbar = () => {
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center lg:hidden">
           <button onClick={toggleMenu} className="text-gray-800 focus:outline-none">
-            <i className="fas fa-bars"></i>
+            <i className={`fas ${isOpen ? 'fa-times' : 'fa-bars'}`}></i>
           </button>
         </div>
-        <div className="flex-1 flex justify-start lg:justify-start">
+        <div className="flex-1 flex justify-center lg:justify-start">
           <Link to="/">
             <img src={Logo} alt="Admit Achievers" className="h-16 w-auto" />
           </Link>
@@ -41,7 +42,7 @@ const Navbar = () => {
         <div className={`w-full lg:flex lg:items-center lg:w-auto ${isOpen ? 'block' : 'hidden'} lg:block`}>
           <div className="lg:flex lg:space-x-6">
             <div className="relative">
-              <button onClick={toggleServicesDropdown} className={`block lg:inline-block p-2 `}>Our Services</button>
+              <button onClick={toggleServicesDropdown} className="block lg:inline-block p-2">Our Services</button>
               {isServicesOpen && (
                 <div className="absolute bg-white shadow-md rounded mt-2 w-48 dropdown-menu">
                   <Link to="/coming-soon" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">UG & PG Admissions</Link>
@@ -52,7 +53,7 @@ const Navbar = () => {
               )}
             </div>
             <div className="relative">
-              <button onClick={toggleDestinationsDropdown} className={`block lg:inline-block p-2 `}>Destinations</button>
+              <button onClick={toggleDestinationsDropdown} className="block lg:inline-block p-2">Destinations</button>
               {isDestinationsOpen && (
                 <div className="absolute bg-white shadow-md rounded mt-2 w-48 dropdown-menu">
                   <Link to="/coming-soon" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Study in USA</Link>
@@ -66,10 +67,10 @@ const Navbar = () => {
               )}
             </div>
             <Link to="/coming-soon" className={`block lg:inline-block p-2 ${getLinkClass('/blog-listing')}`}>Blog</Link>
-            <Link to="/about-us" className={`block lg:inline-block p-2  ${getLinkClass('/about-us')}`}>About Us</Link>
+            <Link to="/about-us" className={`block lg:inline-block p-2 ${getLinkClass('/about-us')}`}>About Us</Link>
           </div>
           <div className="lg:flex lg:space-x-4 lg:ml-auto mt-4 ml-4 lg:mt-0">
-            <Link to="/book-a-session" className={`bg-orange-500 ml-8 text-white px-4 py-2 rounded mb-2 lg:mb-0 ${getLinkClass('/book-a-session')}`}>Book a Session</Link>
+            <Link to="/book-a-session" className={`bg-orange-500 text-white px-4 py-2 rounded mb-2 lg:mb-0 ${getLinkClass('/book-a-session')}`}>Book a Session</Link>
             <Link to="/coming-soon" className="bg-gray-100 text-gray-800 px-4 py-2 rounded mb-2 lg:mb-0">Find a Course</Link>
             <button className="bg-gray-100 text-gray-800 px-4 py-2 rounded">
               <i className="fas fa-search"></i>

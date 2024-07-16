@@ -4,7 +4,6 @@
   font-family: 'Poppins', sans-serif;
 }
 
-
 .footer-logo img {
   width: 160px;
   margin-bottom: -20px; 
@@ -16,4 +15,66 @@ footer ul li a {
 
 .main-footer {
   background-color: #333333;
+}
+
+.text-orange-500 {
+  color: #FF6630;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .flex-col {
+    flex-direction: column;
+  }
+  .md\\:flex-row {
+    flex-direction: column;
+  }
+  .md\\:justify-between {
+    justify-content: center;
+  }
+  .md\\:space-x-36 {
+    margin: 0;
+  }
+  .mb-8 {
+    margin-bottom: 2rem;
+  }
+  .md\\:mb-0 {
+    margin-bottom: 0;
+  }
+  .container {
+    padding: 0 1rem;
+  }
+  .grid-cols-2 {
+    grid-template-columns: 1fr;
+  }
+  .gap-x-20 {
+    gap: 1rem;
+  }
+  .md\\:text-left {
+    text-align: center;
+  }
+  .text-center {
+    text-align: center;
+  }
+  .mt-8 {
+    margin-top: 2rem;
+  }
+  .md\\:mt-0 {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-2xl {
+    font-size: 1.5rem;
+  }
+  .container {
+    padding: 0 0.5rem;
+  }
+  .mb-8 {
+    margin-bottom: 1.5rem;
+  }
+  .md\\:mb-0 {
+    margin-bottom: 0;
+  }
 }

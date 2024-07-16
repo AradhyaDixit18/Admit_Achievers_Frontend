@@ -4,7 +4,6 @@
   font-family: 'Poppins', sans-serif;
 }
 
-
 @media (min-width: 1024px) {
   .lg\:hidden {
     display: none !important;
@@ -57,29 +56,25 @@
   .flex-1 {
     flex: 1;
   }
+  .dropdown-menu {
+    position: static;
+    display: block;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  .dropdown-menu .block {
+    padding: 10px;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+  }
 }
 
 nav {
   border-bottom: 1px solid #e5e7eb; /* Light grey border at the bottom */
-}
-
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 10;
-  min-width: 10rem;
-  padding: 0.5rem 0;
-  margin: 0.125rem 0 0;
-  font-size: 1rem;
-  color: #212529;
-  text-align: left;
-  list-style: none;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 0.25rem;
 }
 
 .relative:hover .dropdown-menu,
