@@ -1,10 +1,8 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 * {
   font-family: 'Poppins', sans-serif;
 }
-
 
 .text-center {
   text-align: center;
@@ -129,7 +127,6 @@ li {
 .aligned-list {
   display: flex;
   flex-direction: column;
-  
 }
 
 ul.aligned-list {
@@ -151,35 +148,34 @@ ul.aligned-list li {
 }
 
 @media (max-width: 768px) {
-  .button-container {
-      flex-direction: column;
+  .work-text {
+    font-size: 1.5rem;
+    visibility: visible;
   }
 
-  .button {
-      margin-bottom: 1rem;
-  }
-.work-text{
-  visibility: hidden;
-}
-  .icons{
-    margin-top: -10%;
+  .icons {
+    flex-wrap: wrap;
+    justify-content: center;
     font-size: 10px;
+    margin-top: -10%;
   }
 
-  .section-image{
-    width: 80vw;
+  .section-image {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
     border-radius: 2px;
- 
-    align-items: center;
+    display: block;
   }
 
-  .section-content{
+  .section-content {
     margin-top: 12px;
+    padding: 0 1rem;
   }
 
-  .image-content{
+  .image-content {
     display: flex;
     flex-direction: column;
-
+    align-items: center;
   }
 }

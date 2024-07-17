@@ -23,8 +23,8 @@ const HeroSection = () => {
 
     return (
         <div className="relative text-white main">
-            <div className="relative w-full  h-96 overflow-hidden z-0">
-                <img src={HeroBanner} alt="Hero Banner" className="absolute   object-cover hero-image" />
+            <div className="relative w-full h-96 overflow-hidden z-0">
+                <img src={HeroBanner} alt="Hero Banner" className="absolute w-full h-full object-cover hero-image" />
                 <div className="relative mx-auto py-24 px-6 text-center z-10 hero-content">
                     <h1 id="hero-text" className="text-5xl text-white font-bold">
                         Unlock Your Academic Potential

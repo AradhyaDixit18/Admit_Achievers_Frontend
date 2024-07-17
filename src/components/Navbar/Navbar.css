@@ -5,6 +5,9 @@
 }
 
 @media (min-width: 1024px) {
+  .logo{
+    margin-left: -90%;
+  }
   .lg\:hidden {
     display: none !important;
   }

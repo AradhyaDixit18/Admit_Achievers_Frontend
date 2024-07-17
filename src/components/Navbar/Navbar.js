@@ -36,7 +36,7 @@ const Navbar = () => {
         </div>
         <div className="flex-1 flex justify-center lg:justify-start">
           <Link to="/">
-            <img src={Logo} alt="Admit Achievers" className="h-16 w-auto" />
+            <img src={Logo} alt="Admit Achievers" className="h-16 logo w-auto" />
           </Link>
         </div>
         <div className={`w-full lg:flex lg:items-center lg:w-auto ${isOpen ? 'block' : 'hidden'} lg:block`}>

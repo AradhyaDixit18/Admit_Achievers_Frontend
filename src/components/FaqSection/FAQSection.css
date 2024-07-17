@@ -20,6 +20,12 @@
   font-family: 'Arial', sans-serif;
 }
 
+@media (min-width: 1024px) {
+  .main-quesns {
+    margin-left: 15%;
+  }
+}
+
 @media (max-width: 768px) {
   .main-text {
     font-size: 24px;
@@ -55,5 +61,34 @@
   .main-quesns {
     margin-top: 2rem;
     width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-text {
+    font-size: 20px;
+  }
+
+  .questions {
+    font-size: 14px;
+  }
+
+  .symbol {
+    font-size: 24px;
+  }
+
+  .images1,
+  .images2,
+  .images3 {
+    width: 100%;
+  }
+
+  .answer-text {
+    margin-left: 1rem;
+    font-size: 14px;
+  }
+
+  .question-text {
+    font-size: 16px;
   }
 }

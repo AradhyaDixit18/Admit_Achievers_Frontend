@@ -19,13 +19,14 @@
   align-items: center;
   overflow: hidden;
   white-space: nowrap;
-  animation: moveLeft 20s linear infinite; /* Adjust duration as needed */
+  animation: moveLeft 20s linear infinite;
 }
 
 .university-item {
   display: inline-block;
-  width: 50%; /* Adjust width for responsiveness */
-  padding: 0 10px; /* Adjust padding for responsiveness */
+  width: calc(100% / 3); /* Show three icons in a row */
+  padding: 0 5px; /* Add gap between icons */
+  box-sizing: border-box;
 }
 
 .university-logo {
@@ -33,21 +34,26 @@
   height: auto;
 }
 
+.university-text {
+  margin-top: 10px;
+  text-align: center;
+}
+
 /* Media Queries for Responsiveness */
 @media (min-width: 640px) {
   .university-item {
-    width: 33.33%; /* Adjust width for medium screens */
+    width: calc(100% / 3); /* Show three icons in a row for small screens */
   }
 }
 
 @media (min-width: 768px) {
   .university-item {
-    width: 25%; /* Adjust width for large screens */
+    width: calc(100% / 4); /* Show four icons in a row for medium screens */
   }
 }
 
 @media (min-width: 1024px) {
   .university-item {
-    width: 20%; /* Adjust width for extra large screens */
+    width: calc(100% / 5); /* Show five icons in a row for large screens */
   }
 }

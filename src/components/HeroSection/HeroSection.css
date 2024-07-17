@@ -11,7 +11,7 @@
 
 .hero-image {
   width: 100%;
-  height: 100%;
+  height: 50vh; /* Default height increased */
   object-fit: cover;
   position: absolute;
   top: 0;
@@ -95,14 +95,14 @@
 
 @media (max-width: 768px) {
   .hero-image {
-    height: 850px;
+    height: 60vh; /* Increased height for medium screens */
     width: 100vw;
   }
 
   .cards-section {
-    width: 60%; /* Reduce width to 60% */
-    margin-left: auto;
-    margin-right: auto;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
   }
 
   .pattern-dots {
@@ -111,36 +111,27 @@
 
   .stat-item {
     margin: 0 auto;
-    width: 200px;
+    width: 100%;
+    margin-bottom: 20px;
   }
 
   .hero-content {
     padding: 20px;
-    margin-top: 4px;
   }
 
   #hero-text {
     font-size: 2rem;
-    margin-left: -8px;
-    margin-top: 6%;
+    margin-top: 20px;
   }
 
   #hero-button {
-    margin-top: 20%;
-    font-size: 15px;
-    z-index: 1;
+    margin-top: 20px;
+    font-size: 1rem;
   }
 
   #hero-subtext {
-    font-size: 1.25rem;
-    margin-top: -25%;
-    margin-left: -4%;
-    z-index: -1;
-  }
-
-  .stat-item {
-    height: auto;
-    margin-bottom: 20px; 
+    font-size: 1rem;
+    margin-top: 10px;
   }
 
   .stat-item .text-orange-500 {
@@ -157,50 +148,49 @@
 }
 
 @media (max-width: 480px) {
+  .hero-image {
+    height: 70vh; /* Increased height for small screens */
+    width: 100vw;
+  }
+
   .hero-content {
-    padding: 20px;
-    margin-top: 4px;
+    padding: 10px;
   }
 
   #hero-text {
-    font-size: 2rem;
-    margin-left: -8px;
-    margin-top: 6%;
+    font-size: 1.5rem;
   }
 
   #hero-button {
-    margin-top: 20%;
-    font-size: 15px;
-    z-index: 1;
+    margin-top: 10px;
+    font-size: 0.875rem;
   }
 
   #hero-subtext {
-    font-size: 1.25rem;
-    margin-top: -25%;
-    margin-left: -4%;
-    z-index: -1;
+    font-size: 0.875rem;
+    margin-top: 5px;
   }
 
   .cards-section {
-    width: 60%; /* Reduce width to 60% */
-    margin-left: auto;
-    margin-right: auto;
+    width: 95%;
+    margin: 0 auto;
+    padding: 10px;
   }
 
   .stat-item {
     height: auto;
-    margin-bottom: 20px; 
+    margin-bottom: 10px;
   }
 
   .stat-item .text-orange-500 {
-    font-size: 2rem; 
+    font-size: 1.5rem; 
   }
 
   .stat-item .value {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 
   .stat-item .label {
-    font-size: 0.875rem;
+    font-size: 0.75rem;
   }
 }

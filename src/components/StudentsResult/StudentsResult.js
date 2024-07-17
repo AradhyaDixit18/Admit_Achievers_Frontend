@@ -4,10 +4,10 @@ import AA_Home_UniversityAdmits_HEC from '../../assets/Homepage/AA_Home_Universi
 import AA_Home_UniversityAdmits_LBS from '../../assets/Homepage/AA_Home_UniversityAdmitsTickr/AA_Home_UniversityAdmits_LBS.png';
 import AA_Home_UniversityAdmits_Mehnheim from '../../assets/Homepage/AA_Home_UniversityAdmitsTickr/AA_Home_UniversityAdmits_Mehnheim.png';
 import AA_Home_UniversityAdmits_MelbourneUniversity from '../../assets/Homepage/AA_Home_UniversityAdmitsTickr/AA_Home_UniversityAdmits_MelbourneUniversity.png';
-import './StudentResult.css'; 
+import './StudentResult.css';
 
 export const StudentsResult = () => {
-  return ( 
+  return (
     <div className="bg-gray-800 text-white p-8 overflow-hidden">
       <div className="text-center mb-8">
         <h1 className="text-4xl md:text-5xl font-bold">
