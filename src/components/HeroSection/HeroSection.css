@@ -8,10 +8,25 @@
   position: relative;
   background-color: #f8f9fa;
 }
+@media(min-width:1024px){
+#hero-text{
+  margin-left: -36%;
+}
+.cards-section{
+  margin-top: -72px;
+}
 
+#hero-button{
+  margin-left: -82%;
+}
+
+#hero-subtext{
+  margin-left: -51%;
+}
+}
 .hero-image {
   width: 100%;
-  height: 50vh; /* Default height increased */
+  height: 50vh; /* Default height */
   object-fit: cover;
   position: absolute;
   top: 0;
@@ -95,18 +110,18 @@
 
 @media (max-width: 768px) {
   .hero-image {
-    height: 60vh; /* Increased height for medium screens */
     width: 100vw;
   }
 
   .cards-section {
-    width: 90%;
-    margin: 0 auto;
+    width: 70%;
     padding: 20px;
+    margin-top: -106px;
   }
-
+ 
   .pattern-dots {
     display: none;
+    height: 0px;
   }
 
   .stat-item {
@@ -149,7 +164,7 @@
 
 @media (max-width: 480px) {
   .hero-image {
-    height: 70vh; /* Increased height for small screens */
+    /* Increased height for small screens */
     width: 100vw;
   }
 
@@ -165,7 +180,9 @@
     margin-top: 10px;
     font-size: 0.875rem;
   }
-
+ .cards-section{
+  margin-top: -86px;
+ }
   #hero-subtext {
     font-size: 0.875rem;
     margin-top: 5px;
@@ -184,6 +201,88 @@
 
   .stat-item .text-orange-500 {
     font-size: 1.5rem; 
+  }
+
+  .stat-item .value {
+    font-size: 1rem;
+  }
+
+  .stat-item .label {
+    font-size: 0.75rem;
+  }
+
+  /* Additional styles for matching the uploaded image */
+  .main {
+    background-color: #f8f9fa;
+    padding-bottom: 2rem;
+  }
+
+  .hero-content {
+    padding: 1rem;
+  }
+
+  #hero-text {
+    font-size: 1.75rem;
+  }
+
+  #hero-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
+
+  #hero-subtext {
+    font-size: 1rem;
+  }
+
+  .cards-section {
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+  }
+
+  .stat-item {
+    padding: 1rem;
+    height: auto;
+  }
+
+  .stat-item .text-orange-500 {
+    font-size: 2rem;
+  }
+
+  .stat-item .value {
+    font-size: 1rem;
+  }
+
+  .stat-item .label {
+    font-size: 0.75rem;
+  }
+
+  .hero-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-content button {
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .hero-content #hero-subtext {
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .stat-item {
+    margin-bottom: 1rem;
+  }
+
+  .stat-item .text-orange-500 {
+    font-size: 1.5rem;
   }
 
   .stat-item .value {

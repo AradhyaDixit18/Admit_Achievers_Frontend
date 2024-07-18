@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Navbar.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { useLocation, Link } from 'react-router-dom';
-import Logo from "../../assets/Logos/AA_Header_Logo_1080_Horizontal.png"
+import Logo from "../../assets/Logos/AA_Header_Logo_1080_Horizontal.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -44,7 +44,7 @@ const Navbar = () => {
             <div className="relative">
               <button onClick={toggleServicesDropdown} className="block lg:inline-block p-2">Our Services</button>
               {isServicesOpen && (
-                <div className="absolute bg-white shadow-md rounded mt-2 w-48 dropdown-menu">
+                <div className="absolute bg-white shadow-md rounded mt-2 w-52 dropdown-menu z-50">
                   <Link to="/coming-soon" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">UG & PG Admissions</Link>
                   <Link to="/coming-soon" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Profile Building</Link>
                   <Link to="/coming-soon" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Essay Review</Link>
@@ -55,7 +55,7 @@ const Navbar = () => {
             <div className="relative">
               <button onClick={toggleDestinationsDropdown} className="block lg:inline-block p-2">Destinations</button>
               {isDestinationsOpen && (
-                <div className="absolute bg-white shadow-md rounded mt-2 w-48 dropdown-menu">
+                <div className="absolute bg-white shadow-md rounded mt-2 w-48 dropdown-menu z-50">
                   <Link to="/coming-soon" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Study in USA</Link>
                   <Link to="/coming-soon" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Study in UK</Link>
                   <Link to="/coming-soon" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Study in Australia</Link>

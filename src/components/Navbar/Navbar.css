@@ -5,7 +5,7 @@
 }
 
 @media (min-width: 1024px) {
-  .logo{
+  .logo {
     margin-left: -90%;
   }
   .lg\:hidden {
@@ -78,9 +78,14 @@
 
 nav {
   border-bottom: 1px solid #e5e7eb; /* Light grey border at the bottom */
+  z-index: 10;
 }
 
 .relative:hover .dropdown-menu,
 .relative:focus-within .dropdown-menu {
   display: block;
+}
+
+.dropdown-menu {
+  z-index: 1000; /* High z-index for dropdowns */
 }

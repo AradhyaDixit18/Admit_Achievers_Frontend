@@ -1,55 +1,25 @@
-/* Half Circle Styles */
-.half-circle-left {
-    position: absolute;
-    top: 20%;
-    left: -50px;
-    width: 100px;
-    height: 100px;
-    background-color: black;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
-    transform: translateY(-50%);
-    overflow: hidden;
-  }
-  
-  .half-circle-right {
-    position: absolute;
-    top: 70%;
-    right: -50px;
-    width: 100px;
-    height: 100px;
-    background-color: black;
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 50px;
-    transform: translateY(-50%);
-  }
-  
-  /* Orange Square Style */
-  .orange-square {
-    position: absolute;
-    border-radius: 200%;
-    top: 40%;
-    left: 40%;
-    width: 100px;
-    height: 100px;
-    background-color: #ea580c;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-  }
-  
+.profile-list {
+  display: flex;
+  flex-direction: column;
+}
 
-  .black-square {
-    position: absolute;
-    border-radius: 200%;
-    top: 40%;
-    right: 40%;
-    width: 100px;
-    height: 100px;
-    background-color: #000000;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-  }
+ul.profile-list {
+  list-style-type: none;
+  padding-left: 0;
+}
 
+ul.profile-list li::before {
+  content: "\2022";
+  color: #000000; /* Custom bullet color */
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+ul.profile-list li {
+  margin-left: 20px; /* Aligns the text with the custom bullet */
+}
 
 
 .main-form{
@@ -86,3 +56,35 @@
     width: 80%;
     margin-left: 10%;
   }
+
+#subheading{
+  margin-left: 22rem;
+}
+
+.section-imagesleft{
+  width: 50%;
+}
+
+.section-textright{
+  width: 50%;
+  margin-left: 50%;
+  margin-top: -33%;
+  font-size: 26px;
+  height: 500px;
+  font-weight: 400;
+}
+
+.images{
+  height: 500px;
+  margin-top: -45px;
+}
+
+
+.arrows {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: #F54C1E;
+  border: 1px solid #F54C1E;
+}
