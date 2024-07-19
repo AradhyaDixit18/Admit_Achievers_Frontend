@@ -61,21 +61,21 @@ const FAQSection = () => {
               ))}
             </ul>
           </div>
-          <div className="w-full images md:w-1/2 md:pl-8 flex flex-col items-center">
+          <div className="w-full images md:w-1/2  flex flex-col items-center">
             <img
               src={Faq1}
               alt="Image 1"
-              className="md:w-80 h-36 object-cover sm:w-4 images1 rounded-md transition-transform transform"
+              className="md:w-80 md:mt-16 h-36 object-cover sm:w-4 images1 rounded-md transition-transform transform"
             />
             <img
               src={Faq2}
               alt="Image 2"
-              className="w-80 mt-4 h-36 images2 object-cover rounded-md transition-transform transform"
+              className="w-80 z-10 md:-mt-8 h-36 images2 object-cover rounded-md transition-transform transform"
             />
             <img
               src={Faq3}
               alt="Image 3"
-              className="w-80 mt-4 h-36 images3 object-cover rounded-md transition-transform transform"
+              className="w-80 md:-mt-8   h-36 images3 object-cover rounded-md transition-transform transform"
             />
           </div>
         </div>

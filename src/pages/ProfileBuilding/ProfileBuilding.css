@@ -41,14 +41,23 @@ ul.profile-list li {
   
 
   .label-1{
-    margin-right: 325px;
+    margin-right: 500px;
+    
   }
 
   .label-2{
     margin-right: 460px;
   }
-
-
+.quesnLabel{
+  width: 1200px;
+  display: flex;
+  flex-direction: row;
+}
+  .normal-text {
+    word-spacing: normal;
+    letter-spacing: normal;
+  }
+  
   .leap-section{
     display: flex;
     align-items: center;
@@ -64,12 +73,15 @@ ul.profile-list li {
 .section-imagesleft{
   width: 50%;
 }
+.profile-image{
+  width: 54%;
 
+}
 .section-textright{
   width: 50%;
   margin-left: 50%;
-  margin-top: -33%;
-  font-size: 26px;
+  margin-top: -37%;
+  font-size: 20px;
   height: 500px;
   font-weight: 400;
 }
