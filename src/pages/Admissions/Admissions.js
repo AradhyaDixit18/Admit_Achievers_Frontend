@@ -1,6 +1,15 @@
 import React from 'react';
 import './Admissions.css';
 import FAQSection from '../../components/FaqSection/FaqSection';
+import banner from '../../assets/UniversityAdmissions/University Admissions Banner 1.png'
+import DocumentEditing from '../../assets/UniversityAdmissions/AA_Admissions_DocumentEditing.svg'
+import HowWeWork from '../../assets/UniversityAdmissions/AA_Admissions_HowWeWork.svg'
+import AdmissionInterview from '../../assets/UniversityAdmissions/AA_Admissions_Interview.png'
+import ProfileEvaluation from '../../assets/UniversityAdmissions/AA_Admissions_ProfileEvaluation.svg'
+import UniversitySelection from '../../assets/UniversityAdmissions/AA_Admissions_UniversitySelection.svg'
+import AdmissionsVisa from '../../assets/UniversityAdmissions/AA_Admissions_Visa.png'
+
+
 
 const Admissions = () => {
     const videos = [
@@ -27,7 +36,7 @@ const Admissions = () => {
         <>
         <div className="relative text-black main">
             <div className="relative w-full h-96 overflow-hidden z-0">
-                <img src="your-image-path.jpg" alt="Background" className="absolute w-full h-full object-cover hero-image" />
+                <img src={banner} alt="Background" className="absolute w-full h-full object-cover hero-image" />
                 <div className="relative text-black container mx-auto py-24 px-6 text-center hero-content z-10">
                     <h1 className="text-5xl font-bold">Universities Admissions Support</h1>
                     <p className="mt-4 text-xl">From the Ivy League to Stanford, MIT and many more...<br />Crimson helps students reach their ultimate college admissions goals.</p>
@@ -56,7 +65,7 @@ const Admissions = () => {
                     </div>
                     <div className="flex flex-col items-center stat-item">
                         <i className="fas fa-comments text-orange-500 text-4xl"></i>
-                        <p className="mt-2 text-md w-56 ml-12 font-semibold">Interview Preparation</p>
+                        <p className="mt-2 text-md w-56 ml-36 font-semibold">Interview Preparation</p>
                     </div>
                     <div className="flex flex-col items-center stat-item">
                         <i className="fas fa-passport text-orange-500 text-4xl"></i>
@@ -161,7 +170,7 @@ const Admissions = () => {
         </div>
       </div>
 
-      <div className="section-container">
+      <div className="section-container ">
         <div className="text-section">
           <h2 className="section-title  ml-4 text-left text-5xl">Interview Preparation</h2>
           <p className="section-description">As a Crimson student, your personally matched strategist will help you build a university application list specifically for you, taking into account:</p>
