@@ -8,6 +8,16 @@ import AdmissionInterview from '../../assets/UniversityAdmissions/AA_Admissions_
 import ProfileEvaluation from '../../assets/UniversityAdmissions/AA_Admissions_ProfileEvaluation.svg'
 import UniversitySelection from '../../assets/UniversityAdmissions/AA_Admissions_UniversitySelection.svg'
 import AdmissionsVisa from '../../assets/UniversityAdmissions/AA_Admissions_Visa.png'
+import Img1 from "../../assets/Profile-building/Profile Building Section Image - AA_ProfileBuilding_AboutProfileBuilding.PNG"
+
+import Img2 from "../../assets/Profile-building/Profile Building Section Image - AA_ProfileBuilding_CollegeRoadMap.PNG"
+
+import Img3 from "../../assets/Profile-building/Profile Building Section Image - AA_ProfileBuilding_HSCourseGuidance.PNG"
+
+import Img4 from "../../assets/Profile-building/Profile Building Section Image - AA_ProfileBuilding_ProfileAssessment.PNG"
+import Img5 from "../../assets/Profile-building/Profile Building Section Image - AA_ProfileBuilding_ProgressTracking.PNG"
+import Img6 from "../../assets/Profile-building/Profile Building Section Image - AA_ProfileBuilding_QaurterlyPlanning.PNG"
+import AdmissionsFaq from '../../components/AdmissionsFaq/AdmissionsFaq';
 
 
 
@@ -15,21 +25,24 @@ const Admissions = () => {
     const videos = [
         {
           id: 1,
-          title: "Piyush Patyal",
-          university: "Delhi University - CVS",
-          videoUrl: "https://www.youtube.com/embed/your-video-id" // Replace with actual video URL
+          title: "Your Application Profile",
+          videoUrl: "https://www.youtube.com/watch?v=afF_SkG3bmI" // Replace with actual video URL
         },
         {
           id: 2,
-          title: "Piyush Patyal",
-          university: "Delhi University - CVS",
-          videoUrl: "https://www.youtube.com/embed/your-video-id" // Replace with actual video URL
+          title: "University Shortlist Services",
+          videoUrl: "https://www.youtube.com/watch?v=jjgZrDiO2sU" // Replace with actual video URL
         },
         {
           id: 3,
-          title: "Piyush Patyal",
-          university: "Delhi University - CVS",
+          title: "Document Editing Services",
           videoUrl: "https://www.youtube.com/embed/your-video-id" // Replace with actual video URL
+        }
+        ,
+        {
+          id: 4,
+          title: "We are Admit Achievers",
+          videoUrl: "https://www.youtube.com/watch?v=_HDi9Ek7UfI" // Replace with actual video URL
         }
       ];
     return (
@@ -38,8 +51,8 @@ const Admissions = () => {
         <div className="relative w-full h-96 overflow-hidden z-0">
           <img src={banner} alt="Background" className="absolute w-full h-full object-cover hero-image" />
           <div className="relative text-black container mx-auto py-24 px-6 text-center hero-content z-10">
-            <h1 className="text-5xl font-bold">Universities Admissions Support</h1>
-            <p className="mt-4 text-xl">From the Ivy League to Stanford, MIT and many more...<br />Crimson helps students reach their ultimate college admissions goals.</p>
+            <h1 className="text-5xl font-bold">University Admissions</h1>
+            <p className="mt-4 text-xl">FUnlocking your potential and securing a place at the world's leading institutions with tailored admissions strategies from Admit Achievers</p>
             <button onClick={() => console.log('Button Clicked')} className="mt-6 bg-black text-white px-6 py-3 rounded-lg font-semibold">
               SPEAK WITH AN ADVISOR
             </button>
@@ -61,38 +74,30 @@ const Admissions = () => {
             </div>
             <div className="flex flex-col items-center stat-item">
               <img src={DocumentEditing} alt="Document Editing" className="h-20" />
-              <p className="mt-4 text-md font-semibold">Document Editing</p>
+              <p className="mt-4 text-md font-semibold">Documentation</p>
             </div>
             <div className="flex flex-col items-center stat-item">
               <img src={AdmissionInterview} alt="Interview Preparation" className="h-20" />
-              <p className="mt-4 text-md flex  font-semibold w-48 text-center">Interview Preparation</p>
+              <p className="mt-4 text-md flex  font-semibold w-48 text-center">Application Assistance</p>
             </div>
             <div className="flex flex-col items-center stat-item">
               <img src={AdmissionsVisa} alt="Visa Assistance" className="h-20" />
-              <p className="mt-4 text-md font-semibold">Visa Assistance</p>
+              <p className="mt-4 text-md font-semibold">Visa Services</p>
             </div>
           </div>
         </div>
             <div className="section-container">
         <div className="text-section">
-          <h2 className="section-title text-5xl ml-4 text-left ">How we work </h2>
-          <p className="section-description ">As a Crimson student, your personally matched strategist will help you build a university application list specifically for you, taking into account:</p>
-          <ul className="list-disc aligned-list text-left list-inside mt-4">
-            <li>Your current grades/test scores — filling out our will give you a good indication of your current match, target and reach schools - and where Crimson tutoring can take you.</li>
-            <li>Your preferred area of study</li>
-            <li>Your extracurricular preferences</li>
-            <li>Location! Where you want to live and study!</li>
-            <li>The competition — we consider your admissions chances and encourage you to aim high.</li>
-          </ul>
+          <h2 className="section-title text-5xl ml-4 text-left ">Why Choose Admit Achievers?</h2>
+          <p className="section-description ">The journey to securing admission to top universities around the world is both intricate and highly competitive. Admit Achievers’ personalized approach lifts students above the global applicant pool, addressing every aspect of the application process with precision and dedication.</p>
+         
           <button className="custom-button bg-orange-500 text-white   py-2 px-4 rounded mt-4">Custom title</button>
         </div>
-        <div className="image-collage">
-          <div className="image-bg">
-            <img src="/path-to-image-9.jpg" alt="Image 9" className="w-full h-auto" />
-            <img src="/path-to-image-10.jpg" alt="Image 10" className="w-full h-auto" />
-            <img src="/path-to-image-11.jpg" alt="Image 11" className="w-full h-auto" />
-            <img src="/path-to-image-12.jpg" alt="Image 12" className="w-full h-auto" />
-          </div>
+        <div className="flex flex-col md:flex-row mt-4">
+        <div className=" p-4 flex flex-wrap relative">
+    
+          <img src={Img1} alt="Image 5" className="images p-2" />
+        </div>
         </div>
       </div>
         </div>
@@ -102,24 +107,16 @@ const Admissions = () => {
 
         <div className="admissions-container">
       <div className="section-container ">
-        <div className="image-collage">
-          <div className="image-bg">
-            <img src="/path-to-image-5.jpg" alt="Image 5" className="w-full h-auto" />
-            <img src="/path-to-image-6.jpg" alt="Image 6" className="w-full h-auto" />
-            <img src="/path-to-image-7.jpg" alt="Image 7" className="w-full h-auto" />
-            <img src="/path-to-image-8.jpg" alt="Image 8" className="w-full h-auto" />
-          </div>
+      <div className="flex flex-col md:flex-row mt-4">
+        <div className=" p-4 flex flex-wrap relative">
+    
+          <img src={Img3} alt="Image 5" className="images p-2" />
+        </div>
         </div>
         <div className="text-section">
           <h2 className="section-title ml-4 text-left text-5xl">University Selection</h2>
-          <p className="section-description">As a Crimson student, your personally matched strategist will help you build a university application list specifically for you, taking into account:</p>
-          <ul className="list-disc aligned-list list-inside text-left  mt-4">
-            <li>Your current grades/test scores — filling out our will give you a good indication of your current match, target and reach schools - and where Crimson tutoring can take you.</li>
-            <li>Your preferred area of study</li>
-            <li>Your extracurricular preferences</li>
-            <li>Location! Where you want to live and study!</li>
-            <li>The competition — we consider your admissions chances and encourage you to aim high.</li>
-          </ul>
+          <p className="section-description">Navigating the multitude of universities worldwide can be overwhelming. Admit Achievers simplifies this process with our University Selection service. We guide you in identifying the institutions that align with your academic interests, career aspirations, and personal preferences. Our advisors leverage their extensive knowledge of global universities to help you create a balanced list of target, match, and safety schools, maximizing your chances of acceptance.</p>
+         
           <button className="custom-button bg-orange-500 text-white py-2 px-4 rounded mt-4">Custom title</button>
         </div>
       </div>
@@ -127,69 +124,46 @@ const Admissions = () => {
       <div className="section-container">
         <div className="text-section">
           <h2 className="section-title ml-4 text-left text-5xl">Profile Evaluation</h2>
-          <p className="section-description">As a Crimson student, your personally matched strategist will help you build a university application list specifically for you, taking into account:</p>
-          <ul className="list-disc list-inside aligned-list  text-left mb-4">
-            <li>Your current grades/test scores — filling out our will give you a good indication of your current match, target and reach schools - and where Crimson tutoring can take you.</li>
-            <li>Your preferred area of study</li>
-            <li>Your extracurricular preferences</li>
-            <li>Location! Where you want to live and study!</li>
-            <li>The competition — we consider your admissions chances and encourage you to aim high.</li>
-          </ul>
+          <p className="section-description">Admit Achievers' Profile Evaluation service offers a comprehensive assessment of your academic achievements, extracurricular activities, and personal goals. Our expert advisors analyze your unique strengths and areas for improvement, providing you with tailored feedback and actionable steps to enhance your profile. We ensure that you present your best self to your dream universities, giving you a competitive edge in the global applicant pool.</p>
+        
           <button className="custom-button bg-orange-500 text-white py-2 px-4 rounded mt-4">Custom title</button>
         </div>
-        <div className="image-collage">
-          <div className="image-bg">
-            <img src="/path-to-image-9.jpg" alt="Image 9" className="w-full h-auto" />
-            <img src="/path-to-image-10.jpg" alt="Image 10" className="w-full h-auto" />
-            <img src="/path-to-image-11.jpg" alt="Image 11" className="w-full h-auto" />
-            <img src="/path-to-image-12.jpg" alt="Image 12" className="w-full h-auto" />
-          </div>
+        <div className="flex flex-col md:flex-row mt-4">
+        <div className=" p-4 flex flex-wrap relative">
+    
+          <img src={Img2} alt="Image 5" className="images p-2" />
+        </div>
         </div>
       </div>
     </div>
     <div className="section-container">
-        <div className="image-collage">
-          <div className="image-bg">
-            <img src="/path-to-image-5.jpg" alt="Image 5" className="w-full h-auto" />
-            <img src="/path-to-image-6.jpg" alt="Image 6" className="w-full h-auto" />
-            <img src="/path-to-image-7.jpg" alt="Image 7" className="w-full h-auto" />
-            <img src="/path-to-image-8.jpg" alt="Image 8" className="w-full h-auto" />
-          </div>
+    <div className="flex flex-col md:flex-row mt-4">
+        <div className=" p-4 flex flex-wrap relative">
+    
+          <img src={Img5} alt="Image 5" className="images p-2" />
+        </div>
         </div>
         <div className="text-section">
-          <h2 className="section-title  ml-4 text-left text-5xl">Document Editing</h2>
-          <p className="section-description">As a Crimson student, your personally matched strategist will help you build a university application list specifically for you, taking into account:</p>
-          <ul className="list-disc aligned-list list-inside text-left mt-4">
-            <li>Your current grades/test scores — filling out our will give you a good indication of your current match, target and reach schools - and where Crimson tutoring can take you.</li>
-            <li>Your preferred area of study</li>
-            <li>Your extracurricular preferences</li>
-            <li>Location! Where you want to live and study!</li>
-            <li>The competition — we consider your admissions chances and encourage you to aim high.</li>
-          </ul>
+          <h2 className="section-title  ml-4 text-left text-5xl">Documentation</h2>
+          <p className="section-description">
+          The application process requires meticulous attention to detail, particularly when it comes to documentation. Admit Achievers supports you in compiling, organizing, and presenting all necessary documents, from transcripts and recommendation letters to personal statements and resumes. Our team ensures that your application materials are polished, cohesive, and compelling, reflecting your achievements and potential.</p>
+        
           <button className="custom-button bg-orange-500 text-white py-2 px-4 rounded mt-4">Custom title</button>
         </div>
       </div>
 
       <div className="section-container ">
         <div className="text-section">
-          <h2 className="section-title   ml-4 text-left text-5xl">Interview Preparation</h2>
-          <p className="section-description">As a Crimson student, your personally matched strategist will help you build a university application list specifically for you, taking into account:</p>
-          <ul className="list-disc aligned-list list-inside text-left mt-4">
-            <li>Your current grades/test scores — filling out our will give you a good indication of your current match, target and reach schools - and where Crimson tutoring can take you.</li>
-            <li>Your preferred area of study</li>
-            <li>Your extracurricular preferences</li>
-            <li>Location! Where you want to live and study!</li>
-            <li>The competition — we consider your admissions chances and encourage you to aim high.</li>
-          </ul>
+          <h2 className="section-title   ml-4 text-left text-5xl">Application Assistance</h2>
+          <p className="section-description">Applying to universities is a multi-step process that demands precision and strategy. Admit Achievers offers Application Assistance to guide you through each stage, from filling out forms to crafting persuasive essays. Our advisors provide personalized support, helping you articulate your story effectively and highlight your unique qualities. We aim to reduce the stress of the application process, allowing you to focus on showcasing your best self.</p>
+       
           <button className="custom-button bg-orange-500 text-white py-2 px-4 rounded mt-4">Custom title</button>
         </div>
-        <div className="image-collage">
-          <div className="image-bg">
-            <img src="/path-to-image-9.jpg" alt="Image 9" className="w-full h-auto" />
-            <img src="/path-to-image-10.jpg" alt="Image 10" className="w-full h-auto" />
-            <img src="/path-to-image-11.jpg" alt="Image 11" className="w-full h-auto" />
-            <img src="/path-to-image-12.jpg" alt="Image 12" className="w-full h-auto" />
-          </div>
+        <div className="flex flex-col md:flex-row mt-4">
+        <div className=" p-4 flex flex-wrap relative">
+    
+          <img src={Img4} alt="Image 5" className="images p-2" />
+        </div>
         </div>
       </div>
 
@@ -198,20 +172,11 @@ const Admissions = () => {
 
 
       <div className="custom-container ml-48   text-left">
-      <h2 className="text-5xl font-bold mb-4 ml-4 mt-16 ">Visa</h2>
+      <h2 className="text-5xl font-bold mb-4 ml-4 mt-16 ">Visa Services</h2>
       <p className="mb-4 ml-8 ">
-        As a Crimson student, your personally matched strategist will help you build a university application list specifically for you, taking into account:
-      </p>
-      <ul className="list-disc   aligned-list  text-left mb-4">
-        <li>Your current grades/test scores - filling out our will give you a good indication of your current match, target and reach schools - and where Crimson tutoring can take you.</li>
-        <li>Your preferred area of study</li>
-        <li>Your extracurricular preferences</li>
-        <li>Location! Where you want to live and study!</li>
-        <li>The competition - we consider your admissions chances and encourage you to aim high.</li>
-        <li>Your current grades/test scores - filling out our will give you a good indication of your current match, target and reach schools - and where Crimson tutoring can take you.</li>
-        <li>Your current grades/test scores - filling out our will give you a good indication of your.</li>
-      </ul>
-      <button className="custom-button ml-12">Custom title</button>
+      Securing a student visa is a critical step in studying abroad. Admit Achievers' Visa Services ensure that you navigate this process smoothly and efficiently. Our experts assist you with understanding visa requirements, preparing necessary documentation, and submitting applications. We provide guidance on interview preparation and follow-up procedures, ensuring that you meet all deadlines and comply with regulations, so you can focus on your academic journey.    </p>
+    
+      <button className="custom-button ml-12">Start Your Admission Journey</button>
     </div>
 
 
@@ -300,9 +265,7 @@ const Admissions = () => {
           </button>
         </div>
 
-
-
-      <FAQSection/>
+<AdmissionsFaq/>
         </>
     );
 };

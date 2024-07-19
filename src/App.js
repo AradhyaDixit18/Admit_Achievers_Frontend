@@ -12,7 +12,7 @@ import BookaSession from './pages/BookaSession/BookaSession';
 import BlogListing from './pages/BlogListing/BlogListing';
 import BlogPage from './pages/BlogPage/BlogPage';
 import ComingSoon from './pages/ComingSoon/ComingSoon';
-
+import EssayReview from './pages/EssayReview/EssayReview'
 
 function App() {
   return (
@@ -29,6 +29,7 @@ function App() {
           <Route path='/blog-lists' element={<BlogListing/>} />
           <Route path='/blog-lists/blog/:id' element={<BlogPage/>} />
           <Route path='/coming-soon' element={<ComingSoon/>} />
+          <Route path='/essay-review' element={<EssayReview/>} />
         </Routes>
         <Footer/>
       </div>
