@@ -34,45 +34,45 @@ const Admissions = () => {
       ];
     return (
         <>
-        <div className="relative text-black main">
-            <div className="relative w-full h-96 overflow-hidden z-0">
-                <img src={banner} alt="Background" className="absolute w-full h-full object-cover hero-image" />
-                <div className="relative text-black container mx-auto py-24 px-6 text-center hero-content z-10">
-                    <h1 className="text-5xl font-bold">Universities Admissions Support</h1>
-                    <p className="mt-4 text-xl">From the Ivy League to Stanford, MIT and many more...<br />Crimson helps students reach their ultimate college admissions goals.</p>
-                    <button onClick={() => console.log('Button Clicked')} className="mt-6 bg-black text-white px-6 py-3 rounded-lg font-semibold">
-                        SPEAK WITH AN ADVISOR
-                    </button>
-                </div>
+         <div className="relative text-black main">
+        <div className="relative w-full h-96 overflow-hidden z-0">
+          <img src={banner} alt="Background" className="absolute w-full h-full object-cover hero-image" />
+          <div className="relative text-black container mx-auto py-24 px-6 text-center hero-content z-10">
+            <h1 className="text-5xl font-bold">Universities Admissions Support</h1>
+            <p className="mt-4 text-xl">From the Ivy League to Stanford, MIT and many more...<br />Crimson helps students reach their ultimate college admissions goals.</p>
+            <button onClick={() => console.log('Button Clicked')} className="mt-6 bg-black text-white px-6 py-3 rounded-lg font-semibold">
+              SPEAK WITH AN ADVISOR
+            </button>
+          </div>
+        </div>
+        <div className="relative container mx-auto cards-section z-20 mt-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 stats">
+            <div className="flex flex-col items-center stat-item">
+              <img src={HowWeWork} alt="How We Work" className="h-20" />
+              <p className="mt-4 text-md font-semibold">How we work</p>
             </div>
-            <div className="relative container mx-auto  cards-section z-20 mt-8">
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6  stats">
-                    <div className="flex flex-col items-center stat-item">
-                        <i className="fas fa-briefcase text-orange-500 text-4xl"></i>
-                        <p className="mt-2 text-md font-semibold">How we work</p>
-                    </div>
-                    <div className="flex flex-col items-center stat-item">
-                        <i className="fas fa-university text-orange-500 text-4xl"></i>
-                        <p className="mt-2 text-md font-semibold">University Selection</p>
-                    </div>
-                    <div className="flex flex-col items-center stat-item">
-                        <i className="fas fa-user text-orange-500 text-4xl"></i>
-                        <p className="mt-2 text-md font-semibold">Profile Evaluation</p>
-                    </div>
-                    <div className="flex flex-col items-center stat-item">
-                        <i className="fas fa-file-alt text-orange-500 text-4xl"></i>
-                        <p className="mt-2 text-md font-semibold">Document Editing</p>
-                    </div>
-                    <div className="flex flex-col items-center stat-item">
-                        <i className="fas fa-comments text-orange-500 text-4xl"></i>
-                        <p className="mt-2 text-md w-56 ml-36 font-semibold">Interview Preparation</p>
-                    </div>
-                    <div className="flex flex-col items-center stat-item">
-                        <i className="fas fa-passport text-orange-500 text-4xl"></i>
-                        <p className="mt-2 text-md font-semibold">Visa Assistance</p>
-                    </div>
-                </div>
+            <div className="flex flex-col items-center stat-item">
+              <img src={UniversitySelection} alt="University Selection" className="h-20" />
+              <p className="mt-4 text-md font-semibold">University Selection</p>
             </div>
+            <div className="flex flex-col items-center stat-item">
+              <img src={ProfileEvaluation} alt="Profile Evaluation" className="h-20" />
+              <p className="mt-4 text-md font-semibold">Profile Evaluation</p>
+            </div>
+            <div className="flex flex-col items-center stat-item">
+              <img src={DocumentEditing} alt="Document Editing" className="h-20" />
+              <p className="mt-4 text-md font-semibold">Document Editing</p>
+            </div>
+            <div className="flex flex-col items-center stat-item">
+              <img src={AdmissionInterview} alt="Interview Preparation" className="h-20" />
+              <p className="mt-4 text-md flex  font-semibold w-48 text-center">Interview Preparation</p>
+            </div>
+            <div className="flex flex-col items-center stat-item">
+              <img src={AdmissionsVisa} alt="Visa Assistance" className="h-20" />
+              <p className="mt-4 text-md font-semibold">Visa Assistance</p>
+            </div>
+          </div>
+        </div>
             <div className="section-container">
         <div className="text-section">
           <h2 className="section-title text-5xl ml-4 text-left ">How we work </h2>
@@ -172,7 +172,7 @@ const Admissions = () => {
 
       <div className="section-container ">
         <div className="text-section">
-          <h2 className="section-title  ml-4 text-left text-5xl">Interview Preparation</h2>
+          <h2 className="section-title   ml-4 text-left text-5xl">Interview Preparation</h2>
           <p className="section-description">As a Crimson student, your personally matched strategist will help you build a university application list specifically for you, taking into account:</p>
           <ul className="list-disc aligned-list list-inside text-left mt-4">
             <li>Your current grades/test scores — filling out our will give you a good indication of your current match, target and reach schools - and where Crimson tutoring can take you.</li>
