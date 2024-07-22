@@ -173,7 +173,7 @@ const ProfileBuilding = () => {
             </div>
 
    
-            <div className="relative bg-gray-200 py-16 px-4 mt-8 w-full">
+            <div className="relative bg-gray-200 overflow-hidden py-16 px-4 mt-8 w-full">
   <h2 className="text-5xl font-bold text-center text-gray-800">
     About <span className="text-orange-600">Profile Building</span>
   </h2>
@@ -220,7 +220,7 @@ const ProfileBuilding = () => {
 
 
 
-    <div className="w-full p-8">
+    <div className="w-full overflow-hidden p-8">
       {/* Header Section */}
       <div className="text-center mb-16">
         <h1 className="text-5xl font-bold text-gray-800">
@@ -307,7 +307,7 @@ const ProfileBuilding = () => {
 
 
 
-      <div className="w-full p-8">
+      <div className="w-full overflow-hidden p-8">
      
       <div className="text-center mb-8">
         <button className="bg-orange-600 text-white py-2 px-4 rounded-full mb-4">Chat With US</button>
@@ -332,7 +332,7 @@ const ProfileBuilding = () => {
       </div>
 
      
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+      <div className="grid grid-cols-1 overflow-hidden md:grid-cols-2 gap-8 mb-16">
         {content[activeTab].map((item, index) => (
           <div key={index} className="p-4 border rounded-lg">
             <h2 className="text-xl font-bold text-orange-600 mb-2">{item.grade}</h2>
@@ -349,7 +349,7 @@ const ProfileBuilding = () => {
 
 
 
-    <div className="flex flex-col items-center main-form md:flex-row items-center bg-black text-white p-8 space-y-4 md:space-y-0 md:space-x-8">
+    <div className="flex flex-col overflow-hidden items-center main-form md:flex-row items-center bg-333333 text-white p-8 space-y-4 md:space-y-0 md:space-x-8">
       <div>
         <h2 className="text-4xl font-bold mb-4">
           What’s your <span className="text-orange-600">focus?</span>
