@@ -151,7 +151,7 @@ const AboutUs = () => {
           </div>
         </section>
       </div>
-      <div className="ready-section w-full md:w-3/4 mx-auto text-white p-8 rounded-lg flex flex-col items-center text-center mb-10">
+      <div className="ready-section orange-line w-full  mx-auto text-white p-8  flex flex-col items-center text-center">
         <h2 className="text-2xl md:text-4xl mt-10 font-bold mb-4 z-10">Start Your <span className="text-orange-500">Journey </span>?</h2>
         <p className="mb-4 z-10 mt-5">Connect with India's leading study abroad counselors.</p>
         <button className="bg-white mt-5 text-333333 px-6 py-3 rounded-lg font-bold z-10">

@@ -26,12 +26,12 @@ const EssayReview = () => {
         {
           id: 1,
           title: "Your Application Profile",
-          videoUrl: "https://www.youtube.com/watch?v=afF_SkG3bmI" // Replace with actual video URL
+          videoUrl: "https://www.youtube.com/embed/watch?v=afF_SkG3bmI" // Replace with actual video URL
         },
         {
           id: 2,
           title: "University Shortlist Services",
-          videoUrl: "https://www.youtube.com/watch?v=jjgZrDiO2sU" // Replace with actual video URL
+          videoUrl: "https://www.youtube.com/embed/watch?v=jjgZrDiO2sU" // Replace with actual video URL
         },
         {
           id: 3,
@@ -42,7 +42,7 @@ const EssayReview = () => {
         {
           id: 4,
           title: "We are Admit Achievers",
-          videoUrl: "https://www.youtube.com/watch?v=_HDi9Ek7UfI" // Replace with actual video URL
+          videoUrl: "https://www.youtube.com/embed/watch?v=_HDi9Ek7UfI" // Replace with actual video URL
         }
       ];
     return (
@@ -58,8 +58,8 @@ const EssayReview = () => {
             </button>
           </div>
         </div>
-        <div className="relative container mx-auto cards-section z-20 mt-8">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 stats">
+        <div className="relative container mx-auto  z-20 -mt-16">
+          <div className="grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 ">
             <div className="flex flex-col items-center stat-item">
               <img src={HowWeWork} alt="How We Work" className="h-20" />
               <p className="mt-4 text-md font-semibold">How we work</p>
@@ -86,13 +86,13 @@ const EssayReview = () => {
             </div>
           </div>
         </div>
-            <div className="section-container">
-        <div className="text-section">
-          <h2 className="section-title text-5xl ml-4 text-left ">Why Choose Admit Achievers?</h2>
+            <div className="section-container ">
+        <div className="text-section ml-16">
+          <h2 className="section-title text-5xl  text-left ">Why Choose Admit Achievers?</h2>
           <p className="section-description ">The journey to securing admission to top universities around the world is both intricate and highly competitive. Admit Achievers’ personalized approach lifts students above the global applicant pool, addressing every aspect of the application process with precision and dedication.
           </p>
          
-          <button className="custom-button bg-orange-500 text-white   py-2 px-4 rounded mt-4">Custom title</button>
+          <button className=" bg-orange-500 text-white top-buttons  py-2 px-4 rounded mt-4">Book a Session</button>
         </div>
         <div className="flex flex-col md:flex-row mt-4">
         <div className=" p-4 flex flex-wrap relative">
@@ -119,7 +119,7 @@ const EssayReview = () => {
           <p className="section-description">
           Navigating the multitude of universities worldwide can be overwhelming. Admit Achievers simplifies this process with our University Selection service. We guide you in identifying the institutions that align with your academic interests, career aspirations, and personal preferences. Our advisors leverage their extensive knowledge of global universities to help you create a balanced list of target, match, and safety schools, maximizing your chances of acceptance.</p>
          
-          <button className="custom-button bg-orange-500 text-white py-2 px-4 rounded mt-4">Custom title</button>
+          <button className="custom-buttons bg-orange-500 text-white  py-2 px-4 rounded mt-4">Book a Session</button>
         </div>
       </div>
 
@@ -128,7 +128,7 @@ const EssayReview = () => {
           <h2 className="section-title ml-4 text-left text-5xl">Profile Evaluation</h2>
           <p className="section-description">Admit Achievers' Profile Evaluation service offers a comprehensive assessment of your academic achievements, extracurricular activities, and personal goals. Our expert advisors analyze your unique strengths and areas for improvement, providing you with tailored feedback and actionable steps to enhance your profile. We ensure that you present your best self to your dream universities, giving you a competitive edge in the global applicant pool.</p>
         
-          <button className="custom-button bg-orange-500 text-white py-2 px-4 rounded mt-4">Custom title</button>
+          <button className="custom-buttons bg-orange-500 text-white py-2 px-4 rounded mt-4">Book a Session</button>
         </div>
         <div className="flex flex-col md:flex-row mt-4">
         <div className=" p-4 flex flex-wrap relative">
@@ -151,7 +151,7 @@ const EssayReview = () => {
           The application process requires meticulous attention to detail, particularly when it comes to documentation. Admit Achievers supports you in compiling, organizing, and presenting all necessary documents, from transcripts and recommendation letters to personal statements and resumes. Our team ensures that your application materials are polished, cohesive, and compelling, reflecting your achievements and potential.
 </p>
         
-          <button className="custom-button bg-orange-500 text-white py-2 px-4 rounded mt-4">Custom title</button>
+          <button className="custom-buttons bg-orange-500 text-white py-2 px-4 rounded mt-4">Book a Session</button>
         </div>
       </div>
 
@@ -160,7 +160,7 @@ const EssayReview = () => {
           <h2 className="section-title   ml-4 text-left text-5xl">Application Assistance</h2>
           <p className="section-description">Applying to universities is a multi-step process that demands precision and strategy. Admit Achievers offers Application Assistance to guide you through each stage, from filling out forms to crafting persuasive essays. Our advisors provide personalized support, helping you articulate your story effectively and highlight your unique qualities. We aim to reduce the stress of the application process, allowing you to focus on showcasing your best self.</p>
        
-          <button className="custom-button bg-orange-500 text-white py-2 px-4 rounded mt-4">Custom title</button>
+          <button className="custom-buttons bg-orange-500 text-white py-2 px-4 rounded mt-4">Book a Session</button>
         </div>
         <div className="flex flex-col md:flex-row mt-4">
         <div className=" p-4 flex flex-wrap relative">
@@ -174,19 +174,19 @@ const EssayReview = () => {
 
 
 
-      <div className="custom-container ml-48   text-left">
-      <h2 className="text-5xl font-bold mb-4 ml-4 mt-16 ">Visa Services</h2>
-      <p className="mb-4 ml-8 ">
+      <div className="   text-left">
+      <h2 className="text-5xl font-bold mb-4 ml-16 mt-16 ">Visa Services</h2>
+      <p className="mb-4 ml-16 mr-16  ">
       Securing a student visa is a critical step in studying abroad. Admit Achievers' Visa Services ensure that you navigate this process smoothly and efficiently. Our experts assist you with understanding visa requirements, preparing necessary documentation, and submitting applications. We provide guidance on interview preparation and follow-up procedures, ensuring that you meet all deadlines and comply with regulations, so you can focus on your academic journey.    </p>
     
-      <button className="custom-button ml-12">Start Your Admission Journey</button>
+      <button className="custom-button ">Start Your Admission Journey</button>
     </div>
 
 
 
 
     <div className="relative text-black mt-8 mb-2">
-      <div className="black-background"></div>
+      <div className="black-background "></div>
       <div className="flex justify-center space-x-4 relative z-10">
         {videos.map(video => (
           <div key={video.id} className="video-card">
@@ -200,7 +200,7 @@ const EssayReview = () => {
                 className="video-frame"
               ></iframe>
             </div>
-            <div className="text-center text-white bg-gray-800 py-2">
+            <div className="text-center text-white mb-8 h-24 bg-333333 py-2">
               <p className="text-lg font-semibold">{video.title}</p>
               <p className="text-sm">{video.university}</p>
             </div>

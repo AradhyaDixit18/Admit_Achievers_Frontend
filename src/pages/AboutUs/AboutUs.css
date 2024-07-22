@@ -67,9 +67,12 @@
 }
 .ready-section {
   background-image: url('../../assets/Homepage/AA_Home_ReadyToTakeTheLeap.png');
-  padding: 2rem;
-  border-radius: 1rem;
+
   text-align: center;
+}
+.orange-line{
+  margin-bottom: -8px;
+  border-bottom: 2px solid #ff6633;
 }
 
 .ready-section h2 {

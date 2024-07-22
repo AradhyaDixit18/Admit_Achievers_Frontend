@@ -1,0 +1,25 @@
+.custom-buttons{
+    margin-left: -75%;
+}
+
+.top-button{
+    margin-left: -73%;
+}
+
+/* Add this to your existing CSS file */
+.stat-item  {
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.stat-item:hover  {
+    transform: scale(1.2); /* Zoom effect on hover */
+}
+.black-background {
+    background-color: #333333;
+    height: 60%; /* Adjust the height as needed */
+    width: 100%; /* Adjust the width as needed */
+    position: absolute; /* Ensure it is positioned correctly */
+    top: 40%; /* Adjust based on where you want it to appear */
+    left: 0;
+}
+
