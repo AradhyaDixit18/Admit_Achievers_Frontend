@@ -3,10 +3,17 @@
 * {
   font-family: 'Poppins', sans-serif;
 }
+.dropdown-menu {
+  display: none;
+}
+
+.relative:hover .dropdown-menu {
+  display: block;
+}
 
 @media (min-width: 1024px) {
   .logo {
-    margin-left: -90%;
+    margin-left: -80%;
   }
   .lg\:hidden {
     display: none !important;

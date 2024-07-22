@@ -68,12 +68,12 @@ const TestimonialSlider = () => {
               href="https://www.instagram.com/admitachievers"
               target="_blank"
               rel="noopener noreferrer"
-              className="community-card bg-light-red p-4 flex items-center rounded-lg shadow-md"
+              className="community-card bg-light-red ml-4 flex items-center rounded-lg shadow-md"
             >
               <p className="community-text font-bold text-black">
                 Follow us<br />for updates
               </p>
-              <FaInstagram className="community-icon text-8xl ml-4 text-pink-500" />
+              <FaInstagram className="community-icon text-6xl ml-16 text-pink-500" />
             </a>
             <a
               href="https://youtube.com/@admitachievers"
@@ -84,7 +84,7 @@ const TestimonialSlider = () => {
               <p className="community-text text-black">
                 Explore &<br />Subscribe
               </p>
-              <FaYoutube className="community-icon text-8xl ml-4 text-red-600" />
+              <FaYoutube className="community-icon text-8xl ml-16 text-red-600" />
             </a>
             <a
               href="https://www.pinterest.com/admitachievers"
@@ -95,7 +95,7 @@ const TestimonialSlider = () => {
               <p className="community-text text-black">
                 Discover<br />Inspiration
               </p>
-              <FaPinterest className="community-icon text-7xl ml-4 text-red-600" />
+              <FaPinterest className="community-icon text-7xl ml-16 text-red-600" />
             </a>
           </div>
         </div>

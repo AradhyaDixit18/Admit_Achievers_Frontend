@@ -5,21 +5,15 @@ import { useLocation, Link } from 'react-router-dom';
 import Logo from "../../assets/Logos/AA_Header_Logo_1080_Horizontal.png";
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [isServicesOpen, setIsServicesOpen] = useState(false);
-  const [isDestinationsOpen, setIsDestinationsOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState(null);
   const location = useLocation();
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
+  const handleMouseEnter = (dropdown) => {
+    setOpenDropdown(dropdown);
   };
 
-  const toggleServicesDropdown = () => {
-    setIsServicesOpen(!isServicesOpen);
-  };
-
-  const toggleDestinationsDropdown = () => {
-    setIsDestinationsOpen(!isDestinationsOpen);
+  const handleMouseLeave = () => {
+    setOpenDropdown(null);
   };
 
   const getLinkClass = (path) => {
@@ -30,8 +24,8 @@ const Navbar = () => {
     <nav className="bg-white shadow p-4 border-b border-gray-200">
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center lg:hidden">
-          <button onClick={toggleMenu} className="text-gray-800 focus:outline-none">
-            <i className={`fas ${isOpen ? 'fa-times' : 'fa-bars'}`}></i>
+          <button onClick={() => setOpenDropdown(openDropdown === 'menu' ? null : 'menu')} className="text-gray-800 focus:outline-none">
+            <i className={`fas ${openDropdown === 'menu' ? 'fa-times' : 'fa-bars'}`}></i>
           </button>
         </div>
         <div className="flex-1 flex justify-center lg:justify-start">
@@ -39,11 +33,15 @@ const Navbar = () => {
             <img src={Logo} alt="Admit Achievers" className="h-16 logo w-auto" />
           </Link>
         </div>
-        <div className={`w-full lg:flex lg:items-center lg:w-auto ${isOpen ? 'block' : 'hidden'} lg:block`}>
-          <div className="lg:flex lg:space-x-6">
-            <div className="relative">
-              <button onClick={toggleServicesDropdown} className="block lg:inline-block p-2">Our Services</button>
-              {isServicesOpen && (
+        <div className={`w-full lg:flex lg:items-center lg:w-auto ${openDropdown === 'menu' ? 'block' : 'hidden'} lg:block`}>
+          <div className="lg:flex -ml-4 lg:space-x-6">
+            <div 
+              className="relative" 
+              onMouseEnter={() => handleMouseEnter('services')} 
+              onMouseLeave={handleMouseLeave}
+            >
+              <button className="block lg:inline-block p-2">Our Services</button>
+              {openDropdown === 'services' && (
                 <div className="absolute bg-white shadow-md rounded mt-2 w-52 dropdown-menu z-50">
                   <Link to="/coming-soon" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">UG & PG Admissions</Link>
                   <Link to="/coming-soon" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Profile Building</Link>
@@ -52,9 +50,13 @@ const Navbar = () => {
                 </div>
               )}
             </div>
-            <div className="relative">
-              <button onClick={toggleDestinationsDropdown} className="block lg:inline-block p-2">Destinations</button>
-              {isDestinationsOpen && (
+            <div 
+              className="relative" 
+              onMouseEnter={() => handleMouseEnter('destinations')} 
+              onMouseLeave={handleMouseLeave}
+            >
+              <button className="block lg:inline-block p-2">Destinations</button>
+              {openDropdown === 'destinations' && (
                 <div className="absolute bg-white shadow-md rounded mt-2 w-48 dropdown-menu z-50">
                   <Link to="/coming-soon" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Study in USA</Link>
                   <Link to="/coming-soon" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Study in UK</Link>
@@ -69,9 +71,9 @@ const Navbar = () => {
             <Link to="/coming-soon" className={`block lg:inline-block p-2 ${getLinkClass('/blog-listing')}`}>Blog</Link>
             <Link to="/about-us" className={`block lg:inline-block p-2 ${getLinkClass('/about-us')}`}>About Us</Link>
           </div>
-          <div className="lg:flex lg:space-x-4 lg:ml-auto mt-4 ml-4 lg:mt-0">
+          <div className="lg:flex lg:space-x-4 lg:ml-4 mt-4  lg:mt-0">
             <Link to="/book-a-session" className={`bg-orange-500 text-white px-4 py-2 rounded mb-2 lg:mb-0 ${getLinkClass('/book-a-session')}`}>Book a Session</Link>
-            <Link to="/coming-soon" className="bg-gray-100 text-gray-800 px-4 py-2 rounded mb-2 lg:mb-0">Find a Course</Link>
+            <Link to="/coming-soon" className="bg-gray-100  text-gray-800 px-4 py-2 rounded mb-2 lg:mb-0">Find a Course</Link>
             <button className="bg-gray-100 text-gray-800 px-4 py-2 rounded">
               <i className="fas fa-search"></i>
             </button>
