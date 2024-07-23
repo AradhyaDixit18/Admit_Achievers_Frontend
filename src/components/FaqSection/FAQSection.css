@@ -4,9 +4,7 @@
   font-family: 'Poppins', sans-serif;
 }
 
-.question-text {
-  font-family: 'Arial', sans-serif;
-}
+
 .symbol {
   font-size: 40px;
   color: #ff730f;
@@ -19,13 +17,11 @@
   font-size:14px ;
 }
 
-.main {
-  font-family: 'Arial', sans-serif;
-}
+
 
 @media (min-width: 1000px) {
   .main-quesns {
-    margin-left: 15%;
+    margin-left: -30%;
   }
   .images {
     margin-left: -40px;
@@ -127,13 +123,11 @@
   margin-left: 1.5rem;
 }
 
-.main {
-  font-family: 'Arial', sans-serif;
-}
+
 
 @media (min-width: 1000px) {
   .main-quesns {
-    margin-left: 15%;
+  margin-left: 7%;
   }
   .images {
     margin-left: -40px;

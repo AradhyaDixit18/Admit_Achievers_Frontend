@@ -41,7 +41,7 @@ const FAQSection = () => {
           Got Questions? Find <span className="text-orange">Answers</span> Here
         </h2>
         <div className="flex flex-col md:flex-row mt-4 justify-center items-start">
-          <div className="w-full main-quesns md:w-1/2">
+          <div className="w-full main-quesns text-xl mt-20 md:w-3/4 z-10 ">
             <ul className="list-none">
               {questionsAndAnswers.map((item, index) => (
                 <li key={index} className="mb-4">
