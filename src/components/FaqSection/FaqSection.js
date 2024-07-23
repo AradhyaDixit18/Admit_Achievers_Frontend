@@ -30,7 +30,7 @@ const FAQSection = () => {
     },
     {
       question: 'How do I finance my studies abroad?',
-      answer: 'Financing options include scholarships, grants, part-time jobs, student loans, and financial assistance from family. Research and apply for scholarships specifically designed for international students and explore funding options provided by universities and government agencies'
+      answer: 'Financing options include scholarships, grants, part-time jobs, student loans, and financial assistance from family. Research and apply for scholarships specifically designed for international students and explore funding options provided by universities and government agencies.'
     }
   ];
 
@@ -49,7 +49,7 @@ const FAQSection = () => {
                     <span className="question-text">{item.question}</span>
                     <button
                       onClick={() => toggleQuestion(index)}
-                      className="text-red-500 symbol ml-8 font-bold text-6xl"
+                      className=" symbol ml-8 font-bold text-2xl"
                     >
                       {openQuestionIndex === index ? '-' : '+'}
                     </button>
@@ -61,7 +61,7 @@ const FAQSection = () => {
               ))}
             </ul>
           </div>
-          <div className="w-full images md:w-1/2  flex flex-col items-center">
+          <div className="w-full images md:w-1/2 flex flex-col items-center mt-4 ">
             <img
               src={Faq1}
               alt="Image 1"
@@ -75,7 +75,7 @@ const FAQSection = () => {
             <img
               src={Faq3}
               alt="Image 3"
-              className="w-80 md:-mt-8   h-36 images3 object-cover rounded-md transition-transform transform"
+              className="w-80 md:-mt-8 h-36 images3 object-cover rounded-md transition-transform transform"
             />
           </div>
         </div>
