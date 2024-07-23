@@ -49,7 +49,58 @@ const ProfileBuilding = () => {
     const [activeTab, setActiveTab] = useState('Undergraduate');
 
     const [currentIndex, setCurrentIndex] = useState(0);
-
+    const [currentStep, setCurrentStep] = useState(0);
+    const [formData, setFormData] = useState({});
+    const [errors, setErrors] = useState({});
+  
+    const handleInputChange = (e) => {
+      setFormData({
+        ...formData,
+        [e.target.id]: e.target.value,
+      });
+      setErrors({
+        ...errors,
+        [e.target.id]: '',
+      });
+    };
+  
+    const validateField = (id, value) => {
+      if (!value) {
+        return 'This field is required';
+      }
+      return '';
+    };
+  
+    const handleNext = (e) => {
+      e.preventDefault();
+  
+      if (currentStep === 0) {
+        const nameError = validateField('childName', formData.childName);
+        const emailError = validateField('email', formData.email);
+        if (nameError || emailError) {
+          setErrors({
+            childName: nameError,
+            email: emailError,
+          });
+          return;
+        }
+      } else {
+        const question = questions[currentStep - 1];
+        const error = validateField(question.id, formData[question.id]);
+        if (error) {
+          setErrors({
+            [question.id]: error,
+          });
+          return;
+        }
+      }
+  
+      if (currentStep < questions.length) {
+        setCurrentStep(currentStep + 1);
+      } else {
+        console.log('Form submitted', formData);
+      }
+    };
     const nextSlide = () => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
     };
@@ -57,22 +108,11 @@ const ProfileBuilding = () => {
     const prevSlide = () => {
       setCurrentIndex((prevIndex) => (prevIndex - 1 + testimonials.length) % testimonials.length);
     };
-    const [currentStep, setCurrentStep] = useState(0);
-  const [formData, setFormData] = useState({});
 
-  const handleInputChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.id]: e.target.value,
-    });
-  };
 
-  const handleNext = (e) => {
-    e.preventDefault();
-    if (currentStep < questions.length) {
-      setCurrentStep(currentStep + 1);
-    }
-  };
+ 
+
+  
     const content = {
       Undergraduate: [
         {
@@ -372,6 +412,7 @@ const ProfileBuilding = () => {
                 value={formData.childName || ''}
                 onChange={handleInputChange}
               />
+              {errors.childName && <p className="text-red-600">{errors.childName}</p>}
             </div>
             <div className="mb-4">
               <label htmlFor="email" className="label-2 text-gray-700">e-mail</label>
@@ -382,6 +423,7 @@ const ProfileBuilding = () => {
                 value={formData.email || ''}
                 onChange={handleInputChange}
               />
+              {errors.email && <p className="text-red-600">{errors.email}</p>}
             </div>
           </>
         ) : (
@@ -398,6 +440,7 @@ const ProfileBuilding = () => {
               value={formData[questions[currentStep - 1].id] || ''}
               onChange={handleInputChange}
             />
+            {errors[questions[currentStep - 1].id] && <p className="text-red-600">{errors[questions[currentStep - 1].id]}</p>}
           </div>
         )}
         <div className="flex justify-end">

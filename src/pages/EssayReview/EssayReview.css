@@ -1,9 +1,9 @@
 .custom-buttons{
-    margin-left: -75%;
+    margin-left: -81%;
 }
 
-.top-button{
-    margin-left: -73%;
+.top-buttons{
+   margin-left: -79%;
 }
 
 /* Add this to your existing CSS file */
@@ -23,3 +23,8 @@
     left: 0;
 }
 
+
+
+.section-description{
+    margin-left: -2px;
+}

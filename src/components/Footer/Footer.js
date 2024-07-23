@@ -4,10 +4,10 @@ import footerIcon from "../../assets/Logos/AA_Footer_Logo_1080_Square.png"
 
 const Footer = () => {
   return (
-    <footer className="main-footer text-white py-8 mt-2">
-      <div className="container mx-auto px-4">
-        <div className="flex flex-col items-center md:flex-row md:justify-between">
-          <div className="flex flex-col items-center mb-8 md:mb-0">
+    <footer className="main-footer text-left text-white py-8 mt-2">
+      <div className="container text-left mx-auto px-4">
+        <div className="flex flex-col text-left items-start md:flex-row md:justify-between">
+          <div className="flex flex-col text-left items-start mb-8 md:mb-0">
             <div className="footer-logo mb-4">
               <img src={footerIcon} alt="Logo" className="logo-main" />
             </div>
@@ -23,10 +23,10 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          <div className="flex flex-col md:flex-row md:space-x-36">
+          <div className="flex flex-col text-left md:flex-row md:space-x-36">
             <div className="mb-8 md:mb-0">
-              <h3 className="font-bold mb-4 text-center md:text-left">Our Services</h3>
-              <ul className="list-none space-y-2 text-center md:text-left">
+              <h3 className="font-bold mb-4">Our Services</h3>
+              <ul className="list-none space-y-2">
                 <li><a href="/coming-soon" className="hover:underline hover:cursor-pointer">Full Stack Admissions</a></li>
                 <li><a href="/coming-soon" className="hover:underline hover:cursor-pointer">Essay Review</a></li>
                 <li><a href="/coming-soon" className="hover:underline hover:cursor-pointer">Profile Building</a></li>
@@ -34,16 +34,16 @@ const Footer = () => {
               </ul>
             </div>
             <div className="mb-8 md:mb-0">
-              <h3 className="font-bold mb-4 text-center md:text-left">Company</h3>
-              <ul className="list-none space-y-2 text-center md:text-left">
+              <h3 className="font-bold mb-4">Company</h3>
+              <ul className="list-none space-y-2">
                 <li><a href="/about-us" className="hover:underline hover:cursor-pointer">About Us</a></li>
                 <li><a href="/contact-us" className="hover:underline hover:cursor-pointer">Contact Us</a></li>
                 <li><a href="/coming-soon" className="hover:underline hover:cursor-pointer">Blogs</a></li>
               </ul>
             </div>
             <div className="flex flex-col mb-8 md:mb-0">
-              <h3 className="font-bold mb-4 text-center md:text-left">Destination</h3>
-              <div className="grid grid-cols-2 gap-x-20 text-center md:text-left">
+              <h3 className="font-bold mb-4">Destination</h3>
+              <div className="grid grid-cols-2 gap-x-20">
                 <ul className="list-none space-y-2">
                   <li><a href="/coming-soon" className="hover:underline hover:cursor-pointer">United States</a></li>
                   <li><a href="/coming-soon" className="hover:underline hover:cursor-pointer">United Kingdom</a></li>
@@ -60,9 +60,9 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col items-center md:flex-row md:justify-between mt-8">
-          <p className="text-center text-white">&copy; 2024 Admit Achievers</p>
-          <p className="text-center text-white">All rights reserved. Registration or use of this site constitutes acceptance of our <a href="#terms" className="hover:underline hover:cursor-pointer">Terms and Conditions</a>.</p>
+        <div className="flex flex-col items-start md:flex-row md:justify-between mt-8">
+          <p className="text-left text-white">&copy; 2024 Admit Achievers</p>
+          <p className="text-left text-white">All rights reserved. Registration or use of this site constitutes acceptance of our <a href="#terms" className="hover:underline hover:cursor-pointer">Terms and Conditions</a>.</p>
         </div>
       </div>
     </footer>
