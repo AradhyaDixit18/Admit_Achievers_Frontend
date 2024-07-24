@@ -1,19 +1,23 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
+// Import the images
+import image1 from '../../assets/Blogs/BEST-SUMMER-PROGRAM-TO-STUDY-ABROAD-2-1.png';
+import image2 from '../../assets/Blogs/ChatGPT for Study Abroad (2400 × 1200 px).png';
+
 const blogs = [
   {
     id: 1,
     title: "Everything you need to know about Personal Loan Calculators",
     date: "Sep 29, 2023",
-    image: "image1_url",
+    image: image1, // Use the imported image
     category: "Finance",
   },
   {
     id: 2,
     title: "How to Apply for Scholarships",
     date: "Oct 12, 2023",
-    image: "image2_url",
+    image: image2, // Use the imported image
     category: "Education",
   },
   // Add more blog entries here
@@ -44,8 +48,8 @@ const BlogListing = () => {
 
   return (
     <>
-      <div className="bg-gray-800 text-center py-32 flex flex-col items-center justify-center">
-        <h1 className="text-4xl font-bold text-white mb-4">Blog</h1>
+      <div className="bg-333333 text-center py-32 flex flex-col items-center justify-center">
+        <h1 className="text-5xl font-bold text-white mb-4">Blog</h1>
         <p className="text-lg text-gray-300 mb-6 px-4 max-w-2xl">
           Studying abroad is not only an academic experience but it's a lifetime experience. KC's Study Abroad Blogs will help you with the best resources, advice, and tips.
         </p>
@@ -54,7 +58,7 @@ const BlogListing = () => {
         </button>
       </div>
       <div className="p-4">
-        <h1 className="text-4xl font-bold text-center mb-8">Latest Blogs</h1>
+        <h1 className="text-5xl font-bold text-center mb-8">Latest Blogs</h1>
         <div className="flex justify-center mb-6 flex-wrap">
           {categories.map((category) => (
             <button
@@ -81,7 +85,7 @@ const BlogListing = () => {
         </div>
         </div>
         
-        <div className="grid grid-cols-1 mt-16 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 ml-12 mt-16 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {currentBlogs.map((blog) => (
             <div key={blog.id} className="bg-white shadow-md rounded-lg overflow-hidden">
               <img src={blog.image} alt={blog.title} className="w-full h-48 object-cover" />

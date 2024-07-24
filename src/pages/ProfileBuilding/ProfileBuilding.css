@@ -44,7 +44,10 @@ ul.profile-list li {
     margin-right: 500px;
     
   }
-
+.backgrounds{
+  width: 100vw;
+  margin-left: -35px;
+}
   
 .quesnLabel{
   width: 1200px;

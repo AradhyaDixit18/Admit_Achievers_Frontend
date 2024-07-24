@@ -263,7 +263,7 @@ const ProfileBuilding = () => {
     <div className="w-full overflow-hidden p-8">
       {/* Header Section */}
       <div className="text-center mb-16">
-        <h1 className="text-5xl font-bold text-gray-800">
+        <h1 className="text-4xl font-bold text-gray-800">
           What we <span className="text-orange-600">Do?</span>
         </h1>
       </div>
@@ -271,8 +271,8 @@ const ProfileBuilding = () => {
       {/* Accelerate Academics Section */}
       <div className="flex flex-col md:flex-row mb-16">
         <div className="md:w-1/2 ml-24 p-4">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">Profile Assessment</h2>
-          <p className="text-gray-700 text-md mb-4">
+          <h2 className="text-4xl font-bold text-gray-800 mb-4">Profile Assessment</h2>
+          <p className="text-gray-700 text-2xl mb-4">
           We begin by assessing the student’s profile in detail. This involves understanding their interests, existing skills, academic achievements, and their desired program, countries, and universities for higher education. This assessment helps us gain insights into the student’s strengths, areas of improvement, and overall profile suitability for the desired educational path.  </p>
          
         </div>
@@ -282,14 +282,14 @@ const ProfileBuilding = () => {
       </div>
 
       {/* Drive Standout Extracurriculars Section */}
-      <div className="flex flex-col md:flex-row mt-4">
+      <div className="flex bg-gray-400 backgrounds flex-col md:flex-row ">
         <div className=" p-4 flex flex-wrap relative">
     
           <img src={Img2} alt="Image 5" className="images p-2" />
         </div>
         <div className="md:w-1/2 p-4">
-          <h2 className="text-3xl font-bold text-orange-600 mb-4">Quarterly Planning</h2>
-          <p className="text-gray-700 text-md mb-4">
+          <h2 className="text-4xl font-bold text-orange-600 mb-4">Quarterly Planning</h2>
+          <p className="text-gray-700 text-2xl mb-4">
           Based on the profile assessment, we provide a quarterly plan of activities and milestones. This plan outlines specific goals and tasks for each quarter to help the student build a strong profile over time. It includes suggestions for academic, extracurricular, and personal development activities that align with the student’s interests and goals. </p>
           
         </div>
@@ -301,8 +301,8 @@ const ProfileBuilding = () => {
 
     <div className="flex flex-col md:flex-row mb-16 mt-4">
         <div className="md:w-1/2 ml-36 p-4">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">Progress Tracking</h2>
-          <p className="text-gray-700 text-md mb-4">
+          <h2 className="text-4xl font-bold text-gray-800 mb-4">Progress Tracking</h2>
+          <p className="text-gray-700 text-xl mb-4">
           We continuously track the student’s progress and performance. Regular monitoring allows us to evaluate the effectiveness of the profile building strategy and make necessary adjustments. We provide feedback and guidance to help the student stay on track and make improvements in areas that require attention.  </p>
          
         </div>
@@ -312,14 +312,14 @@ const ProfileBuilding = () => {
       </div>
 
       {/* Drive Standout Extracurriculars Section */}
-      <div className="flex flex-col md:flex-row mt-4">
+      <div className="flex flex-col bg-gray-400 md:flex-row mt-4">
         <div className=" p-4 flex flex-wrap relative">
     
           <img src={Img5} alt="Image 5" className="images p-2" />
         </div>
         <div className="md:w-1/2 p-4">
-          <h2 className="text-3xl font-bold text-orange-600 mb-4">High School Course Guidance</h2>
-          <p className="text-gray-700 text-md mb-4">
+          <h2 className="text-4xl font-bold text-orange-600 mb-4">High School Course Guidance</h2>
+          <p className="text-gray-700 text-xl mb-4">
           We provide guidance to students on selecting appropriate high school courses that align with their interests and future aspirations. We consider the academic requirements and prerequisites of the desired colleges and universities to ensure that the student takes relevant courses that strengthen their profile for admission. </p>
           
         </div>
@@ -330,8 +330,8 @@ const ProfileBuilding = () => {
 
       <div className="flex flex-col md:flex-row mb-16 mt-4">
         <div className="md:w-1/2 ml-24 p-4">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">Roadmap for College Applications</h2>
-          <p className="text-gray-700 text-md mb-4">
+          <h2 className="text-4xl font-bold text-gray-800 mb-4">Roadmap for College Applications</h2>
+          <p className="text-gray-700 text- mb-4">
           We work with the student to create a roadmap for their college applications. This roadmap includes a detailed timeline that outlines key application milestones, such as researching universities, preparing application materials (essays, letters of recommendation, etc.), and submitting applications. The timeline ensures that the student stays organized and completes each application requirement within the specified time frame.</p>
          
         </div>
@@ -347,7 +347,7 @@ const ProfileBuilding = () => {
 
 
 
-      <div className="w-full overflow-hidden p-8">
+      <div className="w-full overflow-hidden">
      
       <div className="text-center mb-8">
         <button className="bg-orange-600 text-white py-2 px-4 rounded-full mb-4">Chat With US</button>
