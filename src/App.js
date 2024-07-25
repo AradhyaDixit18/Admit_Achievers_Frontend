@@ -13,6 +13,8 @@ import BlogListing from './pages/BlogListing/BlogListing';
 import BlogPage from './pages/BlogPage/BlogPage';
 import ComingSoon from './pages/ComingSoon/ComingSoon';
 import EssayReview from './pages/EssayReview/EssayReview'
+import { DestinationGroup } from './pages/DestinationGroup/DestinationGroup';
+import DestinationPage from './pages/DestinationPage/DestinationPage';
 
 function App() {
   return (
@@ -30,6 +32,8 @@ function App() {
           <Route path='/blog-lists/blog/:id' element={<BlogPage/>} />
           <Route path='/coming-soon' element={<ComingSoon/>} />
           <Route path='/essay-review' element={<EssayReview/>} />
+          <Route path='/destination-group' element={<DestinationGroup/>} />
+          <Route path='/destination-group/destination/:id' element={<DestinationPage/>} />
         </Routes>
         <Footer/>
       </div>

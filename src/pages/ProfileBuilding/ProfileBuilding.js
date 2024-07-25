@@ -331,7 +331,7 @@ const ProfileBuilding = () => {
       <div className="flex flex-col md:flex-row mb-16 mt-4">
         <div className="md:w-1/2 ml-24 p-4">
           <h2 className="text-4xl font-bold text-gray-800 mb-4">Roadmap for College Applications</h2>
-          <p className="text-gray-700 text- mb-4">
+          <p className="text-gray-700 text-xl mb-4">
           We work with the student to create a roadmap for their college applications. This roadmap includes a detailed timeline that outlines key application milestones, such as researching universities, preparing application materials (essays, letters of recommendation, etc.), and submitting applications. The timeline ensures that the student stays organized and completes each application requirement within the specified time frame.</p>
          
         </div>
@@ -350,7 +350,7 @@ const ProfileBuilding = () => {
       <div className="w-full overflow-hidden">
      
       <div className="text-center mb-8">
-        <button className="bg-orange-600 text-white py-2 px-4 rounded-full mb-4">Chat With US</button>
+        <button className="bg-orange-600 text-white py-2 px-4 rounded-sm mb-4">Chat With US</button>
         <h1 className="text-3xl font-bold text-gray-800">
           Discover <span className="text-orange-600">Profile Building</span>
         </h1>

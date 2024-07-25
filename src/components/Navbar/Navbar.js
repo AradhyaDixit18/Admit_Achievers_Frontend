@@ -44,8 +44,8 @@ const Navbar = () => {
               {openDropdown === 'services' && (
                 <div className="absolute bg-white shadow-md rounded mt-2 w-52 dropdown-menu z-50">
                   <Link to="/coming-soon" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">UG & PG Admissions</Link>
-                  <Link to="/coming-soon" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Profile Building</Link>
-                  <Link to="/coming-soon" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Essay Review</Link>
+                  <Link to="/profile-building" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Profile Building</Link>
+                  <Link to="/essay-review" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Essay Review</Link>
                   <Link to="/coming-soon" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Visas</Link>
                 </div>
               )}
@@ -68,7 +68,7 @@ const Navbar = () => {
                 </div>
               )}
             </div>
-            <Link to="/coming-soon" className={`block lg:inline-block p-2 ${getLinkClass('/blog-listing')}`}>Blog</Link>
+            <Link to="/blog-lists" className={`block lg:inline-block p-2 ${getLinkClass('/blog-listing')}`}>Blog</Link>
             <Link to="/about-us" className={`block lg:inline-block p-2 ${getLinkClass('/about-us')}`}>About Us</Link>
           </div>
           <div className="lg:flex lg:space-x-4 lg:ml-4 mt-4  lg:mt-0">

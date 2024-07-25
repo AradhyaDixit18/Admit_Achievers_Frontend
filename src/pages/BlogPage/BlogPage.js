@@ -54,7 +54,7 @@ const BlogPage = () => {
       return;
     }
 
-    emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formData, 'YOUR_USER_ID')
+    emailjs.send('service_r9q75qg', 'template_cxkbce1', formData, 'BHX1Ca4sSWoOpfmMq')
       .then((result) => {
         alert('Message sent successfully!');
       }, (error) => {
