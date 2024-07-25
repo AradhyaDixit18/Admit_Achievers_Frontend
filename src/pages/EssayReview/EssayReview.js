@@ -62,7 +62,7 @@ const EssayReview = () => {
             <div id="common-app-essay" className="section-container">
                 <div className="text-section1 ml-24 mt-16">
                     <h2 className="section-title-left text-5xl text-left">Common App Essay</h2>
-                    <ul className="section-description  aligned-list text-2xl list-disc list-inside">
+                    <ul className="section-description  aligned-list text-xl list-disc list-inside">
                         <li>Topic Selection: Guiding you in choosing a topic that best reflects your experiences and strengths.</li>
                         <li>Content Structuring: Helping you organize your essay for maximum impact.</li>
                         <li>Editing and Feedback: Providing detailed feedback on content, clarity, and style.</li>
@@ -84,7 +84,7 @@ const EssayReview = () => {
                 </div>
                 <div className="text-section2 ml-24 mt-16">
                     <h2 className="section-title text-5xl text-left">University SOP</h2>
-                    <ul className="section-description aligned-list text-2xl list-disc list-inside">
+                    <ul className="section-description aligned-list text-xl list-disc list-inside">
                         <li>Customization: Adapting your SOP to fit the unique requirements of each university.</li>
                         <li>Highlighting Fit: Emphasizing how your goals align with the university’s programs and values.</li>
                         <li>Detailed Feedback: Offering comprehensive reviews to refine your SOP.</li>
@@ -97,7 +97,7 @@ const EssayReview = () => {
             <div id="visa-sop" className="section-container">
                 <div className="text-section1 ml-24 mt-16">
                     <h2 className="section-title-left text-5xl text-left">Visa SOP</h2>
-                    <ul className="section-description aligned-list text-2xl list-disc list-inside">
+                    <ul className="section-description aligned-list text-xl list-disc list-inside">
                         <li>Purpose Articulation: Clearly explaining your reasons for studying abroad and your plans post-study.</li>
                         <li>Consistency: Ensuring your Visa SOP aligns with your university applications and supporting documents.</li>
                         <li>Professional Tone: Crafting a professional and convincing narrative.</li>
@@ -119,7 +119,7 @@ const EssayReview = () => {
                 </div>
                 <div className="text-section2 ml-24 mt-16">
                     <h2 className="section-title text-5xl text-left">Personal Statement</h2>
-                    <ul className="section-description text-2xl aligned-list list-disc list-inside">
+                    <ul className="section-description text-xl aligned-list list-disc list-inside">
                         <li>Storytelling: Assisting you in telling your personal story in a compelling way.</li>
                         <li>Highlighting Achievements: Emphasizing your key accomplishments and experiences.</li>
                         <li>Editing for Impact: Providing feedback to enhance the clarity and impact of your statement.</li>
@@ -132,7 +132,7 @@ const EssayReview = () => {
             <div id="scholarship-essay" className="section-container">
                 <div className="text-section1 ml-24 mt-16">
                     <h2 className="section-title-left text-5xl text-left">Scholarship Essay</h2>
-                    <ul className="section-description text-2xl aligned-list list-disc list-inside">
+                    <ul className="section-description text-xl aligned-list list-disc list-inside">
                         <li>Understanding Criteria: Tailoring your essay to meet the specific criteria of each scholarship.</li>
                         <li>Showcasing Need: Effectively communicating your financial need and personal circumstances.</li>
                         <li>Emphasizing Merit: Highlighting your achievements and qualifications.</li>
@@ -154,7 +154,7 @@ const EssayReview = () => {
                 </div>
                 <div className="text-section2 ml-24 mt-16">
                     <h2 className="section-title text-5xl text-left">Supplement Essay</h2>
-                    <ul className="section-description text-2xl list-disc aligned-list list-inside">
+                    <ul className="section-description text-xl list-disc aligned-list list-inside">
                         <li>Answering Prompts: Helping you understand and effectively respond to each prompt.</li>
                         <li>Customization: Tailoring each essay to align with the specific university’s values and programs.</li>
                         <li>Feedback and Edits: Providing detailed feedback and edits to improve your essays.</li>

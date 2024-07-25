@@ -1,78 +1,47 @@
-.custom-buttons{
-    margin-left: -81%;
-}
-
-.top-buttons{
-   margin-left: -79%;
-}
-
-/* Add this to your existing CSS file */
-.stat-item  {
-    transition: transform 0.3s ease; /* Smooth transition */
-}
-
-.stat-item:hover  {
-    transform: scale(1.2); /* Zoom effect on hover */
-}
-.black-background {
-    background-color: #333333;
-    height: 60%; /* Adjust the height as needed */
-    width: 100%; /* Adjust the width as needed */
-    position: absolute; /* Ensure it is positioned correctly */
-    top: 40%; /* Adjust based on where you want it to appear */
-    left: 0;
-}
-
-
-
 /* EssayReview.css */
 
-.section-container {
-  margin: 2rem 0;
-}
-
-.section-title {
-  margin-bottom: 1rem;
-}
-
-.section-description {
-  padding-left: 1.5rem; /* Add padding to align the text properly */
-}
-
-.section-description li {
-  margin-bottom: 0.5rem; /* Add space between list items */
+/* Adjust the positioning of top buttons */
+.custom-buttons {
+    margin-left: -54%; /* Adjust based on your layout */
 }
 
 .top-buttons {
-  display: block;
-  margin-top: 1rem;
-  background-color: #FFA500; /* Adjust background color for buttons */
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 0.25rem;
-  text-align: center;
+    margin-left: -50%; /* Adjust based on your layout */
 }
 
-.hero-content {
-  color: white;
-}
-
+/* Ensure smooth zoom effect on hover for stat items */
 .stat-item {
-  cursor: pointer;
-  margin-bottom: 1rem;
-  text-align: center;
+    transition: transform 0.3s ease;
 }
 
-.stat-item p {
-  margin-top: 0.5rem;
+.stat-item:hover {
+    transform: scale(1.2);
+}
+
+/* Ensure cards maintain size and layout consistency */
+.section-container {
+    margin: 1rem 0; /* Adjust margin for spacing */
+}
+
+.section-title {
+    margin-bottom: 0.5rem; /* Adjust spacing for section titles */
+}
+
+.section-description {
+    padding-left: 1rem; /* Adjust padding for text alignment */
+}
+
+.section-description li {
+    margin-bottom: 0.3rem; /* Adjust space between list items */
 }
 
 .images {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 1rem;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem; /* Adjust margin for images */
 }
 
+/* Ensure FAQ section maintains spacing */
 .faq-container {
-  margin-top: 2rem;
+    margin-top: 1rem; /* Adjust top margin as needed */
 }
