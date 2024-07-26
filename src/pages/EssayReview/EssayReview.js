@@ -32,34 +32,33 @@ const EssayReview = () => {
             </div>
 
             <div className="relative container mx-auto z-20 -mt-16">
-    <div className="flex flex-wrap justify-center rounded-md gap-0 bg-white shadow-md h-36 main-icons">
-        <Link to="common-app-essay" smooth={true} duration={500} className="link-item flex flex-col items-center h-40 w-40 mt-4 cursor-pointer">
-            <img src={UniversitySelection} alt="University Selection" className="h-16 w-16 mt-2" />
-            <p className="mt-2 text-sm font-semibold text-center">Common App Essay</p>
-        </Link>
-        <Link to="university-sop" smooth={true} duration={500} className="link-item flex flex-col items-center h-40 w-40 mt-4 cursor-pointer">
-            <img src={ProfileEvaluation} alt="Profile Evaluation" className="h-16 w-16 mt-2" />
-            <p className="mt-2 text-sm font-semibold text-center">University SOP</p>
-        </Link>
-        <Link to="visa-sop" smooth={true} duration={500} className="link-item flex flex-col items-center h-40 w-40 mt-4 cursor-pointer">
-            <img src={DocumentEditing} alt="Document Editing" className="h-16 w-16 mt-2" />
-            <p className="mt-2 text-sm font-semibold text-center">Visa SOP</p>
-        </Link>
-        <Link to="personal-statement" smooth={true} duration={500} className="link-item flex flex-col items-center h-40 w-40 mt-4 cursor-pointer">
-            <img src={AdmissionInterview} alt="Interview Preparation" className="h-16 w-16 mt-2" />
-            <p className="mt-2 text-sm font-semibold text-center">Personal Statement</p>
-        </Link>
-        <Link to="scholarship-essay" smooth={true} duration={500} className="link-item flex flex-col items-center h-40 w-40 mt-4 cursor-pointer">
-            <img src={AdmissionsVisa} alt="Visa Assistance" className="h-16 w-16 mt-2" />
-            <p className="mt-2 text-sm font-semibold text-center">Scholarship Essay</p>
-        </Link>
-        <Link to="supplement-essay" smooth={true} duration={500} className="link-item flex flex-col items-center h-40 w-40 mt-4 cursor-pointer">
-            <img src={AdmissionsVisa} alt="Visa Assistance" className="h-16 w-16 mt-2" />
-            <p className="mt-2 text-sm font-semibold text-center">Supplement Essay</p>
-        </Link>
-    </div>
-</div>
-
+                <div className="flex flex-wrap justify-center rounded-md gap-0 bg-white shadow-md h-36 main-icons">
+                    <Link to="common-app-essay" smooth={true} duration={500} className="link-item flex flex-col items-center h-40 w-40 mt-4 cursor-pointer">
+                        <img src={UniversitySelection} alt="University Selection" className="h-16 w-16 mt-2" />
+                        <p className="mt-2 text-sm font-semibold text-center">Common App Essay</p>
+                    </Link>
+                    <Link to="university-sop" smooth={true} duration={500} className="link-item flex flex-col items-center h-40 w-40 mt-4 cursor-pointer">
+                        <img src={ProfileEvaluation} alt="Profile Evaluation" className="h-16 w-16 mt-2" />
+                        <p className="mt-2 text-sm font-semibold text-center">University SOP</p>
+                    </Link>
+                    <Link to="visa-sop" smooth={true} duration={500} className="link-item flex flex-col items-center h-40 w-40 mt-4 cursor-pointer">
+                        <img src={DocumentEditing} alt="Document Editing" className="h-16 w-16 mt-2" />
+                        <p className="mt-2 text-sm font-semibold text-center">Visa SOP</p>
+                    </Link>
+                    <Link to="personal-statement" smooth={true} duration={500} className="link-item flex flex-col items-center h-40 w-40 mt-4 cursor-pointer">
+                        <img src={AdmissionInterview} alt="Interview Preparation" className="h-16 w-16 mt-2" />
+                        <p className="mt-2 text-sm font-semibold text-center">Personal Statement</p>
+                    </Link>
+                    <Link to="scholarship-essay" smooth={true} duration={500} className="link-item flex flex-col items-center h-40 w-40 mt-4 cursor-pointer">
+                        <img src={AdmissionsVisa} alt="Visa Assistance" className="h-16 w-16 mt-2" />
+                        <p className="mt-2 text-sm font-semibold text-center">Scholarship Essay</p>
+                    </Link>
+                    <Link to="supplement-essay" smooth={true} duration={500} className="link-item flex flex-col items-center h-40 w-40 mt-4 cursor-pointer">
+                        <img src={AdmissionsVisa} alt="Visa Assistance" className="h-16 w-16 mt-2" />
+                        <p className="mt-2 text-sm font-semibold text-center">Supplement Essay</p>
+                    </Link>
+                </div>
+            </div>
 
             {/* Your section components go here */}
             <div id="common-app-essay" className="section-container">
@@ -175,7 +174,7 @@ const EssayReview = () => {
                         </div>
                         <h3 className="text-xl font-semibold mb-2">Admissions</h3>
                         <p className="text-gray-600 mb-4">Know about how you can study at your dream university almost for free</p>
-                        <button onClick="" className="bg-orange-500 text-white py-2 px-4 rounded">Know More</button>
+                        <button onClick={() => window.location.href='/admissions'} className="bg-orange-500 text-white py-2 px-4 rounded">Know More</button>
                     </div>
                     <div className="bg-white p-6 rounded-lg shadow-lg">
                         <div className="text-orange-500 mb-4">
@@ -185,7 +184,7 @@ const EssayReview = () => {
                         </div>
                         <h3 className="text-xl font-semibold mb-2">Profile Building</h3>
                         <p className="text-gray-600 mb-4">Plan of action curated by an expert based on your profile and interests</p>
-                        <button onClick="" className="bg-orange-500 text-white py-2 px-4 rounded">Know More</button>
+                        <button onClick={() => window.location.href='/profile-building'} className="bg-orange-500 text-white py-2 px-4 rounded">Know More</button>
                     </div>
                     <div className="bg-white p-6 rounded-lg shadow-lg">
                         <div className="text-orange-500 mb-4">
@@ -195,7 +194,7 @@ const EssayReview = () => {
                         </div>
                         <h3 className="text-xl font-semibold mb-2">Visa</h3>
                         <p className="text-gray-600 mb-4">Know how to crack the Visa interview and also what you need on D-Day</p>
-                        <button onClick="" className="bg-orange-500 text-white py-2 px-4 rounded">Know More</button>
+                        <button onClick={() => window.location.href='/coming-soon'} className="bg-orange-500 text-white py-2 px-4 rounded">Know More</button>
                     </div>
                 </div>
             </div>
