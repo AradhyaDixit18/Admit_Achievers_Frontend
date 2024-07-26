@@ -43,7 +43,7 @@ const Navbar = () => {
               <button className="block lg:inline-block p-2">Our Services</button>
               {openDropdown === 'services' && (
                 <div className="absolute bg-white shadow-md rounded mt-2 w-52 dropdown-menu z-50">
-                  <Link to="/coming-soon" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">UG & PG Admissions</Link>
+                  <Link to="/admissions" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">UG & PG Admissions</Link>
                   <Link to="/profile-building" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Profile Building</Link>
                   <Link to="/essay-review" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Essay Review</Link>
                   <Link to="/coming-soon" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Visas</Link>
