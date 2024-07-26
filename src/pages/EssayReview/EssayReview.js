@@ -33,27 +33,27 @@ const EssayReview = () => {
                 </div>
                 <div className="relative container mx-auto z-20 -mt-16">
     <div className="flex flex-wrap justify-center gap-0 bg-white shadow-md h-36 main-icons ">
-        <div className="flex flex-col items-center h-40 w-40">
+        <div className="flex flex-col items-center h-40 w-40 mt-4">
             <img src={UniversitySelection} alt="University Selection" className="h-16 w-16 mt-2" />
             <p className="mt-2 text-sm font-semibold text-center">Common App Essay</p>
         </div>
-        <div className="flex flex-col items-center h-40 w-40">
+        <div className="flex flex-col items-center h-40 w-40 mt-4">
             <img src={ProfileEvaluation} alt="Profile Evaluation" className="h-16 w-16 mt-2" />
             <p className="mt-2 text-sm font-semibold text-center">University SOP</p>
         </div>
-        <div className="flex flex-col items-center h-40 w-40">
+        <div className="flex flex-col items-center h-40 w-40 mt-4">
             <img src={DocumentEditing} alt="Document Editing" className="h-16 w-16 mt-2" />
             <p className="mt-2 text-sm font-semibold text-center">Visa SOP</p>
         </div>
-        <div className="flex flex-col items-center h-40 w-40">
+        <div className="flex flex-col items-center h-40 w-40 mt-4">
             <img src={AdmissionInterview} alt="Interview Preparation" className="h-16 w-16 mt-2" />
             <p className="mt-2 text-sm font-semibold text-center">Personal Statement</p>
         </div>
-        <div className="flex flex-col items-center h-40 w-40">
+        <div className="flex flex-col items-center h-40 w-40 mt-4">
             <img src={AdmissionsVisa} alt="Visa Assistance" className="h-16 w-16 mt-2" />
             <p className="mt-2 text-sm font-semibold text-center">Scholarship Essay</p>
         </div>
-        <div className="flex flex-col items-center h-40 w-40">
+        <div className="flex flex-col items-center h-40 w-40 mt-4">
             <img src={AdmissionsVisa} alt="Visa Assistance" className="h-16 w-16 mt-2" />
             <p className="mt-2 text-sm font-semibold text-center">Supplement Essay</p>
         </div>

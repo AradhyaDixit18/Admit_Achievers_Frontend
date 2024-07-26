@@ -39,32 +39,35 @@ const Admissions = () => {
                 </div>
             </div>
             <div className="relative container mx-auto z-20 -mt-16">
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
-                    <Link to="how-we-work" smooth={true} duration={500} className="flex flex-col items-center stat-item">
-                        <img src={HowWeWork} alt="How We Work" className="h-20" />
-                        <p className="mt-4 text-md font-semibold">How we work</p>
-                    </Link>
-                    <Link to="university-selection" smooth={true} duration={500} className="flex flex-col items-center stat-item">
-                        <img src={UniversitySelection} alt="University Selection" className="h-20" />
-                        <p className="mt-4 text-md font-semibold">University Selection</p>
-                    </Link>
-                    <Link to="profile-evaluation" smooth={true} duration={500} className="flex flex-col items-center stat-item">
-                        <img src={ProfileEvaluation} alt="Profile Evaluation" className="h-20"  />
-                        <p className="mt-4 text-md font-semibold">Profile Evaluation</p>
-                    </Link>
-                    <Link to="document-editing" smooth={true} duration={500} className="flex flex-col items-center stat-item">
-                        <img src={DocumentEditing} alt="Document Editing" className="h-20" />
-                        <p className="mt-4 text-md font-semibold">Documentation</p>
-                    </Link>
-                    <Link to="application-assistance" smooth={true} duration={500} className="flex flex-col items-center stat-item">
-                        <img src={AdmissionInterview} alt="Interview Preparation" className="h-20" />
-                        <p className="mt-4 text-md flex font-semibold w-48 text-center">Application Assistance</p>
-                    </Link>
-                    <Link to="visa-services" smooth={true} duration={500} className="flex flex-col items-center stat-item">
-                        <img src={AdmissionsVisa} alt="Visa Assistance" className="h-20" />
-                        <p className="mt-4 text-md font-semibold">Visa Services</p>
-                    </Link>
-                </div>
+            <div className="relative container mx-auto z-20 -mt-16">
+    <div className="flex flex-wrap justify-center gap-0 bg-white shadow-md h-36 main-icons ">
+        <div className="flex flex-col items-center h-40 w-40 mt-4">
+            <img src={HowWeWork} alt="University Selection" className="h-16 w-16 mt-2" />
+            <p className="mt-2 text-sm font-semibold text-center">How We Work</p>
+        </div>
+        <div className="flex flex-col items-center h-40 w-40 mt-4">
+            <img src={UniversitySelection} alt="Profile Evaluation" className="h-16 w-16 mt-2" />
+            <p className="mt-2 text-sm font-semibold text-center">University Selection</p>
+        </div>
+        <div className="flex flex-col items-center h-40 w-40 mt-4">
+            <img src={ProfileEvaluation} alt="Document Editing" className="h-16 w-16 mt-2" />
+            <p className="mt-2 text-sm font-semibold text-center">Profile Evaluation</p>
+        </div>
+        <div className="flex flex-col items-center h-40 w-40 mt-4">
+            <img src={DocumentEditing} alt="Interview Preparation" className="h-16 w-16 mt-2" />
+            <p className="mt-2 text-sm font-semibold text-center">Documentation</p>
+        </div>
+        <div className="flex flex-col items-center h-40 w-40 mt-4">
+            <img src={AdmissionInterview} alt="Visa Assistance" className="h-16 w-16 mt-2" />
+            <p className="mt-2 text-sm font-semibold text-center">Application Assistance</p>
+        </div>
+        <div className="flex flex-col items-center h-40 w-40 mt-4">
+            <img src={AdmissionsVisa} alt="Visa Assistance" className="h-16 w-16 mt-2" />
+            <p className="mt-2 text-sm font-semibold text-center">Visa Services</p>
+        </div>
+    </div>
+</div>
+               
             </div>
 
             <div id="how-we-work" className="section-container">
