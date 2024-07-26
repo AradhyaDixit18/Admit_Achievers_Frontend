@@ -33,7 +33,7 @@ const Admissions = () => {
                 <div className="relative text-black container mx-auto py-24 px-6 text-center hero-content z-10">
                     <h1 className="text-5xl font-bold">University Admissions</h1>
                     <p className="mt-4 text-xl">Unlocking your potential and securing a place at the world's leading institutions with tailored admissions strategies from Admit Achievers</p>
-                    <button onClick={handleBookSession} className="mt-6 bg-black text-white px-6 py-3 rounded-lg font-semibold">
+                    <button onClick={() => window.location.href='/book-a-session'} className="mt-6 bg-black text-white px-6 py-3 rounded-lg font-semibold">
                         SPEAK WITH AN ADVISOR
                     </button>
                 </div>
@@ -69,8 +69,8 @@ const Admissions = () => {
 
             <div id="how-we-work" className="section-container">
                 <div className="text-section1 ml-24 mt-16">
-                    <h2 className="section-title-left text-5xl  text-left">Why Choose Admit Achievers?</h2>
-                    <p className="section-description text-2xl">
+                    <h2 className="section-title-left text-3xl   text-left">Why Choose Admit Achievers?</h2>
+                    <p className="section-description text-xl ">
                         The journey to securing admission to top universities around the world is both intricate and highly competitive. Admit Achievers’ personalized approach lifts students above the global applicant pool, addressing every aspect of the application process with precision and dedication.
                     </p>
                     <button onClick={handleBookSession} className="bg-orange-500 text-white top-buttons py-2 px-4 rounded mt-4">Book a Session</button>
@@ -90,8 +90,8 @@ const Admissions = () => {
                         </div>
                     </div>
                     <div className="text-section2">
-                        <h2 className="section-title -ml-2  text-left text-5xl">University Selection</h2>
-                        <p className="section-description text-2xl">
+                        <h2 className="section-title -ml-2  text-left text-3xl">University Selection</h2>
+                        <p className="section-description text-xl">
                             Navigating the multitude of universities worldwide can be overwhelming. Admit Achievers simplifies this process with our University Selection service. We guide you in identifying the institutions that align with your academic interests, career aspirations, and personal preferences. Our advisors leverage their extensive knowledge of global universities to help you create a balanced list of target, match, and safety schools, maximizing your chances of acceptance.
                         </p>
                         <button onClick={handleBookSession} className="custom-buttons bg-orange-500  text-white py-2 px-4 rounded mt-4">Book a Session</button>
@@ -100,8 +100,8 @@ const Admissions = () => {
 
                 <div id='profile-evaluation' className="section-container">
                     <div className="text-section1">
-                        <h2 className="section-title-left -ml-2 text-left text-5xl">Profile Evaluation</h2>
-                        <p className="section-description text-2xl">
+                        <h2 className="section-title-left -ml-2 text-left text-3xl">Profile Evaluation</h2>
+                        <p className="section-description text-xl">
                             Admit Achievers' Profile Evaluation service offers a comprehensive assessment of your academic achievements, extracurricular activities, and personal goals. Our expert advisors analyze your unique strengths and areas for improvement, providing you with tailored feedback and actionable steps to enhance your profile. We ensure that you present your best self to your dream universities, giving you a competitive edge in the global applicant pool.
                         </p>
                         <button onClick={handleBookSession} className="custom-buttons-left bg-orange-500 text-white py-2 px-4 rounded mt-4">Book a Session</button>
@@ -121,8 +121,8 @@ const Admissions = () => {
                     </div>
                 </div>
                 <div className="text-section2">
-                    <h2 className="section-title -ml-2 text-left text-5xl">Documentation</h2>
-                    <p className="section-description text-2xl">
+                    <h2 className="section-title -ml-2 text-left text-3xl">Documentation</h2>
+                    <p className="section-description text-xl">
                         The application process requires meticulous attention to detail, particularly when it comes to documentation. Admit Achievers supports you in compiling, organizing, and presenting all necessary documents, from transcripts and recommendation letters to personal statements and resumes. Our team ensures that your application materials are polished, cohesive, and compelling, reflecting your achievements and potential.
                     </p>
                     <button onClick={handleBookSession} className="custom-buttons bg-orange-500 text-white py-2 px-4 rounded mt-4">Book a Session</button>
@@ -131,8 +131,8 @@ const Admissions = () => {
 
             <div id="application-assistance" className="section-container">
                 <div className="text-section1">
-                    <h2 className="section-title-left text-left text-5xl">Application Assistance</h2>
-                    <p className="section-description text-2xl">
+                    <h2 className="section-title-left text-left text-3xl">Application Assistance</h2>
+                    <p className="section-description text-xl">
                         Applying to universities is a multi-step process that demands precision and strategy. Admit Achievers offers Application Assistance to guide you through each stage, from filling out forms to crafting persuasive essays. Our advisors provide personalized support, helping you articulate your story effectively and highlight your unique qualities. We aim to reduce the stress of the application process, allowing you to focus on showcasing your best self.
                     </p>
                     <button onClick={handleBookSession} className="custom-buttons-left bg-orange-500 text-white py-2 px-4 rounded mt-4">Book a Session</button>
@@ -146,15 +146,15 @@ const Admissions = () => {
 
             <div id="visa-services" className="section-container  bg-gray-400">
                 <div className="text-left">
-                    <h2 className="text-5xl font-bold mb-4 ml-16 text-orange mt-16">Visa Services</h2>
-                    <p className="mb-4 ml-16 mr-16 text-2xl">
+                    <h2 className="text-3xl font-bold mb-4 ml-16 text-orange mt-16">Visa Services</h2>
+                    <p className="mb-4 ml-16 mr-16 text-xl">
                         Securing a student visa is a critical step in studying abroad. Admit Achievers' Visa Services ensure that you navigate this process smoothly and efficiently. Our experts assist you with understanding visa requirements, preparing necessary documentation, and submitting applications. We provide guidance on interview preparation and follow-up procedures, ensuring that you meet all deadlines and comply with regulations, so you can focus on your academic journey.
                     </p>
                     <button onClick={handleBookSession} className="custom-button">Start Your Admission Journey</button>
                 </div>
             </div>
             <div className="flex flex-col items-center py-12 -mt-4 bg-gray-100">
-                <h2 className="text-5xl font-bold mb-8">Explore More <span className="text-orange-500">Services</span></h2>
+                <h2 className="text-3xl font-bold mb-8">Explore More <span className="text-orange-500">Services</span></h2>
                 <div className="flex space-x-8 text-center w-3/4">
                     <div className="bg-white p-6 rounded-lg shadow-lg">
                         <div className="text-orange-500 mb-4">
@@ -190,7 +190,7 @@ const Admissions = () => {
             </div>
 
             <div className="ready-section w-full mx-auto text-white p-8 flex flex-col items-center text-center mb-10">
-                <h2 className="text-2xl md:text-4xl mt-10 font-bold mb-4 z-10">Start Your <span className="text-orange-500">Journey</span></h2>
+                <h2 className="text-xl md:text-4xl mt-10 font-bold mb-4 z-10">Start Your <span className="text-orange-500">Journey</span></h2>
                 <p className="mb-4 z-10 mt-5">Connect with India's leading study abroad counselors.</p>
                 <button
                     onClick={() => window.location.href='/bookasession'}

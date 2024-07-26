@@ -85,9 +85,9 @@ const BlogListing = () => {
         </div>
         </div>
         
-        <div className="grid grid-cols-1 ml-12 mt-16 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 ml-44 mt-16 sm:grid-cols-2 lg:grid-cols-3 gap-2">
           {currentBlogs.map((blog) => (
-            <div key={blog.id} className="bg-white shadow-md rounded-lg overflow-hidden">
+            <div key={blog.id} className="bg-white w-3/4 shadow-md rounded-lg overflow-hidden">
               <img src={blog.image} alt={blog.title} className="w-full h-48 object-cover" />
               <div className="p-4">
                 <h2 className="font-bold text-lg mb-2">{blog.title}</h2>

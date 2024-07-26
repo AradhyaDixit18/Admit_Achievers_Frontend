@@ -101,13 +101,13 @@
     color: #F97316;
   }
   .section-title-left {
-    margin-left: 4%;
+    margin-left: 1.5%;
      font-weight: bold;
      color: #F97316;
    }
   .section-description {
     margin-top: 1rem;
-    margin-left: 20px;
+    margin-left: 50px;
     text-align: left;
   }
   
@@ -138,7 +138,7 @@
     cursor: pointer;
     margin-top: 1rem;
     text-align: left;
-    margin-left: -40%;
+    margin-left: -42%;
   }
   .custom-buttons-left {
     background-color: #F97316;
@@ -148,7 +148,7 @@
     cursor: pointer;
     margin-top: 1rem;
     text-align: left;
-    margin-left: -70%;
+    margin-left: -73%;
   }
   .custom-button:hover {
     background-color: #D65A12;
@@ -259,11 +259,11 @@
     margin-left: 20px; /* Aligns the text with the custom bullet */
   }
   .custom-buttons{
-    margin-left: -77%;
+    margin-left: -79%;
 }
 
 .top-buttons{
-   margin-left: -77%;
+   margin-left: -72%;
 }
 
 /* Add this to your existing CSS file */

@@ -202,11 +202,7 @@ const ProfileBuilding = () => {
                     <div id='subheading' className="mt-6 text-xl w-1/2 ">
                         <span className="block">From Elite Universities to top programs around the globe, Admit Achievers helps students build a standout profile for their top admission goals</span>
                     </div>
-                    <button
-                        id=''
-                        className="mt-6 bg-gray-800 text-white px-6 py-3 rounded-lg font-semibold"
-                        onClick=""
-                    >
+                    <button onClick={() => window.location.href='/book-a-session'} className="mt-6 bg-black text-white px-6 py-3 rounded-lg font-semibold">
                         SPEAK WITH AN ADVISOR
                     </button>
                 </div>
@@ -263,7 +259,7 @@ const ProfileBuilding = () => {
     <div className="w-full overflow-hidden p-8">
       {/* Header Section */}
       <div className="text-center mb-16">
-        <h1 className="text-4xl font-bold text-gray-800">
+        <h1 className="text-5xl font-bold text-gray-800">
           What we <span className="text-orange-600">Do?</span>
         </h1>
       </div>

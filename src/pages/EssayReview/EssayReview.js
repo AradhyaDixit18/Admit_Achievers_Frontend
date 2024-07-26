@@ -2,20 +2,21 @@ import React from 'react';
 import { Link, animateScroll as scroll } from 'react-scroll'; // Import from react-scroll
 import './EssayReview.css';
 import FAQSection from '../../components/FaqSection/FaqSection';
-import banner from '../../assets/essay-review/Essays Banner 1.png'
-import DocumentEditing from '../../assets/UniversityAdmissions/AA_Admissions_DocumentEditing.svg'
-import HowWeWork from '../../assets/UniversityAdmissions/AA_Admissions_HowWeWork.svg'
-import AdmissionInterview from '../../assets/UniversityAdmissions/AA_Admissions_Interview.png'
-import ProfileEvaluation from '../../assets/UniversityAdmissions/AA_Admissions_ProfileEvaluation.svg'
-import UniversitySelection from '../../assets/UniversityAdmissions/AA_Admissions_UniversitySelection.svg'
-import AdmissionsVisa from '../../assets/UniversityAdmissions/AA_Admissions_Visa.png'
-import Img1 from "../../assets/Profile-building/Profile Building Section Image - AA_ProfileBuilding_AboutProfileBuilding.PNG"
-import Img2 from "../../assets/Profile-building/Profile Building Section Image - AA_ProfileBuilding_CollegeRoadMap.PNG"
-import Img3 from "../../assets/Profile-building/Profile Building Section Image - AA_ProfileBuilding_HSCourseGuidance.PNG"
-import Img4 from "../../assets/Profile-building/Profile Building Section Image - AA_ProfileBuilding_ProfileAssessment.PNG"
-import Img5 from "../../assets/Profile-building/Profile Building Section Image - AA_ProfileBuilding_ProgressTracking.PNG"
-import Img6 from "../../assets/Profile-building/Profile Building Section Image - AA_ProfileBuilding_QaurterlyPlanning.PNG"
+import banner from '../../assets/essay-review/Essays Banner 1.png';
+import DocumentEditing from '../../assets/UniversityAdmissions/AA_Admissions_DocumentEditing.svg';
+import HowWeWork from '../../assets/UniversityAdmissions/AA_Admissions_HowWeWork.svg';
+import AdmissionInterview from '../../assets/UniversityAdmissions/AA_Admissions_Interview.png';
+import ProfileEvaluation from '../../assets/UniversityAdmissions/AA_Admissions_ProfileEvaluation.svg';
+import UniversitySelection from '../../assets/UniversityAdmissions/AA_Admissions_UniversitySelection.svg';
+import AdmissionsVisa from '../../assets/UniversityAdmissions/AA_Admissions_Visa.png';
+import Img1 from "../../assets/Profile-building/Profile Building Section Image - AA_ProfileBuilding_AboutProfileBuilding.PNG";
+import Img2 from "../../assets/Profile-building/Profile Building Section Image - AA_ProfileBuilding_CollegeRoadMap.PNG";
+import Img3 from "../../assets/Profile-building/Profile Building Section Image - AA_ProfileBuilding_HSCourseGuidance.PNG";
+import Img4 from "../../assets/Profile-building/Profile Building Section Image - AA_ProfileBuilding_ProfileAssessment.PNG";
+import Img5 from "../../assets/Profile-building/Profile Building Section Image - AA_ProfileBuilding_ProgressTracking.PNG";
+import Img6 from "../../assets/Profile-building/Profile Building Section Image - AA_ProfileBuilding_QaurterlyPlanning.PNG";
 import AdmissionsFaq from '../../components/AdmissionsFaq/AdmissionsFaq';
+
 
 const EssayReview = () => {
     return(
@@ -24,8 +25,8 @@ const EssayReview = () => {
                 <img src={banner} alt="Background" className="absolute w-full h-full object-cover hero-image" />
                 <div className="relative text-black container mx-auto py-24 px-6 text-center hero-content z-10">
                     <h1 className="text-5xl font-bold">Essay Review</h1>
-                    <p className="mt-4 text-xl">From structure to style, Admit Achievers refines every aspect of your essays to help you achieve your academic goals.</p>
-                    <button onClick={() => console.log('Button Clicked')} className="mt-6 bg-black text-white px-6 py-3 rounded-lg font-semibold">
+                    <p className="mt-4 text-2xl">From structure to style, Admit Achievers refines every aspect of your essays to help you achieve your academic goals.</p>
+                    <button onClick={() => window.location.href='/book-a-session'} className="mt-6 bg-black text-white px-6 py-3 rounded-lg font-semibold">
                         SPEAK WITH AN ADVISOR
                     </button>
                 </div>
@@ -61,7 +62,7 @@ const EssayReview = () => {
 
             <div id="common-app-essay" className="section-container">
                 <div className="text-section1 ml-24 mt-16">
-                    <h2 className="section-title-left text-5xl text-left">Common App Essay</h2>
+                    <h2 className="section-title-left text-3xl text-left">Common App Essay</h2>
                     <ul className="section-description  aligned-list text-xl list-disc list-inside">
                         <li>Topic Selection: Guiding you in choosing a topic that best reflects your experiences and strengths.</li>
                         <li>Content Structuring: Helping you organize your essay for maximum impact.</li>
@@ -83,7 +84,7 @@ const EssayReview = () => {
                     </div>
                 </div>
                 <div className="text-section2 ml-24 mt-16">
-                    <h2 className="section-title text-5xl text-left">University SOP</h2>
+                    <h2 className="section-title text-3xl text-left">University SOP</h2>
                     <ul className="section-description aligned-list text-xl list-disc list-inside">
                         <li>Customization: Adapting your SOP to fit the unique requirements of each university.</li>
                         <li>Highlighting Fit: Emphasizing how your goals align with the university’s programs and values.</li>
@@ -96,7 +97,7 @@ const EssayReview = () => {
 
             <div id="visa-sop" className="section-container">
                 <div className="text-section1 ml-24 mt-16">
-                    <h2 className="section-title-left text-5xl text-left">Visa SOP</h2>
+                    <h2 className="section-title-left text-3xl text-left">Visa SOP</h2>
                     <ul className="section-description aligned-list text-xl list-disc list-inside">
                         <li>Purpose Articulation: Clearly explaining your reasons for studying abroad and your plans post-study.</li>
                         <li>Consistency: Ensuring your Visa SOP aligns with your university applications and supporting documents.</li>
@@ -118,7 +119,7 @@ const EssayReview = () => {
                     </div>
                 </div>
                 <div className="text-section2 ml-24 mt-16">
-                    <h2 className="section-title text-5xl text-left">Personal Statement</h2>
+                    <h2 className="section-title text-3xl text-left">Personal Statement</h2>
                     <ul className="section-description text-xl aligned-list list-disc list-inside">
                         <li>Storytelling: Assisting you in telling your personal story in a compelling way.</li>
                         <li>Highlighting Achievements: Emphasizing your key accomplishments and experiences.</li>
@@ -131,7 +132,7 @@ const EssayReview = () => {
 
             <div id="scholarship-essay" className="section-container">
                 <div className="text-section1 ml-24 mt-16">
-                    <h2 className="section-title-left text-5xl text-left">Scholarship Essay</h2>
+                    <h2 className="section-title-left text-3xl text-left">Scholarship Essay</h2>
                     <ul className="section-description text-xl aligned-list list-disc list-inside">
                         <li>Understanding Criteria: Tailoring your essay to meet the specific criteria of each scholarship.</li>
                         <li>Showcasing Need: Effectively communicating your financial need and personal circumstances.</li>
@@ -153,7 +154,7 @@ const EssayReview = () => {
                     </div>
                 </div>
                 <div className="text-section2 ml-24 mt-16">
-                    <h2 className="section-title text-5xl text-left">Supplement Essay</h2>
+                    <h2 className="section-title text-3xl text-left">Supplement Essay</h2>
                     <ul className="section-description text-xl list-disc aligned-list list-inside">
                         <li>Answering Prompts: Helping you understand and effectively respond to each prompt.</li>
                         <li>Customization: Tailoring each essay to align with the specific university’s values and programs.</li>
@@ -165,7 +166,7 @@ const EssayReview = () => {
             </div>
             
             <div className="flex flex-col items-center py-12 bg-gray-100">
-                <h2 className="text-5xl font-bold mb-8">Explore More <span className="text-orange-500">Services</span></h2>
+                <h2 className="text-3xl font-bold mb-8">Explore More <span className="text-orange-500">Services</span></h2>
                 <div className="flex space-x-8 text-center w-3/4">
                     <div className="bg-white p-6 rounded-lg shadow-lg">
                         <div className="text-orange-500 mb-4">
