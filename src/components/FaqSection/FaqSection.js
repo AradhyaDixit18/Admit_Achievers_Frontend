@@ -46,10 +46,10 @@ const FAQSection = () => {
               {questionsAndAnswers.map((item, index) => (
                 <li key={index} className="mb-4">
                   <div className="flex justify-between items-center border-b border-gray-200 pb-2">
-                    <span className="question-text">{item.question}</span>
+                    <span className="question-text"  onClick={() => toggleQuestion(index)}>{item.question}</span>
                     <button
                       onClick={() => toggleQuestion(index)}
-                      className=" symbol ml-8 font-bold text-2xl"
+                      className="symbol ml-8 font-bold text-2xl"
                     >
                       {openQuestionIndex === index ? '-' : '+'}
                     </button>
