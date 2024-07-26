@@ -32,7 +32,7 @@ const EssayReview = () => {
                 </div>
                 </div>
                 <div className="relative container mx-auto z-20 -mt-16">
-    <div className="flex flex-wrap justify-center gap-0 bg-white shadow-md h-36 main-icons ">
+    <div className="flex flex-wrap justify-center rounded-md gap-0 bg-white shadow-md h-36 main-icons ">
         <div className="flex flex-col items-center h-40 w-40 mt-4">
             <img src={UniversitySelection} alt="University Selection" className="h-16 w-16 mt-2" />
             <p className="mt-2 text-sm font-semibold text-center">Common App Essay</p>
