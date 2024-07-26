@@ -164,7 +164,7 @@ const Admissions = () => {
                         </div>
                         <h3 className="text-xl font-semibold mb-2">Essay Review</h3>
                         <p className="text-gray-600 mb-4">Know about how you can study at your dream university almost for free</p>
-                        <button onClick={handleBookSession} className="bg-orange-500 text-white py-2 px-4 rounded">Know More</button>
+                        <button  onClick={() => window.location.href='/essay-review'} className="bg-orange-500 text-white py-2 px-4 rounded">Know More</button>
                     </div>
                     <div className="bg-white p-6 rounded-lg shadow-lg">
                         <div className="text-orange-500 mb-4">
@@ -174,7 +174,7 @@ const Admissions = () => {
                         </div>
                         <h3 className="text-xl font-semibold mb-2">Profile Building</h3>
                         <p className="text-gray-600 mb-4">Plan of action curated by an expert based on your profile and interests</p>
-                        <button onClick={handleBookSession} className="bg-orange-500 text-white py-2 px-4 rounded">Know More</button>
+                        <button  onClick={() => window.location.href='/profile-building'} className="bg-orange-500 text-white py-2 px-4 rounded">Know More</button>
                     </div>
                     <div className="bg-white p-6 rounded-lg shadow-lg">
                         <div className="text-orange-500 mb-4">
@@ -184,7 +184,7 @@ const Admissions = () => {
                         </div>
                         <h3 className="text-xl font-semibold mb-2">Visa</h3>
                         <p className="text-gray-600 mb-4">Know how to crack the Visa interview and also what you need on D-Day</p>
-                        <button onClick={handleBookSession} className="bg-orange-500 text-white py-2 px-4 rounded">Know More</button>
+                        <button  onClick={() => window.location.href='/coming-soon'} className="bg-orange-500 text-white py-2 px-4 rounded">Know More</button>
                     </div>
                 </div>
             </div>
