@@ -49,7 +49,7 @@ const Admissions = () => {
                         <p className="mt-4 text-md font-semibold">University Selection</p>
                     </Link>
                     <Link to="profile-evaluation" smooth={true} duration={500} className="flex flex-col items-center stat-item">
-                        <img src={ProfileEvaluation} alt="Profile Evaluation" className="h-20" />
+                        <img src={ProfileEvaluation} alt="Profile Evaluation" className="h-20"  />
                         <p className="mt-4 text-md font-semibold">Profile Evaluation</p>
                     </Link>
                     <Link to="document-editing" smooth={true} duration={500} className="flex flex-col items-center stat-item">

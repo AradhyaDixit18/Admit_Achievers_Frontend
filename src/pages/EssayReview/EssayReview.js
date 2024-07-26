@@ -32,33 +32,34 @@ const EssayReview = () => {
                 </div>
             </div>
             <div className="relative container mx-auto z-20 -mt-16">
-                <div className="grid grid-cols-1   sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
-                    <Link to="common-app-essay" smooth={true} duration={500} className="flex flex-col items-center  stat-item">
-                        <img src={UniversitySelection} alt="University Selection" className="h-20" />
-                        <p className="mt-4 text-md font-semibold">Common App Essay</p>
-                    </Link>
-                    <Link to="university-sop" smooth={true} duration={500} className="flex flex-col items-center stat-item">
-                        <img src={ProfileEvaluation} alt="Profile Evaluation" className="h-20" />
-                        <p className="mt-4 text-md font-semibold">University SOP</p>
-                    </Link>
-                    <Link to="visa-sop" smooth={true} duration={500} className="flex flex-col items-center stat-item">
-                        <img src={DocumentEditing} alt="Document Editing" className="h-20" />
-                        <p className="mt-4 text-md font-semibold">Visa SOP</p>
-                    </Link>
-                    <Link to="personal-statement" smooth={true} duration={500} className="flex flex-col items-center stat-item">
-                        <img src={AdmissionInterview} alt="Interview Preparation" className="h-20" />
-                        <p className="mt-4 text-md flex font-semibold w-48 text-center">Personal Statement</p>
-                    </Link>
-                    <Link to="scholarship-essay" smooth={true} duration={500} className="flex flex-col items-center stat-item">
-                        <img src={AdmissionsVisa} alt="Visa Assistance" className="h-20" />
-                        <p className="mt-4 text-md font-semibold">Scholarship Essay</p>
-                    </Link>
-                    <Link to="supplement-essay" smooth={true} duration={500} className="flex flex-col items-center stat-item">
-                        <img src={AdmissionsVisa} alt="Visa Assistance" className="h-20" />
-                        <p className="mt-4 text-md font-semibold">Supplement Essay</p>
-                    </Link>
-                </div>
-            </div>
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 ">
+        <Link to="common-app-essay" smooth={true} duration={500} className="flex flex-col items-center stat-item p-2">
+            <img src={UniversitySelection} alt="University Selection" className="h-16" />
+            <p className="mt-2 text-md font-semibold">Common App Essay</p>
+        </Link>
+        <Link to="university-sop" smooth={true} duration={500} className="flex flex-col items-center stat-item p-2">
+            <img src={ProfileEvaluation} alt="Profile Evaluation" className="h-16" />
+            <p className="mt-2 text-md font-semibold">University SOP</p>
+        </Link>
+        <Link to="visa-sop" smooth={true} duration={500} className="flex flex-col items-center stat-item p-2">
+            <img src={DocumentEditing} alt="Document Editing" className="h-16" />
+            <p className="mt-2 text-md font-semibold">Visa SOP</p>
+        </Link>
+        <Link to="personal-statement" smooth={true} duration={500} className="flex flex-col items-center stat-item p-2">
+            <img src={AdmissionInterview} alt="Interview Preparation" className="h-16" />
+            <p className="mt-2 text-md flex font-semibold w-36 text-center">Personal Statement</p>
+        </Link>
+        <Link to="scholarship-essay" smooth={true} duration={500} className="flex flex-col items-center stat-item p-2">
+            <img src={AdmissionsVisa} alt="Visa Assistance" className="h-16" />
+            <p className="mt-2 text-md font-semibold">Scholarship Essay</p>
+        </Link>
+        <Link to="supplement-essay" smooth={true} duration={500} className="flex flex-col items-center stat-item p-2">
+            <img src={AdmissionsVisa} alt="Visa Assistance" className="h-16" />
+            <p className="mt-2 text-md font-semibold">Supplement Essay</p>
+        </Link>
+    </div>
+</div>
+
 
             <div id="common-app-essay" className="section-container">
                 <div className="text-section1 ml-24 mt-16">

@@ -383,87 +383,23 @@ const ProfileBuilding = () => {
 
 
 
-    <div className="flex flex-col overflow-hidden items-center main-form md:flex-row items-center bg-333333 text-white p-8 space-y-4 md:space-y-0 md:space-x-8">
-      <div>
-        <h2 className="text-4xl font-bold mb-4">
-          What’s your <span className="text-orange-600">focus?</span>
-        </h2>
-        <p className="mb-4 text-2xl text-gray-300">
-          Finding your <span className="text-orange-600">passion?</span><br />
-          Preparing for <span className="text-orange-600">uni?</span>
-        </p>
-      </div>
-      <form className="bg-white text-black p-6 rounded-lg form-container" onSubmit={handleNext}>
-        <h3 className="text-orange-600 text-lg mb-4">Question {currentStep + 1}</h3>
-        {currentStep === 0 ? (
-          <>
-            <div className="mb-4">
-              <label htmlFor="childName" className="label-1 quesnLabel text-gray-700">What’s your child’s name?</label>
-              <input
-                type="text"
-                id="childName"
-                className="w-full p-2 border rounded"
-                value={formData.childName || ''}
-                onChange={handleInputChange}
-              />
-              {errors.childName && <p className="text-red-600">{errors.childName}</p>}
-            </div>
-            <div className="mb-4">
-              <label htmlFor="email" className="label-2 text-gray-700">e-mail</label>
-              <input
-                type="email"
-                id="email"
-                className="w-full p-2 border rounded"
-                value={formData.email || ''}
-                onChange={handleInputChange}
-              />
-              {errors.email && <p className="text-red-600">{errors.email}</p>}
-            </div>
-          </>
-        ) : (
-          <div className="mb-4">
-            <div className='normal-text quesnLabel'>
-            <label htmlFor={questions[currentStep - 1].id} className="label-1 text-gray-700 normal-text">
-              {questions[currentStep - 1].question}
-            </label>
-            </div>
-            <input
-              type={questions[currentStep - 1].inputType}
-              id={questions[currentStep - 1].id}
-              className="w-full p-2 border rounded"
-              value={formData[questions[currentStep - 1].id] || ''}
-              onChange={handleInputChange}
-            />
-            {errors[questions[currentStep - 1].id] && <p className="text-red-600">{errors[questions[currentStep - 1].id]}</p>}
-          </div>
-        )}
-        <div className="flex justify-end">
-          <button type="submit" className="next-button font-bold underline text-sm">
-            {currentStep < questions.length ? 'Next' : 'Submit'}
-          </button>
-        </div>
-      </form>
-    </div>
+   
 
   <Testimonial/>
 
 
   
 
-  <div className="ready-section md:w-3/4 mx-auto text-white p-8 rounded-lg flex flex-col items-center text-center mb-10">
-          <h2 className="text-2xl md:text-4xl mt-10 font-bold mb-4 z-10">
-            Start Your <span className="text-orange-500">Journey</span>
-          </h2>
-          <p className="mb-4 z-10 mt-5">
-            Connect with India's leading study abroad counselors.
-          </p>
-          <button
-            onClick={() => window.location.href = '/book-a-session'}
-            className="bg-white mt-5 text-black px-6 py-3 rounded-lg font-bold z-10"
-          >
-            Connect Now
-          </button>
-        </div>
+  <div className="ready-section w-full mx-auto text-white p-8 flex flex-col items-center text-center mb-10">
+                <h2 className="text-2xl md:text-4xl mt-10 font-bold mb-4 z-10">Start Your <span className="text-orange-500">Journey</span></h2>
+                <p className="mb-4 z-10 mt-5">Connect with India's leading study abroad counselors.</p>
+                <button
+                    onClick={() => window.location.href='/bookasession'}
+                    className="bg-white mt-5 text-black px-6 py-3 rounded-lg font-bold z-10"
+                >
+                    Connect Now
+                </button>
+            </div>
     </>
   );
 }

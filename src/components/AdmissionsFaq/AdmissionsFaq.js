@@ -49,7 +49,7 @@ const AdmissionsFaq = () => {
         </h2>
         <div className="flex flex-col md:flex-row mt-4 justify-center z-10 items-start">
           <div className="w-full main-quesns text-xl mt-4 z-10 md:w-1/2">
-            <ul className="list-none z-10">
+            <ul className="list-none  z-10"  onClick={() => toggleQuestion()}>
               {questionsAndAnswers.map((item, index) => (
                 <li key={index} className="mb-4">
                   <div className="flex justify-between items-center border-b border-gray-200 pb-2">
