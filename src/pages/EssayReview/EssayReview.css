@@ -12,6 +12,7 @@
 /* Ensure smooth zoom effect on hover for stat items */
 .stat-item {
     transition: transform 0.3s ease;
+    padding: 0px;
 }
 
 .stat-item:hover {
@@ -45,3 +46,4 @@
 .faq-container {
     margin-top: 1rem; /* Adjust top margin as needed */
 }
+

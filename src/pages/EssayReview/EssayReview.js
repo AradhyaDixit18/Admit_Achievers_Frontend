@@ -32,8 +32,8 @@ const EssayReview = () => {
                 </div>
             </div>
             <div className="relative container mx-auto z-20 -mt-16">
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
-                    <Link to="common-app-essay" smooth={true} duration={500} className="flex flex-col items-center stat-item">
+                <div className="grid grid-cols-1   sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
+                    <Link to="common-app-essay" smooth={true} duration={500} className="flex flex-col items-center  stat-item">
                         <img src={UniversitySelection} alt="University Selection" className="h-20" />
                         <p className="mt-4 text-md font-semibold">Common App Essay</p>
                     </Link>
