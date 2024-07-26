@@ -30,35 +30,38 @@ const EssayReview = () => {
                         SPEAK WITH AN ADVISOR
                     </button>
                 </div>
-            </div>
-            <div className="relative container mx-auto z-20 -mt-16">
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 ">
-        <Link to="common-app-essay" smooth={true} duration={500} className="flex flex-col items-center stat-item p-2">
-            <img src={UniversitySelection} alt="University Selection" className="h-16" />
-            <p className="mt-2 text-md font-semibold">Common App Essay</p>
-        </Link>
-        <Link to="university-sop" smooth={true} duration={500} className="flex flex-col items-center stat-item p-2">
-            <img src={ProfileEvaluation} alt="Profile Evaluation" className="h-16" />
-            <p className="mt-2 text-md font-semibold">University SOP</p>
-        </Link>
-        <Link to="visa-sop" smooth={true} duration={500} className="flex flex-col items-center stat-item p-2">
-            <img src={DocumentEditing} alt="Document Editing" className="h-16" />
-            <p className="mt-2 text-md font-semibold">Visa SOP</p>
-        </Link>
-        <Link to="personal-statement" smooth={true} duration={500} className="flex flex-col items-center stat-item p-2">
-            <img src={AdmissionInterview} alt="Interview Preparation" className="h-16" />
-            <p className="mt-2 text-md flex font-semibold w-36 text-center">Personal Statement</p>
-        </Link>
-        <Link to="scholarship-essay" smooth={true} duration={500} className="flex flex-col items-center stat-item p-2">
-            <img src={AdmissionsVisa} alt="Visa Assistance" className="h-16" />
-            <p className="mt-2 text-md font-semibold">Scholarship Essay</p>
-        </Link>
-        <Link to="supplement-essay" smooth={true} duration={500} className="flex flex-col items-center stat-item p-2">
-            <img src={AdmissionsVisa} alt="Visa Assistance" className="h-16" />
-            <p className="mt-2 text-md font-semibold">Supplement Essay</p>
-        </Link>
+                </div>
+                <div className="relative container mx-auto z-20 -mt-16">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-0 ">
+        <div className="flex flex-col items-center bg-white shadow-md p-2">
+            <img src={UniversitySelection} alt="University Selection" className="h-16 w-16" />
+            <p className="mt-2 text-sm font-semibold text-center">Common App Essay</p>
+        </div>
+        <div className="flex flex-col items-center bg-white shadow-md p-2">
+            <img src={ProfileEvaluation} alt="Profile Evaluation" className="h-16 w-16" />
+            <p className="mt-2 text-sm font-semibold text-center">University SOP</p>
+        </div>
+        <div className="flex flex-col items-center bg-white shadow-md p-2">
+            <img src={DocumentEditing} alt="Document Editing" className="h-16 w-16" />
+            <p className="mt-2 text-sm font-semibold text-center">Visa SOP</p>
+        </div>
+        <div className="flex flex-col items-center bg-white shadow-md p-2">
+            <img src={AdmissionInterview} alt="Interview Preparation" className="h-16 w-16" />
+            <p className="mt-2 text-sm font-semibold text-center">Personal Statement</p>
+        </div>
+        <div className="flex flex-col items-center bg-white shadow-md p-2">
+            <img src={AdmissionsVisa} alt="Visa Assistance" className="h-16 w-16" />
+            <p className="mt-2 text-sm font-semibold text-center">Scholarship Essay</p>
+        </div>
+        <div className="flex flex-col items-center bg-white shadow-md p-2">
+            <img src={AdmissionsVisa} alt="Visa Assistance" className="h-16 w-16" />
+            <p className="mt-2 text-sm font-semibold text-center">Supplement Essay</p>
+        </div>
     </div>
 </div>
+
+
+
 
 
             <div id="common-app-essay" className="section-container">
