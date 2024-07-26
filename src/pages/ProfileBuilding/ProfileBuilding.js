@@ -350,8 +350,7 @@ const ProfileBuilding = () => {
       <div className="w-full overflow-hidden">
      
       <div className="text-center mb-8">
-        <button className="bg-orange-600 text-white py-2 px-4 rounded-sm mb-4">Chat With US</button>
-        <h1 className="text-3xl font-bold text-gray-800">
+          <h1 className="text-3xl font-bold text-gray-800">
           Discover <span className="text-orange-600">Profile Building</span>
         </h1>
       </div>
@@ -379,8 +378,7 @@ const ProfileBuilding = () => {
             <p className="text-gray-700 mb-4">
               {item.description}
             </p>
-            <a href="#" className="text-orange-600 font-bold">Learn More</a>
-          </div>
+            </div>
         ))}
       </div>
     </div>
@@ -454,30 +452,7 @@ const ProfileBuilding = () => {
   <Testimonial/>
 
 
-  <div className="relative w-full max-w-xl mx-auto text-center">
-    <div className='flex flex-row'>
-      <h2 className="text-5xl font-bold mb-8">
-        What <span className="text-orange-500 ">Parents</span> Say
-      </h2>
-    <div className=''>
-      <button onClick={prevSlide} className="arrows w-11 h-11 p-2 ml-4 shadow-sm hover:bg-gray-200">
-        <span className="text-orange-500 text-xl">&lt;</span>
-      </button>
-      <button onClick={nextSlide} className="arrows w-11 h-11 p-2 ml-4 shadow-sm hover:bg-gray-200">
-        <span className="text-orange-500 text-xl">&gt;</span>
-      </button>
-      </div>
-      </div>
-      <div className="text-lg text-gray-700 text-center mb-8">
-        {testimonials[currentIndex].text}
-      </div>
-      <div className="flex justify-center space-x-2 mb-8">
-        {testimonials.map((_, index) => (
-          <div key={index} className={`w-2.5 h-2.5 rounded-full ${currentIndex === index ? 'bg-black' : 'bg-gray-400'}`}></div>
-        ))}
-      </div>
-     
-    </div>
+  
 
   <div className="ready-section md:w-3/4 mx-auto text-white p-8 rounded-lg flex flex-col items-center text-center mb-10">
           <h2 className="text-2xl md:text-4xl mt-10 font-bold mb-4 z-10">
