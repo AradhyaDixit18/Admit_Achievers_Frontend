@@ -298,3 +298,11 @@
 .bg-orange{
   color: #ff6633;
 }
+
+.main-icons .link-item {
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.main-icons .link-item:hover {
+  transform: scale(1.2); /* Scale up on hover */
+}

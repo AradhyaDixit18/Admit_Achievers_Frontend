@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, animateScroll as scroll } from 'react-scroll'; // Import from react-scroll
+import { Link } from 'react-scroll'; // Import from react-scroll
 import './EssayReview.css';
 import FAQSection from '../../components/FaqSection/FaqSection';
 import banner from '../../assets/essay-review/Essays Banner 1.png';
@@ -17,7 +17,6 @@ import Img5 from "../../assets/Profile-building/Profile Building Section Image -
 import Img6 from "../../assets/Profile-building/Profile Building Section Image - AA_ProfileBuilding_QaurterlyPlanning.PNG";
 import AdmissionsFaq from '../../components/AdmissionsFaq/AdmissionsFaq';
 
-
 const EssayReview = () => {
     return(
         <div className="relative text-black main">
@@ -30,52 +29,49 @@ const EssayReview = () => {
                         SPEAK WITH AN ADVISOR
                     </button>
                 </div>
-                </div>
-                <div className="relative container mx-auto z-20 -mt-16">
-    <div className="flex flex-wrap justify-center rounded-md gap-0 bg-white shadow-md h-36 main-icons ">
-        <div className="flex flex-col items-center h-40 w-40 mt-4">
+            </div>
+
+            <div className="relative container mx-auto z-20 -mt-16">
+    <div className="flex flex-wrap justify-center rounded-md gap-0 bg-white shadow-md h-36 main-icons">
+        <Link to="common-app-essay" smooth={true} duration={500} className="link-item flex flex-col items-center h-40 w-40 mt-4 cursor-pointer">
             <img src={UniversitySelection} alt="University Selection" className="h-16 w-16 mt-2" />
             <p className="mt-2 text-sm font-semibold text-center">Common App Essay</p>
-        </div>
-        <div className="flex flex-col items-center h-40 w-40 mt-4">
+        </Link>
+        <Link to="university-sop" smooth={true} duration={500} className="link-item flex flex-col items-center h-40 w-40 mt-4 cursor-pointer">
             <img src={ProfileEvaluation} alt="Profile Evaluation" className="h-16 w-16 mt-2" />
             <p className="mt-2 text-sm font-semibold text-center">University SOP</p>
-        </div>
-        <div className="flex flex-col items-center h-40 w-40 mt-4">
+        </Link>
+        <Link to="visa-sop" smooth={true} duration={500} className="link-item flex flex-col items-center h-40 w-40 mt-4 cursor-pointer">
             <img src={DocumentEditing} alt="Document Editing" className="h-16 w-16 mt-2" />
             <p className="mt-2 text-sm font-semibold text-center">Visa SOP</p>
-        </div>
-        <div className="flex flex-col items-center h-40 w-40 mt-4">
+        </Link>
+        <Link to="personal-statement" smooth={true} duration={500} className="link-item flex flex-col items-center h-40 w-40 mt-4 cursor-pointer">
             <img src={AdmissionInterview} alt="Interview Preparation" className="h-16 w-16 mt-2" />
             <p className="mt-2 text-sm font-semibold text-center">Personal Statement</p>
-        </div>
-        <div className="flex flex-col items-center h-40 w-40 mt-4">
+        </Link>
+        <Link to="scholarship-essay" smooth={true} duration={500} className="link-item flex flex-col items-center h-40 w-40 mt-4 cursor-pointer">
             <img src={AdmissionsVisa} alt="Visa Assistance" className="h-16 w-16 mt-2" />
             <p className="mt-2 text-sm font-semibold text-center">Scholarship Essay</p>
-        </div>
-        <div className="flex flex-col items-center h-40 w-40 mt-4">
+        </Link>
+        <Link to="supplement-essay" smooth={true} duration={500} className="link-item flex flex-col items-center h-40 w-40 mt-4 cursor-pointer">
             <img src={AdmissionsVisa} alt="Visa Assistance" className="h-16 w-16 mt-2" />
             <p className="mt-2 text-sm font-semibold text-center">Supplement Essay</p>
-        </div>
+        </Link>
     </div>
 </div>
 
 
-
-
-
-
-
+            {/* Your section components go here */}
             <div id="common-app-essay" className="section-container">
                 <div className="text-section1 ml-24 mt-16">
                     <h2 className="section-title-left text-3xl text-left">Common App Essay</h2>
-                    <ul className="section-description  aligned-list text-xl list-disc list-inside">
+                    <ul className="section-description aligned-list text-xl list-disc list-inside">
                         <li>Topic Selection: Guiding you in choosing a topic that best reflects your experiences and strengths.</li>
                         <li>Content Structuring: Helping you organize your essay for maximum impact.</li>
                         <li>Editing and Feedback: Providing detailed feedback on content, clarity, and style.</li>
                         <li>Polishing: Ensuring your essay is error-free and ready for submission.</li>
                     </ul>
-                         </div>
+                </div>
                 <div className="flex flex-col md:flex-row mt-4">
                     <div className="p-4 flex flex-wrap relative">
                         <img src={Img1} alt="Image 1" className="images p-2" />
@@ -83,8 +79,8 @@ const EssayReview = () => {
                 </div>
             </div>
 
-            <div id="university-sop" className="section-container bg-gray-400 ">
-            <div className="flex flex-col md:flex-row mt-4">
+            <div id="university-sop" className="section-container bg-gray-400">
+                <div className="flex flex-col md:flex-row mt-4">
                     <div className="p-4 flex flex-wrap relative">
                         <img src={Img2} alt="Image 2" className="images p-2" />
                     </div>
@@ -97,8 +93,7 @@ const EssayReview = () => {
                         <li>Detailed Feedback: Offering comprehensive reviews to refine your SOP.</li>
                         <li>Final Edits: Ensuring your SOP is polished and tailored for each application.</li>
                     </ul>
-                     </div>
-                
+                </div>
             </div>
 
             <div id="visa-sop" className="section-container">
@@ -110,7 +105,7 @@ const EssayReview = () => {
                         <li>Professional Tone: Crafting a professional and convincing narrative.</li>
                         <li>Proofreading: Polishing your Visa SOP for clarity, coherence, and correctness.</li>
                     </ul>
-                    </div>
+                </div>
                 <div className="flex flex-col md:flex-row mt-4">
                     <div className="p-4 flex flex-wrap relative">
                         <img src={Img3} alt="Image 3" className="images p-2" />
@@ -119,7 +114,7 @@ const EssayReview = () => {
             </div>
 
             <div id="personal-statement" className="section-container bg-gray-400">
-            <div className="flex flex-col md:flex-row mt-4">
+                <div className="flex flex-col md:flex-row mt-4">
                     <div className="p-4 flex flex-wrap relative">
                         <img src={Img4} alt="Image 4" className="images p-2" />
                     </div>
@@ -132,8 +127,7 @@ const EssayReview = () => {
                         <li>Editing for Impact: Providing feedback to enhance the clarity and impact of your statement.</li>
                         <li>Final Review: Ensuring your personal statement is polished and ready for submission.</li>
                     </ul>
-                 </div>
-                
+                </div>
             </div>
 
             <div id="scholarship-essay" className="section-container">
@@ -145,7 +139,7 @@ const EssayReview = () => {
                         <li>Emphasizing Merit: Highlighting your achievements and qualifications.</li>
                         <li>Final Edits: Ensuring your scholarship essay is compelling and error-free.</li>
                     </ul>
-                  </div>
+                </div>
                 <div className="flex flex-col md:flex-row mt-4">
                     <div className="p-4 flex flex-wrap relative">
                         <img src={Img5} alt="Image 5" className="images p-2" />
@@ -154,7 +148,7 @@ const EssayReview = () => {
             </div>
 
             <div id="supplement-essay" className="section-container bg-gray-400">
-            <div className="flex flex-col md:flex-row mt-4">
+                <div className="flex flex-col md:flex-row mt-4">
                     <div className="p-4 flex flex-wrap relative">
                         <img src={Img6} alt="Image 6" className="images p-2" />
                     </div>
@@ -167,10 +161,9 @@ const EssayReview = () => {
                         <li>Feedback and Edits: Providing detailed feedback and edits to improve your essays.</li>
                         <li>Final Review: Ensuring each supplement essay is polished and ready for submission.</li>
                     </ul>
-                   </div>
-               
+                </div>
             </div>
-            
+
             <div className="flex flex-col items-center py-12 bg-gray-100">
                 <h2 className="text-3xl font-bold mb-8">Explore More <span className="text-orange-500">Services</span></h2>
                 <div className="flex space-x-8 text-center w-3/4">

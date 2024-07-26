@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, animateScroll as scroll } from 'react-scroll'; // Import from react-scroll
+import { Link } from 'react-scroll'; // Import from react-scroll
 import { useNavigate } from 'react-router-dom'; // Import useNavigate from react-router-dom
 import '../EssayReview/EssayReview.css';
 import './Admissions.css'
@@ -16,7 +16,6 @@ import Img2 from "../../assets/Profile-building/Profile Building Section Image -
 import Img3 from "../../assets/Profile-building/Profile Building Section Image - AA_ProfileBuilding_HSCourseGuidance.PNG"
 import Img4 from "../../assets/Profile-building/Profile Building Section Image - AA_ProfileBuilding_ProfileAssessment.PNG"
 import Img5 from "../../assets/Profile-building/Profile Building Section Image - AA_ProfileBuilding_ProgressTracking.PNG"
-import Img6 from "../../assets/Profile-building/Profile Building Section Image - AA_ProfileBuilding_QaurterlyPlanning.PNG"
 import AdmissionsFaq from '../../components/AdmissionsFaq/AdmissionsFaq';
 
 const Admissions = () => {
@@ -39,41 +38,39 @@ const Admissions = () => {
                 </div>
             </div>
             <div className="relative container mx-auto z-20 rounded-lg -mt-16">
-            <div className="relative container mx-auto z-20 -mt-16">
-    <div className="flex flex-wrap justify-center gap-0 bg-white shadow-md rounded-md h-36 main-icons ">
-        <div className="flex flex-col items-center h-40 w-40 mt-4">
-            <img src={HowWeWork} alt="University Selection" className="h-16 w-16 mt-2" />
+    <div className="flex flex-wrap justify-center gap-0 bg-white shadow-md rounded-md h-36 main-icons">
+        <Link to="how-we-work" smooth={true} duration={500} className="link-item flex flex-col items-center h-40 w-40 mt-4 cursor-pointer">
+            <img src={HowWeWork} alt="How We Work" className="h-16 w-16 mt-2" />
             <p className="mt-2 text-sm font-semibold text-center">How We Work</p>
-        </div>
-        <div className="flex flex-col items-center h-40 w-40 mt-4">
-            <img src={UniversitySelection} alt="Profile Evaluation" className="h-16 w-16 mt-2" />
+        </Link>
+        <Link to="university-selection" smooth={true} duration={500} className="link-item flex flex-col items-center h-40 w-40 mt-4 cursor-pointer">
+            <img src={UniversitySelection} alt="University Selection" className="h-16 w-16 mt-2" />
             <p className="mt-2 text-sm font-semibold text-center">University Selection</p>
-        </div>
-        <div className="flex flex-col items-center h-40 w-40 mt-4">
-            <img src={ProfileEvaluation} alt="Document Editing" className="h-16 w-16 mt-2" />
+        </Link>
+        <Link to="profile-evaluation" smooth={true} duration={500} className="link-item flex flex-col items-center h-40 w-40 mt-4 cursor-pointer">
+            <img src={ProfileEvaluation} alt="Profile Evaluation" className="h-16 w-16 mt-2" />
             <p className="mt-2 text-sm font-semibold text-center">Profile Evaluation</p>
-        </div>
-        <div className="flex flex-col items-center h-40 w-40 mt-4">
-            <img src={DocumentEditing} alt="Interview Preparation" className="h-16 w-16 mt-2" />
+        </Link>
+        <Link to="document-editing" smooth={true} duration={500} className="link-item flex flex-col items-center h-40 w-40 mt-4 cursor-pointer">
+            <img src={DocumentEditing} alt="Document Editing" className="h-16 w-16 mt-2" />
             <p className="mt-2 text-sm font-semibold text-center">Documentation</p>
-        </div>
-        <div className="flex flex-col items-center h-40 w-40 mt-4">
-            <img src={AdmissionInterview} alt="Visa Assistance" className="h-16 w-16 mt-2" />
+        </Link>
+        <Link to="application-assistance" smooth={true} duration={500} className="link-item flex flex-col items-center h-40 w-40 mt-4 cursor-pointer">
+            <img src={AdmissionInterview} alt="Application Assistance" className="h-16 w-16 mt-2" />
             <p className="mt-2 text-sm font-semibold text-center">Application Assistance</p>
-        </div>
-        <div className="flex flex-col items-center h-40 w-40 mt-4">
-            <img src={AdmissionsVisa} alt="Visa Assistance" className="h-16 w-16 mt-2" />
+        </Link>
+        <Link to="visa-services" smooth={true} duration={500} className="link-item flex flex-col items-center h-40 w-40 mt-4 cursor-pointer">
+            <img src={AdmissionsVisa} alt="Visa Services" className="h-16 w-16 mt-2" />
             <p className="mt-2 text-sm font-semibold text-center">Visa Services</p>
-        </div>
+        </Link>
     </div>
 </div>
-               
-            </div>
+
 
             <div id="how-we-work" className="section-container">
                 <div className="text-section1 ml-24 mt-16">
-                    <h2 className="section-title-left text-3xl   text-left">Why Choose Admit Achievers?</h2>
-                    <p className="section-description text-xl ">
+                    <h2 className="section-title-left text-3xl text-left">Why Choose Admit Achievers?</h2>
+                    <p className="section-description text-xl">
                         The journey to securing admission to top universities around the world is both intricate and highly competitive. Admit Achievers’ personalized approach lifts students above the global applicant pool, addressing every aspect of the application process with precision and dedication.
                     </p>
                     <button onClick={handleBookSession} className="bg-orange-500 text-white top-buttons py-2 px-4 rounded mt-4">Book a Session</button>
@@ -85,7 +82,7 @@ const Admissions = () => {
                 </div>
             </div>
 
-            <div id="university-selection" className="admissions-container ">
+            <div id="university-selection" className="admissions-container">
                 <div className="section-container bg-gray-400">
                     <div className="flex flex-col md:flex-row mt-4">
                         <div className="p-4 flex flex-wrap relative">
@@ -93,15 +90,15 @@ const Admissions = () => {
                         </div>
                     </div>
                     <div className="text-section2">
-                        <h2 className="section-title -ml-2  text-left text-3xl">University Selection</h2>
+                        <h2 className="section-title -ml-2 text-left text-3xl">University Selection</h2>
                         <p className="section-description text-xl">
                             Navigating the multitude of universities worldwide can be overwhelming. Admit Achievers simplifies this process with our University Selection service. We guide you in identifying the institutions that align with your academic interests, career aspirations, and personal preferences. Our advisors leverage their extensive knowledge of global universities to help you create a balanced list of target, match, and safety schools, maximizing your chances of acceptance.
                         </p>
-                        <button onClick={handleBookSession} className="custom-buttons bg-orange-500  text-white py-2 px-4 rounded mt-4">Book a Session</button>
+                        <button onClick={handleBookSession} className="custom-buttons bg-orange-500 text-white py-2 px-4 rounded mt-4">Book a Session</button>
                     </div>
                 </div>
 
-                <div id='profile-evaluation' className="section-container">
+                <div id="profile-evaluation" className="section-container">
                     <div className="text-section1">
                         <h2 className="section-title-left -ml-2 text-left text-3xl">Profile Evaluation</h2>
                         <p className="section-description text-xl">
@@ -147,7 +144,7 @@ const Admissions = () => {
                 </div>
             </div>
 
-            <div id="visa-services" className="section-container  bg-gray-400">
+            <div id="visa-services" className="section-container bg-gray-400">
                 <div className="text-left">
                     <h2 className="text-3xl font-bold mb-4 ml-16 text-orange mt-16">Visa Services</h2>
                     <p className="mb-4 ml-16 mr-16 text-xl">
