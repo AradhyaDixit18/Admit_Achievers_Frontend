@@ -153,7 +153,7 @@ const ResultSection = () => {
   }, []); 
 
   return (
-    <div>
+    <div className='w-full'>
       <StudentsResult />
 
       <div className="bg-white text-gray-800 p-8">

@@ -45,7 +45,7 @@ const Testimonial = () => {
 
   return (
     <>
-      <div className="mx-auto mt-8 py-8">
+      <div className="mx-auto  py-8">
         <div className='mb-4'>
           <h2 className="text-5xl mb-4 font-bold mb-4 test-head inline">What Students are saying about <span className="text-orange-500">Admit Achievers</span></h2>
           <div className="ml-4 mb-4 inline">
