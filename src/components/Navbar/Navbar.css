@@ -3,11 +3,13 @@
 * {
   font-family: 'Poppins', sans-serif;
 }
+
 .dropdown-menu {
   display: none;
 }
 
-.relative:hover .dropdown-menu {
+.relative:hover .dropdown-menu,
+.relative:focus-within .dropdown-menu {
   display: block;
 }
 

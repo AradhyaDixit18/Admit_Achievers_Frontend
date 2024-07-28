@@ -35,18 +35,18 @@ const FAQSection = () => {
   ];
 
   return (
-    <div className="main font-sans antialiased bg-white py-8">
+    <div className="main font-sans antialiased bg-white py-8 ">
       <div className="container questions mx-auto px-4">
         <h2 className="text-5xl main-text font-bold text-center mb-4">
           Got Questions? Find <span className="text-orange">Answers</span> Here
         </h2>
         <div className="flex flex-col md:flex-row mt-4 justify-center items-start">
           <div className="w-full main-quesns text-xl mt-20 md:w-3/4 z-10 ">
-            <ul className="list-none">
+            <ul className="list-none quesns">
               {questionsAndAnswers.map((item, index) => (
                 <li key={index} className="mb-4">
                   <div className="flex justify-between items-center border-b border-gray-200 pb-2">
-                    <span className="question-text"  onClick={() => toggleQuestion(index)}>{item.question}</span>
+                    <span className="question-text" onClick={() => toggleQuestion(index)}>{item.question}</span>
                     <button
                       onClick={() => toggleQuestion(index)}
                       className="symbol ml-8 font-bold text-2xl"

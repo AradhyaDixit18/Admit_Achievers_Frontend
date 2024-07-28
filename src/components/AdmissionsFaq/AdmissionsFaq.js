@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
+import './AdmissionsFaq.css';
 import Faq1 from '../../assets/Homepage/AA_Home_FAQ1.png';
 import Faq2 from '../../assets/Homepage/AA_Home_FAQ2.png';
 import Faq3 from '../../assets/Homepage/AA_Home_FAQ3.png';
 
-const AdmissionsFaq = () => {
+const AdmissionFaq = () => {
   const [openQuestionIndex, setOpenQuestionIndex] = useState(null);
 
   const toggleQuestion = (index) => {
@@ -42,21 +43,21 @@ const AdmissionsFaq = () => {
   ];
 
   return (
-    <div className="main font-sans antialiased bg-white py-8">
+    <div className="main font-sans antialiased bg-white py-8 ">
       <div className="container questions mx-auto px-4">
         <h2 className="text-5xl main-text font-bold text-center mb-4">
           Got Questions? Find <span className="text-orange">Answers</span> Here
         </h2>
-        <div className="flex flex-col md:flex-row mt-4 justify-center z-10 items-start">
-          <div className="w-full main-quesns text-xl mt-4 z-10 md:w-1/2">
-            <ul className="list-none  z-10"  onClick={() => toggleQuestion()}>
+        <div className="flex flex-col md:flex-row mt-4 justify-center items-start">
+          <div className="w-full main-quesns text-xl mt-20 md:w-3/4 z-10 ">
+            <ul className="list-none quesns">
               {questionsAndAnswers.map((item, index) => (
                 <li key={index} className="mb-4">
                   <div className="flex justify-between items-center border-b border-gray-200 pb-2">
-                    <span className="question-text">{item.question}</span>
+                    <span className="question-text" onClick={() => toggleQuestion(index)}>{item.question}</span>
                     <button
                       onClick={() => toggleQuestion(index)}
-                      className="text-red-500 symbol ml-8 font-bold text-lg"
+                      className="symbol ml-8 font-bold text-2xl"
                     >
                       {openQuestionIndex === index ? '-' : '+'}
                     </button>
@@ -68,7 +69,7 @@ const AdmissionsFaq = () => {
               ))}
             </ul>
           </div>
-          <div className="z-0 images md:w-1/2 flex flex-col items-center  md:mt-0">
+          <div className="w-full images md:w-1/2 flex flex-col items-center mt-4 ">
             <img
               src={Faq1}
               alt="Image 1"
@@ -91,4 +92,4 @@ const AdmissionsFaq = () => {
   );
 };
 
-export default AdmissionsFaq;
+export default AdmissionFaq;

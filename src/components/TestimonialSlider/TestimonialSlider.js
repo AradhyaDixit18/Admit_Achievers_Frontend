@@ -20,7 +20,7 @@ const TestimonialSlider = () => {
             </h2>
             <button
               onClick={() => window.open('https://youtube.com/@admitachievers', '_blank')}
-              className="mt-4 abroad-button text-white px-6 py-2 rounded-md bg-333333 shadow-md"
+              className="mt-4 ml-4 abroad-button text-white px-6 py-2 rounded-md bg-333333 shadow-md"
             >
               Watch Now
             </button>
@@ -30,9 +30,9 @@ const TestimonialSlider = () => {
 
       <Testimonial />
 
-      <div className="bg-gray-100 p-8">
+      <div className="bg-gray-100 ">
         {/* Section 1 */}
-        <div className="ready-section md:w-3/4 mx-auto text-white p-8 rounded-lg flex flex-col items-center text-center mb-10">
+        <div className="ready-section w-full mx-auto text-white p-8 rounded-lg flex flex-col items-center text-center mb-10">
           <h2 className="text-2xl md:text-4xl mt-10 font-bold mb-4 z-10">
             Start Your <span className="text-orange-500">Journey</span>
           </h2>

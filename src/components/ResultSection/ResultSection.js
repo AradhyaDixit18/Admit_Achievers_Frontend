@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';  // Import useNavigate
 import './ResultSection.css';
 import { StudentsResult } from '../StudentsResult/StudentsResult';
 
@@ -7,7 +8,7 @@ import ProfileBuildingImage from '../../assets/Homepage/OtherServices/AA_Homepag
 import DocumentationImage from '../../assets/Homepage/OtherServices/AA_HomePageService_Documentation.jpg';
 import ApplicationsAssistImage from '../../assets/Homepage/OtherServices/AA_HomepageServices_ApplicationAssist.jpg';
 import UniversitySelectionImage from '../../assets/Homepage/OtherServices/AA_HomepageServices_UniversityShortlisting.jpg';
-import ScholarshipAssistanceImage from '../../assets/Homepage/OtherServices/AA_HomepageServices_ScholarShipAssistance.jpg'
+import ScholarshipAssistanceImage from '../../assets/Homepage/OtherServices/AA_HomepageServices_ScholarShipAssistance.jpg';
 // Importing icons
 import ProfileBuildingActiveIcon from '../../assets/Homepage/Icons/aa_profile_hm_active.png';
 import UniversitySelectionActiveIcon from '../../assets/Homepage/Icons/aa_university_hm_active.png';
@@ -21,9 +22,9 @@ import DocumentationDefaultIcon from '../../assets/Homepage/Icons/aa_document_hm
 import ApplicationsAssistDefaultIcon from '../../assets/Homepage/Icons/aa_application_hm_default.png';
 import ScholarshipAssistanceDefaultIcon from '../../assets/Homepage/Icons/AA_HomepageService_ScholarshipAssist_Default.png';
 
-
 const ResultSection = () => {
   const [activeSection, setActiveSection] = useState('Profile Building');
+  const navigate = useNavigate();  // Create navigate function
 
   const sections = {
     'Profile Building': (
@@ -150,6 +151,7 @@ const ResultSection = () => {
 
     preloadImages();
   }, []); 
+
   return (
     <div>
       <StudentsResult />
@@ -168,15 +170,15 @@ const ResultSection = () => {
               <img
                 src={activeSection === section ? iconPaths[section].active : iconPaths[section].default}
                 alt={section}
-                className="h-12 w-12 mx-auto "
+                className="h-12 w-12 mx-auto"
               />
-              <p className="mt-2 ">{section}</p>
+              <p className="mt-2">{section}</p>
             </button>
           ))}
         </div>
       </div>
 
-      <div className="bg-white text-gray-800 image-content  p-8 flex mx-8">
+      <div className="bg-white text-gray-800 image-content p-8 flex mx-8">
         <img
           src={imagePaths[activeSection]}
           alt={activeSection}
@@ -185,7 +187,10 @@ const ResultSection = () => {
         <div className='section-content'>
           {sections[activeSection]}
           <div className="mt-4 flex space-x-4">
-            <button className="bg-orange-500 text-white px-6 py-2 rounded-md shadow-md flex items-center">
+            <button 
+              className="bg-orange-500 text-white px-6 py-2 rounded-md shadow-md flex items-center"
+              onClick={() => navigate('/book-a-session')}  // Use navigate instead of history.push
+            >
               Book A Session
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="ml-2 h-5 w-5">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
