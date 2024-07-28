@@ -8,7 +8,7 @@ import Testimonial from '../Testimonials/Testinomials';
 const TestimonialSlider = () => {
   return (
     <>
-      <div className="relative w-full text-white main -mt-96">
+      <div className="relative w-full text-white main ">
         <div className="relative w-full h-80 overflow-hidden z-0">
           <img src={VideoBanner} alt="" className="absolute w-full h-full object-cover" />
           <div className="study-abroad-section z-10">
