@@ -8,10 +8,10 @@ import Testimonial from '../Testimonials/Testinomials';
 const TestimonialSlider = () => {
   return (
     <>
-      <div className="relative w-full text-white main">
-        <div className="relative w-full h-78 overflow-hidden z-0">
-          <img src={VideoBanner} alt="" className="absolute w-full h-full object-cover" />
-          <div className="relative container py-24 z-10 flex flex-col items-center sm:items-start px-4 sm:px-0">
+      <div className="relative w-full text-white  mb-0 main">
+        <div className="relative w-full h-96 overflow-hidden z-0">
+          <img src={VideoBanner} alt="" className="absolute w-full  object-cover" />
+          <div className="relative container mt-24 py-24 z-10 flex flex-col items-center sm:items-start px-4 sm:px-0">
             <h1 className="sm:text-2xl md:text-5xl abroad-maintext text-white font-bold text-center sm:text-left">
               STUDY ABROAD ESSENTIALS
             </h1>
@@ -20,7 +20,7 @@ const TestimonialSlider = () => {
             </h2>
             <button
               onClick={() => window.open('https://youtube.com/@admitachievers', '_blank')}
-              className="mt-4 ml-4 abroad-button text-white px-6 py-2 rounded-md bg-333333 shadow-md"
+              className="mt-4 abroad-button text-white px-6 py-2  rounded-md bg-333333 shadow-md"
             >
               Watch Now
             </button>

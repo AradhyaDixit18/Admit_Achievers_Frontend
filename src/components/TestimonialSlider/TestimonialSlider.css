@@ -9,7 +9,7 @@
   background-color: #f8f9fa;
 }
 
-.abroad-maintext, .abroad-subtext, .abroad-button {
+.abroad-maintext, .abroad-subtext{
   margin: 0;
 }
 
@@ -159,7 +159,7 @@
   margin-left: -45%;
 }
 .abroad-button{
-  margin-left: -84%;
+  margin-left: -86%;
 }
 }
 @media (max-width: 768px) {
