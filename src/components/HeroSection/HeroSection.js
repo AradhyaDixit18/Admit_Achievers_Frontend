@@ -42,7 +42,7 @@ const HeroSection = () => {
                 </div>
             </div>
         
-            <div className="cards-section text-center z-20 ">
+            <div className="cards-section text-center  z-20 ">
                 <div className="pattern-dots top-right"></div>
                 <h2 className="md:text-5xl sm:text-2xl font-bold mb-8 text-black">Why Admit Achievers?</h2>
                 <div className="pattern-dots bottom-left"></div>

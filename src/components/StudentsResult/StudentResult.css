@@ -37,9 +37,9 @@
 .university-text {
   margin-top: 10px;
   text-align: center;
+  white-space: normal; /* Allow wrapping */
 }
 
-/* Media Queries for Responsiveness */
 @media (min-width: 640px) {
   .university-item {
     width: calc(100% / 3); /* Show three icons in a row for small screens */

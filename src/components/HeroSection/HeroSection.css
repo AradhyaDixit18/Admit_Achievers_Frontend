@@ -15,6 +15,7 @@
   }
   .cards-section {
     margin-top: -72px;
+  
   }
   #hero-button {
     margin-left: -82%;
@@ -47,7 +48,7 @@
   padding: 40px;
   background: #fff;
   align-items: center;
-  margin-left: 5%;
+ 
   width: 90%; /* Default width */
 }
 

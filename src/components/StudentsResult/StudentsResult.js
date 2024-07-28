@@ -32,7 +32,9 @@ export const StudentsResult = () => {
               alt={university.name}
               className="university-logo mx-auto"
             />
-            <p className="university-text mt-4 text-white">{university.name}</p>
+            <p className="university-text mt-4 text-white">{university.name.split(' ').map((word, index) => (
+              <span key={index}>{word}<br /></span>
+            ))}</p>
           </div>
         ))}
       </div>
