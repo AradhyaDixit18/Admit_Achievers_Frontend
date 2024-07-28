@@ -73,7 +73,7 @@ const Navbar = () => {
               <button className="block lg:inline-block p-2">Our Services</button>
               {openDropdown === 'services' && (
                 <div
-                  className="absolute bg-white shadow-md rounded mt-2 w-52 dropdown-menu z-50"
+                  className="absolute bg-white shadow-md rounded mt-2 w-52 dropdown-menu z-50 open"
                   onMouseEnter={() => handleMouseEnter('services')}
                   onMouseLeave={handleMouseLeave}
                 >
@@ -92,7 +92,7 @@ const Navbar = () => {
               <button className="block lg:inline-block p-2">Destinations</button>
               {openDropdown === 'destinations' && (
                 <div
-                  className="absolute bg-white shadow-md rounded mt-2 w-48 dropdown-menu z-50"
+                  className="absolute bg-white shadow-md rounded mt-2 w-48 dropdown-menu z-50 open"
                   onMouseEnter={() => handleMouseEnter('destinations')}
                   onMouseLeave={handleMouseLeave}
                 >

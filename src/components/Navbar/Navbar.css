@@ -5,12 +5,16 @@
 }
 
 .dropdown-menu {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
 .relative:hover .dropdown-menu,
-.relative:focus-within .dropdown-menu {
-  display: block;
+.relative:focus-within .dropdown-menu,
+.dropdown-menu.open {
+  opacity: 1;
+  visibility: visible;
 }
 
 @media (min-width: 1024px) {
@@ -88,11 +92,6 @@
 nav {
   border-bottom: 1px solid #e5e7eb; /* Light grey border at the bottom */
   z-index: 10;
-}
-
-.relative:hover .dropdown-menu,
-.relative:focus-within .dropdown-menu {
-  display: block;
 }
 
 .dropdown-menu {
