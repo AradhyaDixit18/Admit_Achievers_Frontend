@@ -4,10 +4,10 @@ import footerIcon from "../../assets/Logos/AA_Footer_Logo_1080_Square.png"
 
 const Footer = () => {
   return (
-    <footer className="main-footer text-left text-white py-8 mt-2">
-      <div className="container text-left mx-auto px-4">
-        <div className="flex flex-col text-left items-start md:flex-row md:justify-between">
-          <div className="flex flex-col text-left items-start mb-8 md:mb-0">
+    <footer className="main-footer text-white mt-2">
+      <div className="container mx-auto px-4">
+        <div className="flex flex-col items-start md:flex-row md:justify-between">
+          <div className="flex flex-col items-start mb-8 md:mb-0">
             <div className="footer-logo mb-4">
               <img src={footerIcon} alt="Logo" className="logo-main" />
             </div>
@@ -23,13 +23,13 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          <div className="flex flex-col text-left md:flex-row md:space-x-36">
+          <div className="flex flex-col md:flex-row md:space-x-36">
             <div className="mb-8 md:mb-0">
               <h3 className="font-bold mb-4">Our Services</h3>
               <ul className="list-none space-y-2">
                 <li><a href="/coming-soon" className="hover:underline hover:cursor-pointer">Full Stack Admissions</a></li>
-                <li><a href="/coming-soon" className="hover:underline hover:cursor-pointer">Essay Review</a></li>
-                <li><a href="/coming-soon" className="hover:underline hover:cursor-pointer">Profile Building</a></li>
+                <li><a href="/essay-review" className="hover:underline hover:cursor-pointer">Essay Review</a></li>
+                <li><a href="/profile-building" className="hover:underline hover:cursor-pointer">Profile Building</a></li>
                 <li><a href="/coming-soon" className="hover:underline hover:cursor-pointer">Visas</a></li>
               </ul>
             </div>
@@ -61,8 +61,8 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex flex-col items-start md:flex-row md:justify-between mt-8">
-          <p className="text-left text-white">&copy; 2024 Admit Achievers</p>
-          <p className="text-left text-white">All rights reserved. Registration or use of this site constitutes acceptance of our <a href="#terms" className="hover:underline hover:cursor-pointer">Terms and Conditions</a>.</p>
+          <p className="text-left">&copy; 2024 Admit Achievers</p>
+          <p className="text-left">All rights reserved. Registration or use of this site constitutes acceptance of our <a href="#terms" className="hover:underline hover:cursor-pointer">Terms and Conditions</a>.</p>
         </div>
       </div>
     </footer>

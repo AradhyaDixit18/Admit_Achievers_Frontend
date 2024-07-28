@@ -7,6 +7,11 @@ import Logo from "../../assets/Logos/AA_Header_Logo_1080_Horizontal.png";
 const Navbar = () => {
   const [openDropdown, setOpenDropdown] = useState(null);
   const [dropdownTimeout, setDropdownTimeout] = useState(null);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState({
+    services: false,
+    destinations: false
+  });
   const location = useLocation();
 
   useEffect(() => {
@@ -18,18 +23,22 @@ const Navbar = () => {
   }, [dropdownTimeout]);
 
   const handleMouseEnter = (dropdown) => {
-    if (dropdownTimeout) {
-      clearTimeout(dropdownTimeout);
-      setDropdownTimeout(null);
+    if (window.innerWidth >= 1024) { // Only apply on larger screens
+      if (dropdownTimeout) {
+        clearTimeout(dropdownTimeout);
+        setDropdownTimeout(null);
+      }
+      setOpenDropdown(dropdown);
     }
-    setOpenDropdown(dropdown);
   };
 
   const handleMouseLeave = () => {
-    const timeout = setTimeout(() => {
-      setOpenDropdown(null);
-    }, 3000); // 3 seconds
-    setDropdownTimeout(timeout);
+    if (window.innerWidth >= 1024) { // Only apply on larger screens
+      const timeout = setTimeout(() => {
+        setOpenDropdown(null);
+      }, 3000); // 3 seconds
+      setDropdownTimeout(timeout);
+    }
   };
 
   const handleClickOutside = (event) => {
@@ -46,6 +55,13 @@ const Navbar = () => {
     };
   }, []);
 
+  const toggleDropdown = (dropdown) => {
+    setIsDropdownOpen((prev) => ({
+      ...prev,
+      [dropdown]: !prev[dropdown]
+    }));
+  };
+
   const getLinkClass = (path) => {
     return location.pathname === path ? 'text-orange-600' : 'text-gray-800';
   };
@@ -54,8 +70,8 @@ const Navbar = () => {
     <nav className="bg-white shadow p-4 border-b border-gray-200">
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center lg:hidden">
-          <button onClick={() => setOpenDropdown(openDropdown === 'menu' ? null : 'menu')} className="text-gray-800 focus:outline-none">
-            <i className={`fas ${openDropdown === 'menu' ? 'fa-times' : 'fa-bars'}`}></i>
+          <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-gray-800 focus:outline-none">
+            <i className={`fas ${isMenuOpen ? 'fa-times' : 'fa-bars'}`}></i>
           </button>
         </div>
         <div className="flex-1 flex justify-center lg:justify-start">
@@ -63,15 +79,20 @@ const Navbar = () => {
             <img src={Logo} alt="Admit Achievers" className="h-16 logo w-auto" />
           </Link>
         </div>
-        <div className={`w-full lg:flex lg:items-center lg:w-auto ${openDropdown === 'menu' ? 'block' : 'hidden'} lg:block`}>
+        <div className={`w-full lg:flex lg:items-center lg:w-auto ${isMenuOpen ? 'block' : 'hidden'} lg:block`}>
           <div className="lg:flex -ml-4 lg:space-x-6">
             <div
               className="relative"
               onMouseEnter={() => handleMouseEnter('services')}
               onMouseLeave={handleMouseLeave}
             >
-              <button className="block lg:inline-block p-2">Our Services</button>
-              {openDropdown === 'services' && (
+              <button 
+                className="block lg:inline-block p-2" 
+                onClick={() => toggleDropdown('services')}
+              >
+                Our Services
+              </button>
+              {(openDropdown === 'services' || isDropdownOpen.services) && (
                 <div
                   className="absolute bg-white shadow-md rounded mt-2 w-52 dropdown-menu z-50 open"
                   onMouseEnter={() => handleMouseEnter('services')}
@@ -89,8 +110,13 @@ const Navbar = () => {
               onMouseEnter={() => handleMouseEnter('destinations')}
               onMouseLeave={handleMouseLeave}
             >
-              <button className="block lg:inline-block p-2">Destinations</button>
-              {openDropdown === 'destinations' && (
+              <button 
+                className="block lg:inline-block p-2" 
+                onClick={() => toggleDropdown('destinations')}
+              >
+                Destinations
+              </button>
+              {(openDropdown === 'destinations' || isDropdownOpen.destinations) && (
                 <div
                   className="absolute bg-white shadow-md rounded mt-2 w-48 dropdown-menu z-50 open"
                   onMouseEnter={() => handleMouseEnter('destinations')}
