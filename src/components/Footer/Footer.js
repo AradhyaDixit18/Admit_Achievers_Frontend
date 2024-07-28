@@ -4,8 +4,8 @@ import footerIcon from "../../assets/Logos/AA_Footer_Logo_1080_Square.png"
 
 const Footer = () => {
   return (
-    <footer className="main-footer text-white mt-2">
-      <div className="container mx-auto px-4">
+    <footer className="main-footer text-white ">
+      <div className="container mx-auto px-4 mt-4">
         <div className="flex flex-col items-start md:flex-row md:justify-between">
           <div className="flex flex-col items-start mb-8 md:mb-0">
             <div className="footer-logo mb-4">
@@ -24,7 +24,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex flex-col md:flex-row md:space-x-36">
-            <div className="mb-8 md:mb-0">
+            <div className="mb-8 md:mb-0 mt-4">
               <h3 className="font-bold mb-4">Our Services</h3>
               <ul className="list-none space-y-2">
                 <li><a href="/Admissions" className="hover:underline hover:cursor-pointer">Full Stack Admissions</a></li>
@@ -33,7 +33,7 @@ const Footer = () => {
                 <li><a href="/coming-soon" className="hover:underline hover:cursor-pointer">Visas</a></li>
               </ul>
             </div>
-            <div className="mb-8 md:mb-0">
+            <div className="mb-8 md:mb-0 mt-4">
               <h3 className="font-bold mb-4">Company</h3>
               <ul className="list-none space-y-2">
                 <li><a href="/about-us" className="hover:underline hover:cursor-pointer">About Us</a></li>
@@ -41,7 +41,7 @@ const Footer = () => {
                 <li><a href="/blog-lists" className="hover:underline hover:cursor-pointer">Blogs</a></li>
               </ul>
             </div>
-            <div className="flex flex-col mb-8 md:mb-0">
+            <div className="flex flex-col mb-8 mt-4 md:mb-0">
               <h3 className="font-bold mb-4">Destination</h3>
               <div className="grid grid-cols-2 gap-x-20">
                 <ul className="list-none space-y-2">
