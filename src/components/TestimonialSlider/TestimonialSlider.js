@@ -8,19 +8,19 @@ import Testimonial from '../Testimonials/Testinomials';
 const TestimonialSlider = () => {
   return (
     <>
-      <div className="relative w-full text-white  mb-0 main">
-        <div className="relative w-full h-96 overflow-hidden z-0">
-          <img src={VideoBanner} alt="" className="absolute w-full  object-cover" />
-          <div className="relative container mt-24 py-24 z-10 flex flex-col items-center sm:items-start px-4 sm:px-0">
-            <h1 className="sm:text-2xl md:text-5xl abroad-maintext text-white font-bold text-center sm:text-left">
+      <div className="relative w-full text-white main">
+        <div className="relative w-full h-80 overflow-hidden z-0">
+          <img src={VideoBanner} alt="" className="absolute w-full h-full object-cover" />
+          <div className="study-abroad-section z-10">
+            <h1 className="sm:text-2xl md:text-5xl abroad-maintext text-white font-bold">
               STUDY ABROAD ESSENTIALS
             </h1>
-            <h2 className="text-base md:text-xl abroad-subtext text-white mt-4 text-center sm:text-left">
+            <h2 className="text-base md:text-xl abroad-subtext text-white mt-2">
               Video Resources for study abroad tips, guides, and inspiration
             </h2>
             <button
               onClick={() => window.open('https://youtube.com/@admitachievers', '_blank')}
-              className="mt-4 abroad-button text-white px-6 py-2  rounded-md bg-333333 shadow-md"
+              className="-mt-8 abroad-button text-white px-6 py-2 rounded-md shadow-md"
             >
               Watch Now
             </button>
@@ -30,7 +30,7 @@ const TestimonialSlider = () => {
 
       <Testimonial />
 
-      <div className="bg-gray-100 ">
+      <div className="bg-gray-100">
         {/* Section 1 */}
         <div className="ready-section w-full mx-auto text-white p-8 rounded-lg flex flex-col items-center text-center mb-10">
           <h2 className="text-2xl md:text-4xl mt-10 font-bold mb-4 z-10">

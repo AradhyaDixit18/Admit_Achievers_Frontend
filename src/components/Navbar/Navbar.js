@@ -98,7 +98,7 @@ const Navbar = () => {
                   onMouseEnter={() => handleMouseEnter('services')}
                   onMouseLeave={handleMouseLeave}
                 >
-                  <Link to="/admissions" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">UG & PG Admissions</Link>
+                  <Link to="/admissions" className="block px-4 py-2 text-gray-800 hover:bg-gray-100"> Admissions</Link>
                   <Link to="/profile-building" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Profile Building</Link>
                   <Link to="/essay-review" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Essay Review</Link>
                   <Link to="/coming-soon" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Visas</Link>
@@ -127,7 +127,7 @@ const Navbar = () => {
                   <Link to="/coming-soon" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Study in Australia</Link>
                   <Link to="/coming-soon" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Study in Canada</Link>
                   <Link to="/coming-soon" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Study in Singapore</Link>
-                  <Link to="/coming-soon" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Study in New Zealand</Link>
+                  <Link to="/coming-soon" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Study in NZ</Link>
                   <Link to="/coming-soon" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Study in Europe</Link>
                 </div>
               )}

@@ -9,7 +9,7 @@
   background-color: #f8f9fa;
 }
 
-.abroad-maintext, .abroad-subtext{
+.abroad-maintext {
   margin: 0;
 }
 
@@ -66,10 +66,10 @@
 }
 
 .community-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1rem;
-  justify-items: center;
 }
 
 .community-card {
@@ -120,127 +120,50 @@
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
-.text-center {
-  text-align: center;
+/* Study Abroad Section */
+.study-abroad-section {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 1rem 2rem;
+  text-align: left;
 }
 
-.mb-8 {
-  margin-bottom: 2rem;
+.study-abroad-section h1 {
+  margin: 0.5rem 0;
+}
+.study-abroad-section h2{
+  margin-left: -6%;
+}
+.abroad-button {
+  background-color: #333333;
+ 
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-}
-
-.font-bold {
-  font-weight: 700;
-}
-
-.text-orange-500 {
-  color: #ff6633;
-}
-
-.grid {
-  display: grid;
-}
-
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
-.gap-4 {
-  gap: 1rem;
-}
-@media (min-width: 1024px) {
-.abroad-maintext{
-  margin-left: -42%;
-}
-.abroad-subtext{
-  margin-left: -45%;
-}
-.abroad-button{
-  margin-left: -86%;
-}
-}
-@media (max-width: 768px) {
-  .testimonial {
-    margin-top: 180px;
-    flex-direction: column;
-  }
-
-  .testimonial-image {
-    margin-left: 0;
-    width: 100%;
-    height: auto;
-  }
-
-  .testimonial > div {
-    text-align: center;
-    width: 100%;
-    text-align: left;
-    margin-left: 0;
-  }
-
-  .testimonial div.bg-white {
-    margin-left: 0;
-    width: 100%;
-    padding: 1rem;
-  }
-
-  .test-head {
-    font-size: 30px;
-    text-align: center;
-  }
-
-  .arrows {
-    visibility: hidden;
-  }
-
-  .w-full {
-    width: 100%;
-  }
-
+@media (max-width: 767px) {
   .community-grid {
-    grid-template-columns: 1fr;
-    width: 100%;
+    flex-direction: column;
+    align-items: center;
   }
 
   .community-card {
-    width: 100%;
-    margin-left: 0;
-    height: auto;
+    max-width: 100%;
   }
 
-  .community-text {
-    font-size: 14px;
+  .study-abroad-section {
+    padding: 1rem;
   }
 
-  .rounded-lg {
-    border-radius: 0.25rem;
+  .study-abroad-section h1 {
+    font-size: 1.5rem;
   }
 
-  .mb-8 {
-    margin-bottom: 1rem;
-  }
-
-  .text-2xl {
-    font-size: 1.25rem;
-  }
-
-  .abroad-maintext,
-  .abroad-subtext,
-  .abroad-button {
-    margin-left: 0;
-    text-align: center;
-    width: 100%;
-  }
-
-  .abroad-subtext {
+  .study-abroad-section h2 {
     font-size: 1rem;
-    margin-top: 1rem;
   }
 
-  .abroad-button {
+  .study-abroad-section button {
     font-size: 1rem;
   }
 }
