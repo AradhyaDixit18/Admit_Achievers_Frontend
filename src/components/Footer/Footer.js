@@ -27,7 +27,7 @@ const Footer = () => {
             <div className="mb-8 md:mb-0">
               <h3 className="font-bold mb-4">Our Services</h3>
               <ul className="list-none space-y-2">
-                <li><a href="/coming-soon" className="hover:underline hover:cursor-pointer">Full Stack Admissions</a></li>
+                <li><a href="/Admissions" className="hover:underline hover:cursor-pointer">Full Stack Admissions</a></li>
                 <li><a href="/essay-review" className="hover:underline hover:cursor-pointer">Essay Review</a></li>
                 <li><a href="/profile-building" className="hover:underline hover:cursor-pointer">Profile Building</a></li>
                 <li><a href="/coming-soon" className="hover:underline hover:cursor-pointer">Visas</a></li>
@@ -38,7 +38,7 @@ const Footer = () => {
               <ul className="list-none space-y-2">
                 <li><a href="/about-us" className="hover:underline hover:cursor-pointer">About Us</a></li>
                 <li><a href="/contact-us" className="hover:underline hover:cursor-pointer">Contact Us</a></li>
-                <li><a href="/coming-soon" className="hover:underline hover:cursor-pointer">Blogs</a></li>
+                <li><a href="/blog-lists" className="hover:underline hover:cursor-pointer">Blogs</a></li>
               </ul>
             </div>
             <div className="flex flex-col mb-8 md:mb-0">
